@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 tcp-concurrent: true
-global-ua: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
 dns:
   enable: true
   ipv6: true
@@ -37,167 +36,20 @@ geox-url:
   geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
   mmdb: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
 
-# 通用配置
-proxy_provider_common_config: &proxy_provider_common_config
-  interval: 21600
-  health-check:
-    enable: true
-    interval: 300
-    timeout: 5000
-    url: https://www.google.com/gen_204
-proxy_group_common_config: &proxy_group_common_config
-  lazy: false
-  interval: 300
-  timeout: 5000
-  tolerance: 100
-  url: https://www.google.com/gen_204
+# 代理
+proxies: 
+- {'name': '@v2ray_configs_pool', 'server': '[2a12:5940:a5d5::2]', 'port': 1080, 'type': 'ss', 'cipher': 'aes-128-gcm', 'password': 'XdnQHhaBURukrpf_lmKlgA'}
+- {'name': '@v2ray_configs_pool 2', 'server': '52.209.17.83', 'port': 22222, 'type': 'trojan', 'password': 'telegram-id-privatevpns', 'sni': 'trojan.burgerip.co.uk'}
+- {'name': '@v2ray_configs_pool 3', 'server': '165.22.238.239', 'port': 44386, 'type': 'ss', 'cipher': 'chacha20-ietf-poly1305', 'password': 'QiGcrP2fyCWKcJxOlFmvFo'}
+- {'name': '@v2ray_configs_pool 4', 'server': 'zula.ir', 'port': 443, 'type': 'vmess', 'uuid': '950db6aa-4926-4616-816e-ec0312dcb87b', 'alterId': 0, 'cipher': 'auto', 'tls': true, 'servername': 'jahfkjha.cfd', 'network': 'ws', 'ws-opts': {'path': '/linkws', 'headers': {'Host': 'jahfkjha.cfd'}}}
+- {'name': '@v2ray_configs_pool 5', 'server': '172.67.207.26', 'port': 443, 'type': 'vmess', 'uuid': '76221bfb-e92f-4e80-81c5-6fe48f50ac0b', 'alterId': 0, 'cipher': 'auto', 'tls': true, 'servername': 'glweidf.sbs', 'network': 'ws', 'ws-opts': {'path': '/linkws', 'headers': {'Host': 'glweidf.sbs'}}}
+- {'name': '@v2ray_configs_pool 6', 'server': 'w3.org', 'port': 443, 'type': 'trojan', 'password': 'e16e9768-240f-4ff2-8c29-36d220ed2aa4', 'sni': 'msnghdfy4c2.cpiforpersia.uk'}
+- {'name': '@v2ray_configs_pool 7', 'server': 'tgju.org', 'port': 443, 'type': 'vmess', 'uuid': 'e16e9768-240f-4ff2-8c29-36d220ed2aa4', 'alterId': 0, 'cipher': 'auto', 'tls': true, 'servername': 'tgju.org', 'network': 'grpc', 'grpc-opts': {'grpc-service-name': 'GKI7QXj9evft2rWGqHh74mj'}}
+- {'name': '@v2ray_configs_pool 8', 'server': 'coinspeaker.com', 'port': 443, 'type': 'trojan', 'password': 'e16e9768-240f-4ff2-8c29-36d220ed2aa4', 'sni': 'msnghdfy4c1.iraniancpi.uk'}
+- {'name': '@v2ray_configs_pool 9', 'server': 'cumhuriyet.com.tr', 'port': 443, 'type': 'trojan', 'password': 'e16e9768-240f-4ff2-8c29-36d220ed2aa4', 'sni': 'msnghdfy4c1.iraniancpi.uk', 'network': 'ws', 'ws-opts': {'path': '/4xLDSO3FrWl2DhIibUbDFdhZ', 'headers': {'Host': 'msnghdfy4c1.iraniancpi.uk'}}}
+- {'name': '@v2ray_configs_pool 10', 'server': '104.16.219.108', 'port': 80, 'type': 'vmess', 'uuid': '441da342-ce90-441e-bff9-d2ceb55e68ca', 'alterId': 0, 'cipher': 'auto', 'tls': false, 'network': 'ws', 'ws-opts': {'path': '/Telegram/XV2ray', 'headers': {'Host': 'rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aparat.com.V2ray.com.shf2.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net.'}}}
+- {'name': '@v2ray_configs_pool 11', 'server': '188.114.97.79', 'port': 443, 'type': 'vmess', 'uuid': 'edbb1059-1633-4271-b66e-ed4fba47a1bf', 'alterId': 0, 'cipher': 'auto', 'tls': true, 'servername': 'linde06.indiavideo.sbs', 'network': 'ws', 'ws-opts': {'path': '/linkws', 'headers': {'Host': 'linde06.indiavideo.sbs'}}}
 
-# 订阅地址
-proxy-providers: 
-  _pool:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/_pool.yaml'
-    path: ./providers/_pool.yaml
-  ClodQiu:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/ClodQiu.yaml'
-    path: ./providers/ClodQiu.yaml
-  Pawdroid:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/Pawdroid.yaml'
-    path: ./providers/Pawdroid.yaml
-  a2470982985:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/a2470982985.yaml'
-    path: ./providers/a2470982985.yaml
-  abshare:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/abshare.yaml'
-    path: ./providers/abshare.yaml
-  aiboboxx:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/aiboboxx.yaml'
-    path: ./providers/aiboboxx.yaml
-  chengaopan:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/chengaopan.yaml'
-    path: ./providers/chengaopan.yaml
-  edgetunnel:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/edgetunnel.yaml'
-    path: ./providers/edgetunnel.yaml
-  ermaozi:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/ermaozi.yaml'
-    path: ./providers/ermaozi.yaml
-  freefq:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/freefq.yaml'
-    path: ./providers/freefq.yaml
-  mfuu:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/mfuu.yaml'
-    path: ./providers/mfuu.yaml
-  ChromeGo:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/ChromeGo.yaml'
-    path: ./providers/ChromeGo.yaml
-  mksshare:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/mksshare.yaml'
-    path: ./providers/mksshare.yaml
-  peasoft:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/peasoft.yaml'
-    path: ./providers/peasoft.yaml
-  shunfeng:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/shunfeng.yaml'
-    path: ./providers/shunfeng.yaml
-  tolinkshare:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/tolinkshare.yaml'
-    path: ./providers/tolinkshare.yaml
-  xrayvip:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/xrayvip.yaml'
-    path: ./providers/xrayvip.yaml
-  zhangkaiitugithub:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/zhangkaiitugithub.yaml'
-    path: ./providers/zhangkaiitugithub.yaml
-  ripaojiedian:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/ripaojiedian.yaml'
-    path: ./providers/ripaojiedian.yaml
-  yaney01:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/yaney01.yaml'
-    path: ./providers/yaney01.yaml
-  hkaa0:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/hkaa0.yaml'
-    path: ./providers/hkaa0.yaml
-  soroushmirzaei:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/soroushmirzaei.yaml'
-    path: ./providers/soroushmirzaei.yaml
-  mahdibland:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/mahdibland.yaml'
-    path: ./providers/mahdibland.yaml
-  yudou:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/yudou.yaml'
-    path: ./providers/yudou.yaml
-  fromzero:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/fromzero.yaml'
-    path: ./providers/fromzero.yaml
-  maskedman:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/maskedman.yaml'
-    path: ./providers/maskedman.yaml
-  yaney:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/yaney.yaml'
-    path: ./providers/yaney.yaml
-  getafreenode:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/getafreenode.yaml'
-    path: ./providers/getafreenode.yaml
-  anaer:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/anaer.yaml'
-    path: ./providers/anaer.yaml
-  tssf:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/tssf.yaml'
-    path: ./providers/tssf.yaml
-  ttvg:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/ttvg.yaml'
-    path: ./providers/ttvg.yaml
-  zonghewang:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/zonghewang.yaml'
-    path: ./providers/zonghewang.yaml
-  chxxyz2004:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/chxxyz2004.yaml'
-    path: ./providers/chxxyz2004.yaml
-  changfengoss:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/changfengoss.yaml'
-    path: ./providers/changfengoss.yaml
-  go4sharing:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/go4sharing.yaml'
-    path: ./providers/go4sharing.yaml
-  m3hdio1:
-    type: http
-    url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/notebookbeta/airport/main/subs/m3hdio1.yaml'
-    path: ./providers/m3hdio1.yaml
 
 # 代理组
 proxy-groups:
@@ -213,24 +65,40 @@ proxy-groups:
 
   - name: ♻️ 自动选择
     type: url-test
-    <<: *proxy_group_common_config
+    lazy: false
+    interval: 300
+    timeout: 5000
+    tolerance: 100
+    url: https://www.google.com/gen_204
     include-all: true
 
   - name: 🚑 故障转移
     type: fallback
-    <<: *proxy_group_common_config
+    lazy: false
+    interval: 300
+    timeout: 5000
+    tolerance: 100
+    url: https://www.google.com/gen_204
     include-all: true
 
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     strategy: round-robin
-    <<: *proxy_group_common_config
+    lazy: false
+    interval: 300
+    timeout: 5000
+    tolerance: 100
+    url: https://www.google.com/gen_204
     include-all: true
 
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     strategy: consistent-hashing
-    <<: *proxy_group_common_config
+    lazy: false
+    interval: 300
+    timeout: 5000
+    tolerance: 100
+    url: https://www.google.com/gen_204
     include-all: true
 
   - name: 🌍 国外媒体
@@ -407,10 +275,6 @@ rule-providers:
 
 # 规则
 rules:
-  # 自定义规则
-  - RULE-SET,custom_direct,🎯 全球直连
-  - RULE-SET,custom_reject,🛑 全球拦截
-  - RULE-SET,custom_proxy,🚀 节点选择
   # acl4ssr
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
   - RULE-SET,UnBan,🎯 全球直连
