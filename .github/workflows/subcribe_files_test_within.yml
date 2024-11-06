@@ -18,8 +18,8 @@ jobs:
         run: |
           git config --global user.email "metaST@github.com"
           git config --global user.name "metaST"
-          git config --global http.proxy  http://10.0.0.10:7890
-          git config --global https.proxy http://10.0.0.10:7890
+          git config --global http.proxy  http://67.198.151.190:7890
+          git config --global https.proxy http://67.198.151.190:7890
 
       - name: 拉取代码
         uses: actions/checkout@v4
