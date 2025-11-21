@@ -102,18 +102,6 @@ proxies:
     sni: joss.gpj1.web.id
     network: ws
     ws-opts:
-      path: /Free-VPN-CF-Geo-Project/212.227.144.37=8443
-      headers:
-        Host: joss.gpj1.web.id
-    type: trojan
-    password: 1e1a7efa-a4f1-4936-a470-a001e0c3c85b
-    server: 212.227.144.37
-    port: 8443
-    name: ES_speednode_0008
-  - skip-cert-verify: false
-    sni: joss.gpj1.web.id
-    network: ws
-    ws-opts:
       path: /Free-VPN-CF-Geo-Project/217.30.10.31=8443
       headers:
         Host: joss.gpj1.web.id
@@ -192,13 +180,6 @@ proxies:
     cipher: aes-256-cfb
     password: ZET59LF6DvCC8KVt
     client-fingerprint: chrome
-  - skip-cert-verify: true
-    sni: t.me/ripaojiedian
-    type: trojan
-    password: BxceQaOe
-    server: 219.79.165.55
-    port: 443
-    name: 香港+电讯盈科有限公司-2
   - name: YouTube顺丰资源 Nofound1
     type: vless
     server: 36.50.90.241
@@ -294,18 +275,6 @@ proxies:
         Host: gaosir.unfeeling.sbs
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-    servername: gaosir.unfeeling.sbs
-  - name: YouTube顺丰资源 俄罗斯26
-    type: vless
-    server: 31.192.238.71
-    port: 2053
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    tls: true
-    network: ws
-    ws-opts:
-      path: /freecodes/
-      headers:
-        Host: gaosir.unfeeling.sbs
     servername: gaosir.unfeeling.sbs
   - name: YouTube顺丰资源 俄罗斯32
     type: vless
@@ -526,18 +495,6 @@ proxies:
         Host: gaosir.unfeeling.sbs
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-    servername: gaosir.unfeeling.sbs
-  - name: YouTube顺丰资源 韩国228
-    type: vless
-    server: 147.75.225.105
-    port: 443
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    tls: true
-    network: ws
-    ws-opts:
-      path: /x@节点狂魔/
-      headers:
-        Host: gaosir.unfeeling.sbs
     servername: gaosir.unfeeling.sbs
   - name: YouTube顺丰资源 日本251
     type: vless
@@ -893,36 +850,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     client-fingerprint: chrome
-  - name: 美国 049
-    type: vless
-    network: ws
-    server: 104.21.30.167
-    port: 443
-    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-    skip-cert-verify: false
-    tls: true
-    encryption: none
-    ws-opts:
-      headers:
-        Host: ssssssssssssfffffffgh.2032.pp.ua
-      path: /eAbAcRHV1QuhyXWGxgFnoFPw1
-    client-fingerprint: chrome
-    servername: ssssssssssssfffffffgh.2032.pp.ua
-  - name: 美国 073
-    type: vless
-    network: ws
-    server: 104.21.3.219
-    port: 8443
-    uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-    skip-cert-verify: false
-    tls: true
-    client-fingerprint: chrome
-    encryption: none
-    ws-opts:
-      headers:
-        Host: ovhwuxian.pai50288.uk
-      path: /57ba2ab1
-    servername: ovhwuxian.pai50288.uk
   - name: 英国 003
     type: vless
     network: ws
@@ -992,22 +919,6 @@ proxies:
           like Gecko) Chrome/120.0.0.0 Safari/537.36
       path: /
     servername: ula347.tiri-viri.com
-  - name: 比利时 045
-    type: vmess
-    network: ws
-    server: 57.129.132.223
-    port: 80
-    uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-    skip-cert-verify: true
-    udp: true
-    tfo: true
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: google.com
-      path: /vmess/
-    client-fingerprint: chrome
   - name: 加拿大 003
     type: vmess
     network: ws
@@ -1165,22 +1076,6 @@ proxies:
         Host: d9a44defd1.hhouge123.ggff.net
       path: /db1024d9a44defd1
     servername: d9a44defd1.hhouge123.ggff.net
-  - name: 美国 398
-    type: vless
-    network: ws
-    server: ssssssssssssfffffffgh.2032.pp.ua
-    port: 443
-    uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: ssssssssssssfffffffgh.2032.pp.ua
-      path: /eAbAcRHV1QuhyXWGxgFnoFPw1
-    client-fingerprint: chrome
-    servername: ssssssssssssfffffffgh.2032.pp.ua
   - name: 巴西 006
     type: vless
     network: ws
@@ -1263,38 +1158,6 @@ proxies:
       path: /linkvws
     client-fingerprint: chrome
     servername: tilebani.com
-  - name: 美国 759
-    type: vless
-    network: ws
-    server: dabaius2.sylu.net
-    port: 443
-    uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    tfo: false
-    client-fingerprint: chrome
-    ws-opts:
-      headers:
-        Host: dabaius2.sylu.net
-      path: /db10240eb751d6ab
-    servername: dabaius2.sylu.net
-  - name: 英属印度洋领地 001
-    type: vmess
-    network: ws
-    server: vc.fly.dev
-    port: 443
-    uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-    skip-cert-verify: true
-    tls: true
-    alterId: 32
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: vc.fly.dev
-      path: /vc
-    client-fingerprint: chrome
-    servername: vc.fly.dev
   - name: 美国 850
     type: vmess
     network: ws
@@ -1345,20 +1208,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     servername: Xlz767V2Ray.PAGEs.DEv
-  - name: 中国 135
-    type: vmess
-    network: ws
-    server: v10.heduian.link
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    skip-cert-verify: true
-    alterId: 2
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: v10.heduian.link
-      path: /oooo
-    client-fingerprint: chrome
   - name: 美国 967
     type: vmess
     network: ws
@@ -1406,22 +1255,6 @@ proxies:
       path: /
     client-fingerprint: chrome
     servername: t1.620720.xyz
-  - name: 美国 1043
-    type: vmess
-    network: ws
-    server: sy4.620720.xyz
-    port: 443
-    uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-    skip-cert-verify: true
-    tls: true
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: sy4.620720.xyz
-      path: /
-    client-fingerprint: chrome
-    servername: sy4.620720.xyz
   - name: 美国 1053
     type: vless
     network: ws
@@ -1782,7 +1615,7 @@ proxies:
     password: 1b609740-eec2-11ef-8543-f23c93136cb3
     sni: c0a37350-t4x400-tdtx5w-au6.la.shifen.uk
   - type: hysteria2
-    name: 🇺🇸_US_美国_8-1
+    name: 🇺🇸_US_美国_8-1-1
     server: 9edb1f6e-t56dc0-t9lxaa-1glq.la.shifen.uk
     port: 1743
     ports: 20000-50000
@@ -1795,19 +1628,19 @@ proxies:
     password: 94931862-1484-11f0-9ab7-f23c95b6f51d
     sni: 98f4acfe-t4un40-tdini3-cdfn.la.shifen.uk
   - type: hysteria2
-    name: 🇺🇸_US_美国_1-2
+    name: 🇺🇸_US_美国_1-2-1
     server: ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk
     port: 1743
     password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
     sni: ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk
   - type: hysteria2
-    name: 🇺🇸_US_美国_2-2
+    name: 🇺🇸_US_美国_2-2-1
     server: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
     port: 1743
     password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
     sni: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
   - type: hysteria2
-    name: 🇺🇸_US_美国_4-2
+    name: 🇺🇸_US_美国_4-2-1
     server: d48dac10-t4v9c0-tdtx5w-au6.la.shifen.uk
     port: 1743
     password: 1b609740-eec2-11ef-8543-f23c93136cb3
@@ -1831,7 +1664,7 @@ proxies:
     password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
     sni: ad87b9c7-t3b340-t3hjqp-b4pt.la.shifen.uk
   - type: hysteria2
-    name: 🇺🇸_US_美国-2
+    name: 🇺🇸_US_美国-2-1
     server: 67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk
     port: 1743
     password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
@@ -1946,7 +1779,7 @@ proxies:
       headers:
         Host: 4120-Be04-13ef56096989.457.pp.UA
     servername: 4120-bE04-13ef56096989.457.pP.ua
-  - name: 美国(yudou6677.top 玉豆免费节点) 8-2
+  - name: 美国(yudou6677.top 玉豆免费节点) 8-2-1
     server: 920a-4BCc-9A2d-57960603C7d9.457.pP.Ua
     port: 443
     type: vmess
@@ -1994,22 +1827,6 @@ proxies:
       headers:
         Host: 479B-B511-7D5b7828Dbeb.457.pp.Ua
     servername: 479b-b511-7D5b7828dBeB.457.pP.ua
-  - name: 美国(yudou6677.top 玉豆免费节点) 19
-    server: 4120-be04-13ef56096989.457.pp.ua
-    port: 443
-    type: vmess
-    uuid: 0cd3c9d1-68e5-4917-8a0a-c62f1a52de56
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    udp: true
-    ws-opts:
-      path: /kT5VHYcMrphesqROzSPoHrBo
-      headers:
-        Host: 4120-BE04-13ef56096989.457.pP.UA
-    servername: 4120-be04-13ef56096989.457.pp.ua
   - name: 美国(yudou6677.top 玉豆免费节点) 20-2
     server: d0-473F-9717-0bc5daAD31DA.457.PP.uA
     port: 443
@@ -2392,12 +2209,6 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: QCXDxuDlTTMD7jtgHUjIoj
-  - name: 🇫🇷FR-195.154.169.198-0217 | 34.098MB
-    server: 195.154.169.198
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
   - name: 🇫🇷FR-195.154.185.174-0201 | 33.623MB
     server: 195.154.185.174
     port: 989
@@ -2655,36 +2466,12 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: oZIoA69Q8yhcQV8ka3Pa3A
-  - name: 🇭🇰HK-8.210.134.183-0253 | 1.314MB
-    server: 8.210.134.183
-    port: 3721
-    type: vmess
-    uuid: e72f5c6b-220f-40b3-a115-2d81473458cf
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
   - name: SE-192.71.249.78-0299 | 1.041MB
     server: 192.71.249.78
     port: 989
     type: ss
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
-  - name: 🇭🇰HK-8.217.52.42-0263 | 0.987MB
-    server: 8.217.52.42
-    port: 3721
-    type: vmess
-    uuid: f80b2b0d-df73-470c-8139-cc1ad613230b
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
   - name: LT-45.87.175.188-0198 | 0.963MB
     server: 45.87.175.188
     port: 8080
@@ -2788,18 +2575,6 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: f8f7aCzcPKbsF8p3
-  - name: 🇵🇱PL-217.30.10.18-5448 | 0.316MB
-    server: 217.30.10.18
-    port: 9033
-    type: ss
-    cipher: aes-256-cfb
-    password: UTJA57ypk2XKQpnm
-  - name: 🇸🇬SG-103.36.91.23-0343 | 0.312MB
-    server: 103.36.91.23
-    port: 8388
-    type: ss
-    cipher: chacha20-ietf
-    password: asd123456
   - name: AR-38.54.45.129-0364 | 0.293MB
     server: 38.54.45.129
     port: 990
@@ -3016,12 +2791,6 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     password: f8f7aCzcPKbsF8p3
-  - name: 🇮🇸IS-37.235.49.168-0351 | 0.014MB
-    server: 37.235.49.168
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
   - name: MA-188.214.157.58-0367 | 0.013MB
     server: 188.214.157.58
     port: 990
@@ -3143,20 +2912,6 @@ proxies:
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-  - name: 🇩🇪 德国 | DEU 2
-    server: detuic.yydzx.xyz
-    port: 15081
-    type: tuic
-    password: 5b7124d0-7092-466c-b9fa-c13be64f0cb0
-    uuid: 5b7124d0-7092-466c-b9fa-c13be64f0cb0
-    sni: detuic.yydzx.xyz
-    alpn:
-      - h3
-    disable-sni: false
-    reduce-rtt: false
-    request-timeout: 0
-    congestion-controller: bbr
-    version: 5
   - name: 🇫🇷 法国 | FRA
     server: 195.154.206.231
     port: 33880
@@ -3196,20 +2951,6 @@ proxies:
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
     udp: true
-  - name: 🇷🇺 俄罗斯 | RUS
-    server: 45.134.12.47
-    port: 31203
-    type: vless
-    uuid: 87d1f4b2-83e7-4125-8d62-5d376871fd41
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: tN1ZYDEnM0t_V59FGQSpiq56sOpDo8JZ25Epgg-Z9kg
-      short-id: ab12cd34
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: vt-1.ozone.ru
   - type: ss
     server: 147.78.1.27
     port: 990
@@ -3355,14 +3096,6 @@ proxies:
     cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
     name: 🔒 SS-TCP-NA 🇲🇽 MX-147.78.1.230:989-01
-  - name: 🔒 VM-TCP-NA 🇺🇸 US-216.227.168.157:45235-01
-    type: vmess
-    server: 216.227.168.157
-    port: 45235
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
   - type: ss
     server: 103.186.154.18
     port: 38388
@@ -3472,14 +3205,6 @@ proxies:
     cipher: aes-256-cfb
     password: BwcAUZk8hUFAkDGN
     name: 🔒 SS-TCP-NA 🇵🇱 PL-217.30.10.18:9031-01
-  - name: 🔒 VM-TCP-NA 🇺🇸 US-216.227.168.157:45266-01
-    type: vmess
-    server: 216.227.168.157
-    port: 45266
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
   - type: ss
     server: 185.192.124.188
     port: 989
@@ -3492,14 +3217,6 @@ proxies:
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     name: 🔒 SS-TCP-NA 🇻🇳 VN-103.186.154.19:38388-01
-  - name: 🔒 VM-TCP-NA 🇺🇸 US-216.227.168.157:45263-01
-    type: vmess
-    server: 216.227.168.157
-    port: 45263
-    cipher: auto
-    uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-    alterId: 0
-    tls: false
   - type: ss
     server: 141.98.4.67
     port: 52952
@@ -3572,12 +3289,6 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: QCXDxuDlTTMD7jtgHUjIoj
     name: 🔒 SS-TCP-NA 🇳🇱 NL-193.29.139.233:8080-01
-  - type: ss
-    server: 218.237.185.230
-    port: 4652
-    cipher: aes-256-cfb
-    password: qwerREWQ@@
-    name: 🔒 SS-TCP-NA 🇰🇷 KR-218.237.185.230:4652-01
   - type: ss
     server: 37.19.198.244
     port: 443
@@ -3702,17 +3413,6 @@ proxies:
         Host: 1403.stopt7307.workers.dev
       path: /
     servername: 1403.stopt7307.workers.dev
-  - type: vless
-    name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.1.47:80-01
-    server: 104.16.1.47
-    port: 80
-    uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-      path: /
   - sni: store.timimi.dpdns.org
     network: ws
     ws-opts:
@@ -3796,34 +3496,6 @@ proxies:
     server: 104.21.14.54
     port: 443
     name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.14.54:443-01
-  - type: vless
-    name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.24.189.102:80-01
-    server: 104.24.189.102
-    port: 80
-    uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
-    tls: false
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - sni: azadnet-9ya.pages.dev
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: azadnet-9ya.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    type: trojan
-    password: trojan
-    server: 104.19.173.68
-    port: 443
-    name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.173.68:443-01
   - type: vless
     name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.160.192:443-01
     server: 172.67.160.192
@@ -4052,15 +3724,6 @@ proxies:
       path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-  - type: vless
-    name: 🔒 VL-WS-NA 🇯🇵 JP-172.111.146.64:80-01
-    server: 172.111.146.64
-    port: 80
-    uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /vless/
   - type: vless
     name: 🔒 VL-WS-NA 🇳🇱 NL-185.18.184.66:80-01
     server: 185.18.184.66
@@ -4331,19 +3994,6 @@ proxies:
     name: 🇭🇰HK_11
     server: 47.79.20.64
     port: 443
-    uuid: fb6838fd-c1e4-4185-8c0f-05aa8d17cbf4
-    network: ws
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /?ed=2560&
-      headers:
-        Host: innoheat.sbs
-    servername: innoheat.sbs
-  - type: vless
-    name: 🇭🇰HK_13
-    server: 192.142.4.33
-    port: 8443
     uuid: fb6838fd-c1e4-4185-8c0f-05aa8d17cbf4
     network: ws
     tls: true
@@ -4630,22 +4280,6 @@ proxies:
     servername: cdnjs.com
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇳🇱 opl-[Нидерланды2]
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    server: nl2.srv.oplcdn.link
-    tcp-opts:
-      ip-version: dual
-    tls: true
-    type: vless
-    udp: true
-    uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-    servername: ign.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
     name: 🇩🇪 opl-[Германия2]
     network: tcp
     port: 8443
@@ -4918,22 +4552,6 @@ proxies:
     servername: ign.com
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: 🇳🇱 opl-[Нидерланды3]
-    network: tcp
-    port: 8443
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    server: nl3.srv.oplcdn.link
-    tcp-opts:
-      ip-version: dual
-    tls: true
-    type: vless
-    udp: true
-    uuid: d42c146e-2ded-4b4a-8592-6459ac636910
-    servername: ign.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
     name: 🇨🇦 opl-[Канада]
     network: tcp
     port: 8443
@@ -5060,24 +4678,6 @@ proxies:
     udp: true
     uuid: d42c146e-2ded-4b4a-8592-6459ac636910
     servername: ign.com
-  - name: KR-2
-    type: vless
-    server: kr2-r.link-t7.com
-    port: 10047
-    uuid: D844AF30-5BCD-419E-94D5-3417C648366A
-    udp: true
-    packet-encoding: xudp
-    cipher: auto
-    client-fingerprint: chrome
-    tls: true
-    skip-cert-verify: false
-    reality-opts:
-      public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-      short-id: 686c0ef0
-    network: grpc
-    grpc-opts:
-      grpc-service-name: update
-    servername: s0.awsstatic.com
   - type: vless
     name: 法國
     server: 162.19.175.55
@@ -5140,42 +4740,6 @@ proxies:
       host: 16a89ef:154955
       mode: tls
     delay: 276
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 35
-    server: 211.75.210.20
-    type: ss
-    country: 🇹🇼 TW
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: (TG @WangCai2)32cf132:178330
-      mode: tls
-    delay: 517
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 49
-    server: 210.61.187.239
-    type: ss
-    country: 🇹🇼 TW
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: (TG @WangCai2)32cf132:178330
-      mode: tls
-    delay: 2408
-  - name: 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 51
-    server: 210.61.187.238
-    type: ss
-    country: 🇹🇼 TW
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: (TG @WangCai2)32cf132:178330
-      mode: tls
-    delay: 1258
   - name: 加拿大 - 多伦多 - DigitalOcean, LLC - 1
     server: 137.184.174.93
     port: 8080
@@ -5232,18 +4796,6 @@ proxies:
     password: amazonskr05
     udp: true
     delay: 1477
-  - name: 日本 - 东京 - Akamai Technologies, Inc. - 2
-    server: 172.237.11.141
-    type: ss
-    country: 🇺🇸 US
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: (TG @WangCai2)32cf132:178330
-      mode: tls
-    delay: 506
   - name: 波兰 - 华沙 - WorkTitans B.V. - 1
     server: 45.15.126.19
     type: ss
@@ -5263,14 +4815,6 @@ proxies:
       mode: tls
       host: (TG @WangCai2)32cf132:178330
     delay: 696
-  - name: 越南 - Hải Dương - FASTLY - 1
-    server: 103.186.154.158
-    type: ss
-    country: 🏁ZZ
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-    delay: 2596
   - name: 越南 - Hải Dương - FASTLY - 2
     server: 103.186.155.232
     type: ss
@@ -5438,81 +4982,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1353
-  - name: 德国 - 德赖艾希 - 106
-    server: 45.154.98.230
-    port: 2004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1871
-  - name: 德国 - 德赖艾希 - 107
-    server: 45.154.98.133
-    port: 2004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2835
-  - name: 德国 - 德赖艾希 - 113
-    server: 62.60.239.218
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1769
-  - name: 德国 - 德赖艾希 - 115
-    server: 172.104.203.143
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1746
-  - name: 德国 - 德赖艾希 - 118
-    server: 45.154.98.133
-    port: 1033
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1592
   - name: 德国 - 德赖艾希 - 123
     server: 93.185.163.220
     port: 3002
@@ -5528,51 +4997,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2106
-  - name: 德国 - 德赖艾希 - 124
-    server: 93.185.163.193
-    port: 3002
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2342
-  - name: 德国 - 德赖艾希 - 129
-    server: 93.185.163.193
-    port: 1035
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1622
-  - name: 德国 - 德赖艾希 - 13
-    server: 85.239.151.167
-    port: 444
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1648
   - name: 德国 - 德赖艾希 - 133
     server: 193.42.62.165
     port: 2083
@@ -5588,36 +5012,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2529
-  - name: 德国 - 德赖艾希 - 14
-    server: 93.185.163.220
-    port: 3001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1945
-  - name: 德国 - 德赖艾希 - 147
-    server: 77.90.43.66
-    port: 2087
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2209
   - name: 德国 - 德赖艾希 - 150
     server: 185.110.189.174
     port: 8080
@@ -5633,66 +5027,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2123
-  - name: 德国 - 德赖艾希 - 152
-    server: 45.154.98.230
-    port: 1004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2245
-  - name: 德国 - 德赖艾希 - 153
-    server: 194.26.192.125
-    port: 1011
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2037
-  - name: 德国 - 德赖艾希 - 156
-    server: 188.245.84.85
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1743
-  - name: 德国 - 德赖艾希 - 163
-    server: 188.245.165.71
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1685
   - name: 德国 - 德赖艾希 - 166
     server: 152.53.12.23
     port: 5005
@@ -5708,81 +5042,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2383
-  - name: 德国 - 德赖艾希 - 170
-    server: 45.154.98.100
-    port: 1035
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2199
-  - name: 德国 - 德赖艾希 - 173
-    server: 49.13.220.86
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2420
-  - name: 德国 - 德赖艾希 - 179
-    server: 88.99.60.34
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2841
-  - name: 德国 - 德赖艾希 - 181
-    server: 80.211.249.151
-    port: 3085
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2041
-  - name: 德国 - 德赖艾希 - 191
-    server: 94.130.72.184
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2292
   - name: 德国 - 德赖艾希 - 199
     server: 93.185.163.193
     port: 14003
@@ -5813,21 +5072,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2551
-  - name: 德国 - 德赖艾希 - 20
-    server: 5.75.220.207
-    port: 7991
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1568
   - name: 德国 - 德赖艾希 - 204
     server: 45.154.98.100
     port: 2026
@@ -5843,51 +5087,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1527
-  - name: 德国 - 德赖艾希 - 208
-    server: 2.59.135.223
-    port: 2030
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2590
-  - name: 德国 - 德赖艾希 - 212
-    server: 152.53.12.23
-    port: 15006
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2760
-  - name: 德国 - 德赖艾希 - 216
-    server: 194.26.192.125
-    port: 1029
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2691
   - name: 德国 - 德赖艾希 - 219
     server: 78.47.172.202
     port: 4433
@@ -5903,66 +5102,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1720
-  - name: 德国 - 德赖艾希 - 223
-    server: 202.61.200.220
-    port: 2083
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1818
-  - name: 德国 - 德赖艾希 - 225
-    server: 93.185.163.213
-    port: 2011
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2560
-  - name: 德国 - 德赖艾希 - 233
-    server: 91.107.140.10
-    port: 2052
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2279
-  - name: 德国 - 德赖艾希 - 234
-    server: 93.185.163.193
-    port: 2021
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1619
   - name: 德国 - 德赖艾希 - 236
     server: 45.154.98.100
     port: 2018
@@ -5978,21 +5117,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1840
-  - name: 德国 - 德赖艾希 - 240
-    server: 45.154.98.100
-    port: 5004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1511
   - name: 德国 - 德赖艾希 - 242
     server: 93.185.163.181
     port: 8205
@@ -6008,51 +5132,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2307
-  - name: 德国 - 德赖艾希 - 246
-    server: 194.26.192.251
-    port: 2010
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2613
-  - name: 德国 - 德赖艾希 - 247
-    server: 45.154.98.184
-    port: 10322
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1337
-  - name: 德国 - 德赖艾希 - 248
-    server: 89.58.38.76
-    port: 5004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2895
   - name: 德国 - 德赖艾希 - 249
     server: 93.185.163.220
     port: 1029
@@ -6083,36 +5162,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1788
-  - name: 德国 - 德赖艾希 - 252
-    server: 93.185.163.193
-    port: 2011
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2251
-  - name: 德国 - 德赖艾希 - 256
-    server: 93.185.163.220
-    port: 2021
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2220
   - name: 德国 - 德赖艾希 - 261
     server: 194.26.192.125
     port: 5004
@@ -6128,21 +5177,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2162
-  - name: 德国 - 德赖艾希 - 262
-    server: 194.26.192.125
-    port: 2018
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2425
   - name: 德国 - 德赖艾希 - 266
     server: 93.185.163.220
     port: 2026
@@ -6158,21 +5192,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1612
-  - name: 德国 - 德赖艾希 - 268
-    server: 45.154.98.230
-    port: 2001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2459
   - name: 德国 - 德赖艾希 - 271
     server: 91.107.245.83
     port: 8443
@@ -6188,21 +5207,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2339
-  - name: 德国 - 德赖艾希 - 276
-    server: 194.26.192.125
-    port: 2003
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2949
   - name: 德国 - 德赖艾希 - 277
     server: 217.199.252.144
     port: 2031
@@ -6263,21 +5267,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2008
-  - name: 德国 - 德赖艾希 - 283
-    server: 45.144.220.193
-    port: 2003
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2958
   - name: 德国 - 德赖艾希 - 292
     server: 93.185.163.161
     port: 8000
@@ -6293,21 +5282,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1297
-  - name: 德国 - 德赖艾希 - 293
-    server: 5.199.130.149
-    port: 1002
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2514
   - name: 德国 - 德赖艾希 - 302
     server: 176.96.138.171
     port: 14000
@@ -6338,36 +5312,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1330
-  - name: 德国 - 德赖艾希 - 314
-    server: 194.26.192.251
-    port: 4001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1526
-  - name: 德国 - 德赖艾希 - 315
-    server: 93.185.163.160
-    port: 8103
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2712
   - name: 德国 - 德赖艾希 - 321
     server: 194.26.192.251
     port: 2003
@@ -6383,21 +5327,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2305
-  - name: 德国 - 德赖艾希 - 323
-    server: 91.107.139.23
-    port: 2001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2397
   - name: 德国 - 德赖艾希 - 325
     server: 185.94.29.156
     port: 4001
@@ -6428,36 +5357,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1392
-  - name: 德国 - 德赖艾希 - 33
-    server: 152.53.12.112
-    port: 12001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2031
-  - name: 德国 - 德赖艾希 - 335
-    server: 93.185.163.170
-    port: 8104
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1470
   - name: 德国 - 德赖艾希 - 336
     server: 213.176.66.250
     port: 18001
@@ -6473,21 +5372,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2603
-  - name: 德国 - 德赖艾希 - 347
-    server: 45.157.233.203
-    port: 8104
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2043
   - name: 德国 - 德赖艾希 - 350
     server: 89.58.14.243
     port: 1002
@@ -6503,36 +5387,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1489
-  - name: 德国 - 德赖艾希 - 354
-    server: 152.53.117.31
-    port: 2011
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1627
-  - name: 德国 - 德赖艾希 - 355
-    server: 93.185.163.193
-    port: 1026
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2024
   - name: 德国 - 德赖艾希 - 36
     server: 150.230.146.170
     port: 2053
@@ -6563,36 +5417,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2411
-  - name: 德国 - 德赖艾希 - 362
-    server: 194.26.192.251
-    port: 4005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1678
-  - name: 德国 - 德赖艾希 - 369
-    server: 152.53.12.23
-    port: 5006
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1405
   - name: 德国 - 德赖艾希 - 37
     server: 89.58.40.153
     port: 1004
@@ -6623,51 +5447,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1830
-  - name: 德国 - 德赖艾希 - 377
-    server: 93.185.163.220
-    port: 4005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2268
-  - name: 德国 - 德赖艾希 - 38
-    server: 45.154.98.127
-    port: 2025
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1445
-  - name: 德国 - 德赖艾希 - 380
-    server: 93.185.163.193
-    port: 2027
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1537
   - name: 德国 - 德赖艾希 - 385
     server: 45.144.220.193
     port: 2005
@@ -6683,51 +5462,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2832
-  - name: 德国 - 德赖艾希 - 388
-    server: 2.59.134.70
-    port: 8203
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1467
-  - name: 德国 - 德赖艾希 - 39
-    server: 167.235.65.225
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2593
-  - name: 德国 - 德赖艾希 - 393
-    server: 194.26.192.251
-    port: 2001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2193
   - name: 德国 - 德赖艾希 - 4
     server: 185.94.29.212
     port: 2017
@@ -6743,36 +5477,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2208
-  - name: 德国 - 德赖艾希 - 40
-    server: 91.107.185.122
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1801
-  - name: 德国 - 德赖艾希 - 400
-    server: 152.53.13.16
-    port: 1009
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1779
   - name: 德国 - 德赖艾希 - 404
     server: 93.185.163.193
     port: 4004
@@ -6833,51 +5537,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2825
-  - name: 德国 - 德赖艾希 - 412
-    server: 93.185.163.220
-    port: 2005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2358
-  - name: 德国 - 德赖艾希 - 421
-    server: 194.26.192.251
-    port: 4009
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2143
-  - name: 德国 - 德赖艾希 - 429
-    server: 185.94.29.46
-    port: 2015
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2742
   - name: 德国 - 德赖艾希 - 430
     server: 194.26.192.125
     port: 2008
@@ -6893,96 +5552,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1596
-  - name: 德国 - 德赖艾希 - 431
-    server: 194.26.192.125
-    port: 2019
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2420
-  - name: 德国 - 德赖艾希 - 432
-    server: 93.185.163.220
-    port: 4011
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1532
-  - name: 德国 - 德赖艾希 - 434
-    server: 2.56.127.6
-    port: 2097
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1784
-  - name: 德国 - 德赖艾希 - 437
-    server: 93.185.163.199
-    port: 2005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1866
-  - name: 德国 - 德赖艾希 - 438
-    server: 45.154.98.230
-    port: 2005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2172
-  - name: 德国 - 德赖艾希 - 439
-    server: 194.26.192.251
-    port: 4007
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1560
   - name: 德国 - 德赖艾希 - 45
     server: 89.40.117.67
     port: 8443
@@ -6998,36 +5567,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1817
-  - name: 德国 - 德赖艾希 - 46
-    server: 93.185.163.193
-    port: 1008
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1430
-  - name: 德国 - 德赖艾希 - 51
-    server: 45.154.98.120
-    port: 14001
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2782
   - name: 德国 - 德赖艾希 - 54
     server: 91.107.151.39
     port: 2083
@@ -7058,21 +5597,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2037
-  - name: 德国 - 德赖艾希 - 6
-    server: 185.254.97.221
-    port: 3207
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2438
   - name: 德国 - 德赖艾希 - 62
     server: 45.154.98.120
     port: 5005
@@ -7103,66 +5627,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1842
-  - name: 德国 - 德赖艾希 - 64
-    server: 45.154.98.100
-    port: 5005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2858
-  - name: 德国 - 德赖艾希 - 65
-    server: 45.154.98.133
-    port: 5005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2153
-  - name: 德国 - 德赖艾希 - 66
-    server: 45.154.98.230
-    port: 5005
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1672
-  - name: 德国 - 德赖艾希 - 69
-    server: 92.246.141.6
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2306
   - name: 德国 - 德赖艾希 - 7
     server: 152.53.142.49
     port: 4003
@@ -7208,51 +5672,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1442
-  - name: 德国 - 德赖艾希 - 76
-    server: 176.96.138.171
-    port: 8000
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2090
-  - name: 德国 - 德赖艾希 - 81
-    server: 91.107.139.23
-    port: 2000
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1759
-  - name: 德国 - 德赖艾希 - 83
-    server: 88.218.78.20
-    port: 2096
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2182
   - name: 德国 - 德赖艾希 - 88
     server: 89.58.26.175
     port: 2083
@@ -7268,66 +5687,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1830
-  - name: 德国 - 德赖艾希 - 9
-    server: 45.154.98.230
-    port: 2007
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1372
-  - name: 德国 - 德赖艾希 - 94
-    server: 45.154.98.100
-    port: 1033
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2515
-  - name: 德国 - 德赖艾希 - 97
-    server: 93.185.163.220
-    port: 14003
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1866
-  - name: 德国 - 德赖艾希 - 98
-    server: 93.185.163.220
-    port: 1013
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1880
   - name: 德国 - 杜塞尔多夫 - 158
     server: 5.199.130.149
     port: 1004
@@ -7373,36 +5732,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2028
-  - name: 德国 - 杜塞尔多夫 - 311
-    server: 109.196.103.21
-    port: 2026
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1890
-  - name: 德国 - 杜塞尔多夫 - 383
-    server: 213.202.208.7
-    port: 2033
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1661
   - name: 德国 - 黑尼格斯多夫 - 183
     server: 85.214.157.170
     port: 443
@@ -7643,21 +5972,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2366
-  - name: 法国 - 奧奈叢林 - 14
-    server: 109.199.122.5
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2502
   - name: 法国 - 奧奈叢林 - 16
     server: 185.255.112.193
     port: 20003
@@ -7748,21 +6062,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2290
-  - name: 法国 - 奧奈叢林 - 9
-    server: 54.37.50.54
-    port: 8443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1805
   - name: 波兰 - 普魯斯科夫 - 1
     server: 45.67.229.128
     port: 81
@@ -7823,21 +6122,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1556
-  - name: 澳大利亚 - 悉尼 - 1
-    server: 103.73.65.187
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1402
   - name: 瑞士 - 温特图尔 - 1
     server: 45.15.167.19
     port: 8443
@@ -7883,21 +6167,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1845
-  - name: 美国 - Flower Mound - 159
-    server: 107.174.93.186
-    port: 33111
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2755
   - name: 美国 - Flower Mound - 72
     server: 64.235.35.145
     port: 7000
@@ -7943,36 +6212,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1765
-  - name: 美国 - Reston - 51
-    server: 172.233.195.154
-    port: 80
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2497
-  - name: 美国 - 东洛杉矶 - 100
-    server: 38.181.42.244
-    port: 8081
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1053
   - name: 美国 - 东洛杉矶 - 103
     server: 45.45.217.92
     port: 443
@@ -7988,36 +6227,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1161
-  - name: 美国 - 东洛杉矶 - 114
-    server: 154.21.84.176
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1035
-  - name: 美国 - 东洛杉矶 - 116
-    server: 104.194.68.16
-    port: 25222
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 998
   - name: 美国 - 东洛杉矶 - 126
     server: 156.232.10.223
     port: 10029
@@ -8093,21 +6302,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2325
-  - name: 美国 - 东洛杉矶 - 140
-    server: 38.247.8.232
-    port: 10013
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1189
   - name: 美国 - 东洛杉矶 - 146
     server: 144.168.59.87
     port: 30006
@@ -8123,21 +6317,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1653
-  - name: 美国 - 东洛杉矶 - 148
-    server: 38.247.8.232
-    port: 10073
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1051
   - name: 美国 - 东洛杉矶 - 150
     server: 185.194.148.95
     port: 33434
@@ -8153,66 +6332,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1588
-  - name: 美国 - 东洛杉矶 - 151
-    server: 47.254.18.134
-    port: 30000
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2113
-  - name: 美国 - 东洛杉矶 - 154
-    server: 185.194.148.95
-    port: 33403
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1031
-  - name: 美国 - 东洛杉矶 - 155
-    server: 98.142.139.146
-    port: 10004
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1643
-  - name: 美国 - 东洛杉矶 - 157
-    server: 173.249.201.109
-    port: 49664
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2076
   - name: 美国 - 东洛杉矶 - 2
     server: 162.141.164.121
     port: 20119
@@ -8348,21 +6467,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2041
-  - name: 美国 - 东洛杉矶 - 43
-    server: 142.171.50.6
-    port: 8080
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2633
   - name: 美国 - 东洛杉矶 - 45
     server: 162.141.164.185
     port: 20183
@@ -8438,21 +6542,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2650
-  - name: 美国 - 东洛杉矶 - 9
-    server: 95.181.190.20
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1429
   - name: 美国 - 东洛杉矶 - 90
     server: 162.141.164.69
     port: 20067
@@ -8648,21 +6737,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2445
-  - name: 美国 - 紐華克 - 125
-    server: 212.80.215.251
-    port: 10409
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1151
   - name: 美国 - 紐華克 - 38
     server: 52.230.95.97
     port: 443
@@ -8678,21 +6752,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1308
-  - name: 美国 - 紐華克 - 66
-    server: 159.223.74.251
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1997
   - name: 美国 - 聖荷西 - 119
     server: 155.248.200.6
     port: 1112
@@ -8708,21 +6767,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1911
-  - name: 美国 - 聖荷西 - 147
-    server: 137.175.84.41
-    port: 25224
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2366
   - name: 美国 - 聖荷西 - 29
     server: 104.17.106.111
     port: 2096
@@ -8753,21 +6797,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1507
-  - name: 美国 - 聖荷西 - 63
-    server: 107.140.5.52
-    port: 2053
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2554
   - name: 美国 - 聖荷西 - 77
     server: 104.234.4.130
     port: 443
@@ -8843,36 +6872,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2975
-  - name: 芬兰 - 万塔 - 19
-    server: 46.62.144.110
-    port: 6444
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2655
-  - name: 芬兰 - 万塔 - 20
-    server: 46.8.230.253
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1477
   - name: 英国 - 豪恩斯洛 - 10
     server: 217.154.53.220
     port: 443
@@ -8978,21 +6977,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1883
-  - name: 荷兰 - 阿姆斯特丹 - 13
-    server: 185.186.244.93
-    port: 81
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1917
   - name: 荷兰 - 阿姆斯特丹 - 14
     server: 185.186.244.184
     port: 81
@@ -9068,21 +7052,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1556
-  - name: 荷兰 - 阿姆斯特丹 - 19
-    server: 45.142.164.17
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1927
   - name: 荷兰 - 阿姆斯特丹 - 2
     server: 185.186.244.217
     port: 81
@@ -9098,21 +7067,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 1402
-  - name: 荷兰 - 阿姆斯特丹 - 20
-    server: 31.214.157.113
-    port: 443
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 2051
   - name: 荷兰 - 阿姆斯特丹 - 21
     server: 199.247.24.14
     port: 2040
@@ -9128,21 +7082,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2286
-  - name: 荷兰 - 阿姆斯特丹 - 22
-    server: 93.185.163.205
-    port: 8104
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1713
   - name: 荷兰 - 阿姆斯特丹 - 23
     server: m.speedtest.net.in
     port: 443
@@ -9188,21 +7127,6 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     delay: 2765
-  - name: 荷兰 - 阿姆斯特丹 - 3
-    server: 185.186.244.191
-    port: 81
-    type: trojan
-    password: trojan
-    sni: tianjiu.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tianjiu.pages.dev
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    delay: 1688
   - name: 荷兰 - 阿姆斯特丹 - 5
     server: 195.58.50.114
     port: 443
@@ -9399,19 +7323,6 @@ proxies:
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
-  - name: 🇺🇸 美国3|@stairnode-03
-    server: 16.162.87.79
-    port: 2173
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-  - name: 🇻🇳 越南|@stairnode-01
-    server: 103.186.154.53
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   - type: vless
     name: US美国(mibei77.com 米贝节点分享)-17
     server: 104.21.27.126
@@ -9474,7 +7385,7 @@ proxies:
     obfs-password: Yet-Another-Public-Config-1
     skip-cert-verify: false
     tfo: false
-  - name: 未知7
+  - name: 未知7-1
     type: vmess
     server: 15.235.83.228
     port: 443
@@ -9489,6 +7400,132 @@ proxies:
       headers:
         Host: lammaland.org
     servername: lammaland.org
+  - skip-cert-verify: false
+    sni: joss.gpj1.web.id
+    network: ws
+    ws-opts:
+      path: /Free-VPN-CF-Geo-Project/45.159.251.8=81
+      headers:
+        Host: joss.gpj1.web.id
+    type: trojan
+    password: 6ead60c4-4321-45d5-81a9-ba4835f7c692
+    server: 45.159.251.8
+    port: 81
+    name: PT_speednode_0023
+  - name: LT-45.87.175.155-0213 | 27.674MB
+    server: 45.87.175.155
+    port: 8080
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: k1dBOmOB4oqi7Ump37a1bQ
+  - name: 🇯🇵JP-160.16.116.227-0294 | 0.033MB
+    server: 160.16.116.227
+    port: 127
+    type: trojan
+    password: dd2f25b4c70689de8bc0f7fa9d6591cb
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+  - type: ss
+    server: 103.186.154.21
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    name: 🔒 SS-TCP-NA 🇻🇳 VN-103.186.154.21:38388-01
+  - type: ss
+    server: 103.186.154.38
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    name: 🔒 SS-TCP-NA 🇻🇳 VN-103.186.154.38:38388-01
+  - type: ss
+    server: 185.231.233.173
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    name: 🔒 SS-TCP-NA 🇵🇹 PT-185.231.233.173:989-01
+  - type: vless
+    name: 🇩🇪DE_5 | ⬇️ 6.7MB/s
+    server: de.shvurgceo.online
+    port: 14357
+    uuid: 006f752c-42fe-41dd-a224-e2f7c48b72a9
+    network: tcp
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+      short-id: ab12cd34
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    servername: vk.com
+  - name: 德国 - 德赖艾希 - 1
+    server: 194.26.192.125
+    port: 2013
+    type: trojan
+    password: trojan
+    sni: tianjiu.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tianjiu.pages.dev
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    delay: 2361
+  - name: 德国 - 德赖艾希 - 200
+    server: 85.10.198.99
+    port: 443
+    type: trojan
+    password: trojan
+    sni: tianjiu.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tianjiu.pages.dev
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    delay: 2142
+  - name: 德国 - 德赖艾希 - 409
+    server: 93.185.163.249
+    port: 556
+    type: trojan
+    password: trojan
+    sni: tianjiu.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tianjiu.pages.dev
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    delay: 2569
+  - name: 美国 - 东洛杉矶 - 112
+    server: 107.174.53.66
+    port: 443
+    type: trojan
+    password: trojan
+    sni: tianjiu.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tianjiu.pages.dev
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    delay: 2114
+  - name: 未知32 12.6MB/s
+    type: trojan
+    server: 198.57.27.27
+    port: 12990
+    alterId: 0
+    password: 6pRjKQJ0CWyFtG.9
+    sni: diningtable.electricbanana.click
+    skip-cert-verify: true
+    udp: true
 rules:
   - GEOIP,lan,🎯 全球直连,no-resolve
   - GEOSITE,github,🚀 节点选择
