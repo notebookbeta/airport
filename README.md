@@ -1,0 +1,23 @@
+# Clash Meta 免费节点
+
+## 🦄 特点
+
+- 🎁 节点来自网络整理，完全免费。
+- ⏰ 每 6 小时测试一次（ 节点池 `4000~7000+`节点，延迟<=`1500ms`）。
+- ✂️ 节点去重、地域重命名、归属地分组。
+
+## 📎 Clash 订阅链接
+
+### 🔗 订阅直链
+
+```
+https://raw.githubusercontent.com/dongchengjie/airport/refs/heads/main/subs/merged/tested_within.yaml
+```
+
+### 🚀 订阅镜像链接
+
+> 如果无法访问/直连 Github 更新最新订阅，请使用镜像链接。
+
+```
+https://fastly.jsdelivr.net/gh/dongchengjie/airport@main/subs/merged/tested_within.yaml
+```
