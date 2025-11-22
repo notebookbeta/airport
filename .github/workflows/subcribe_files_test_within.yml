@@ -51,7 +51,10 @@ jobs:
             https://raw.githubusercontent.com/dongchengjie/airport/refs/heads/main/subs/xrayvip.yaml
             https://raw.githubusercontent.com/dongchengjie/airport/refs/heads/main/subs/yudou.yaml
             https://raw.githubusercontent.com/dongchengjie/airport/refs/heads/main/subs/zhangkaiitugithub.yaml
-          test_url: https://www.google.com/generate_204
+          test_urls: |
+            https://github.com/
+            https://google.com/generate_204
+            https://www.youtube.com/generate_204
           timeout: 1500
           excluded_proxies_config_urls: |
             https://raw.githubusercontent.com/dongchengjie/airport/refs/heads/main/subs/merged/excluded.yaml
