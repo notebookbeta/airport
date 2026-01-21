@@ -2874,11 +2874,11 @@ proxies:
   - type: hysteria2
     server: 206.245.134.20
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: hysteria2
     server: 206.245.134.20
     port: 60000
-    _excluded_times: 2
+    _excluded_times: 3
   - type: hysteria2
     server: 206.71.158.23
     port: 45000
@@ -3862,7 +3862,7 @@ proxies:
   - type: hysteria2
     server: 89.144.35.25
     port: 33550
-    _excluded_times: 1
+    _excluded_times: 2
   - type: hysteria2
     server: 89.168.32.96
     port: 50000
@@ -4986,6 +4986,10 @@ proxies:
   - type: hysteria2
     server: h1.ammmd.cc
     port: 41601
+    _excluded_times: 1
+  - type: hysteria2
+    server: helan.zuomomo.top
+    port: 16666
     _excluded_times: 1
   - type: hysteria2
     server: heng1.duyueq.icu
@@ -6822,7 +6826,7 @@ proxies:
   - type: socks5
     server: 161.35.31.237
     port: 1080
-    _excluded_times: 2
+    _excluded_times: 3
   - type: socks5
     server: 161.35.82.57
     port: 1080
@@ -6839,10 +6843,6 @@ proxies:
     server: 192.241.156.17
     port: 1080
     _excluded_times: 5
-  - type: socks5
-    server: 193.233.254.7
-    port: 1080
-    _excluded_times: 1
   - type: socks5
     server: 193.233.254.8
     port: 1080
@@ -7082,15 +7082,11 @@ proxies:
   - type: ss
     server: 103.163.218.2
     port: 990
-    _excluded_times: 4
+    _excluded_times: 5
   - type: ss
     server: 103.181.165.180
     port: 20005
     _excluded_times: 2
-  - type: ss
-    server: 103.186.154.13
-    port: 38388
-    _excluded_times: 1
   - type: ss
     server: 103.186.154.139
     port: 38388
@@ -7200,6 +7196,10 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
+    server: 103.186.154.17
+    port: 38388
+    _excluded_times: 1
+  - type: ss
     server: 103.186.154.170
     port: 38388
     _excluded_times: 4
@@ -7209,6 +7209,10 @@ proxies:
     _excluded_times: 1
   - type: ss
     server: 103.186.154.178
+    port: 38388
+    _excluded_times: 1
+  - type: ss
+    server: 103.186.154.179
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7224,6 +7228,10 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
+    server: 103.186.154.19
+    port: 38388
+    _excluded_times: 1
+  - type: ss
     server: 103.186.154.191
     port: 38388
     _excluded_times: 1
@@ -7232,23 +7240,11 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.154.196
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.20
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.154.203
     port: 38388
     _excluded_times: 1
   - type: ss
     server: 103.186.154.211
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.212
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7264,17 +7260,13 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.154.221
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.154.222
     port: 38388
     _excluded_times: 1
   - type: ss
     server: 103.186.154.224
     port: 38388
-    _excluded_times: 1
+    _excluded_times: 2
   - type: ss
     server: 103.186.154.225
     port: 38388
@@ -7300,31 +7292,11 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.154.249
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.154.25
     port: 38388
     _excluded_times: 1
   - type: ss
     server: 103.186.154.252
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.29
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.31
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.36
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.37
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7349,14 +7321,6 @@ proxies:
     _excluded_times: 1
   - type: ss
     server: 103.186.154.59
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.61
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.154.62
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7392,7 +7356,7 @@ proxies:
     port: 38388
     _excluded_times: 2
   - type: ss
-    server: 103.186.155.105
+    server: 103.186.155.102
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7416,10 +7380,6 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.155.123
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.155.127
     port: 38388
     _excluded_times: 1
@@ -7427,10 +7387,6 @@ proxies:
     server: 103.186.155.128
     port: 38388
     _excluded_times: 5
-  - type: ss
-    server: 103.186.155.129
-    port: 38388
-    _excluded_times: 1
   - type: ss
     server: 103.186.155.130
     port: 38388
@@ -7440,19 +7396,7 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.155.135
-    port: 38388
-    _excluded_times: 2
-  - type: ss
     server: 103.186.155.136
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.155.141
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.155.142
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7465,10 +7409,6 @@ proxies:
     _excluded_times: 1
   - type: ss
     server: 103.186.155.147
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.155.148
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7504,10 +7444,6 @@ proxies:
     port: 38388
     _excluded_times: 1
   - type: ss
-    server: 103.186.155.231
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.155.239
     port: 38388
     _excluded_times: 1
@@ -7532,10 +7468,6 @@ proxies:
     port: 38388
     _excluded_times: 2
   - type: ss
-    server: 103.186.155.33
-    port: 38388
-    _excluded_times: 1
-  - type: ss
     server: 103.186.155.36
     port: 38388
     _excluded_times: 1
@@ -7551,10 +7483,6 @@ proxies:
     server: 103.186.155.39
     port: 38388
     _excluded_times: 2
-  - type: ss
-    server: 103.186.155.4
-    port: 38388
-    _excluded_times: 1
   - type: ss
     server: 103.186.155.41
     port: 38388
@@ -7588,13 +7516,9 @@ proxies:
     port: 38388
     _excluded_times: 4
   - type: ss
-    server: 103.186.155.54
-    port: 38388
-    _excluded_times: 2
-  - type: ss
     server: 103.186.155.58
     port: 38388
-    _excluded_times: 1
+    _excluded_times: 2
   - type: ss
     server: 103.186.155.59
     port: 38388
@@ -7607,14 +7531,6 @@ proxies:
     server: 103.186.155.68
     port: 38388
     _excluded_times: 2
-  - type: ss
-    server: 103.186.155.69
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.155.76
-    port: 38388
-    _excluded_times: 1
   - type: ss
     server: 103.186.155.77
     port: 38388
@@ -7641,10 +7557,6 @@ proxies:
     _excluded_times: 1
   - type: ss
     server: 103.186.155.85
-    port: 38388
-    _excluded_times: 1
-  - type: ss
-    server: 103.186.155.9
     port: 38388
     _excluded_times: 1
   - type: ss
@@ -7790,7 +7702,7 @@ proxies:
   - type: ss
     server: 104.192.226.106
     port: 990
-    _excluded_times: 4
+    _excluded_times: 5
   - type: ss
     server: 104.192.227.162
     port: 443
@@ -8490,7 +8402,7 @@ proxies:
   - type: ss
     server: 13.38.30.95
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: ss
     server: 13.38.73.145
     port: 443
@@ -8772,6 +8684,10 @@ proxies:
     port: 8080
     _excluded_times: 5
   - type: ss
+    server: 146.70.61.37
+    port: 8080
+    _excluded_times: 1
+  - type: ss
     server: 146.70.90.196
     port: 17454
     _excluded_times: 5
@@ -8900,22 +8816,6 @@ proxies:
     port: 8443
     _excluded_times: 5
   - type: ss
-    server: 151.242.251.131
-    port: 8080
-    _excluded_times: 1
-  - type: ss
-    server: 151.242.251.133
-    port: 8080
-    _excluded_times: 1
-  - type: ss
-    server: 151.242.251.152
-    port: 8080
-    _excluded_times: 1
-  - type: ss
-    server: 151.242.251.153
-    port: 8080
-    _excluded_times: 1
-  - type: ss
     server: 152.53.64.227
     port: 45595
     _excluded_times: 5
@@ -9028,20 +8928,12 @@ proxies:
     port: 989
     _excluded_times: 5
   - type: ss
-    server: 154.26.132.38
-    port: 16922
-    _excluded_times: 3
-  - type: ss
     server: 154.26.156.99
     port: 22881
     _excluded_times: 1
   - type: ss
     server: 154.26.156.99
     port: 47385
-    _excluded_times: 1
-  - type: ss
-    server: 154.26.156.99
-    port: 47386
     _excluded_times: 1
   - type: ss
     server: 154.26.156.99
@@ -9302,6 +9194,10 @@ proxies:
   - type: ss
     server: 163.171.181.30
     port: 11201
+    _excluded_times: 2
+  - type: ss
+    server: 163.171.207.11
+    port: 19688
     _excluded_times: 1
   - type: ss
     server: 163.177.46.157
@@ -9346,7 +9242,7 @@ proxies:
   - type: ss
     server: 167.17.179.87
     port: 8388
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 167.235.238.146
     port: 443
@@ -9492,6 +9388,10 @@ proxies:
     port: 990
     _excluded_times: 5
   - type: ss
+    server: 176.123.1.175
+    port: 990
+    _excluded_times: 1
+  - type: ss
     server: 176.124.207.105
     port: 37322
     _excluded_times: 5
@@ -9531,10 +9431,6 @@ proxies:
     server: 178.23.190.216
     port: 19609
     _excluded_times: 5
-  - type: ss
-    server: 178.23.190.238
-    port: 443
-    _excluded_times: 1
   - type: ss
     server: 18.140.54.43
     port: 2377
@@ -9710,7 +9606,7 @@ proxies:
   - type: ss
     server: 185.126.237.38
     port: 990
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 185.126.239.250
     port: 990
@@ -9731,10 +9627,6 @@ proxies:
     server: 185.153.197.5
     port: 989
     _excluded_times: 5
-  - type: ss
-    server: 185.156.110.92
-    port: 443
-    _excluded_times: 1
   - type: ss
     server: 185.156.72.107
     port: 443
@@ -9770,7 +9662,7 @@ proxies:
   - type: ss
     server: 185.192.124.188
     port: 990
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 185.193.48.157
     port: 443
@@ -9960,6 +9852,10 @@ proxies:
     port: 989
     _excluded_times: 5
   - type: ss
+    server: 192.71.249.78
+    port: 989
+    _excluded_times: 1
+  - type: ss
     server: 193.108.119.230
     port: 8080
     _excluded_times: 5
@@ -9987,14 +9883,6 @@ proxies:
     server: 193.29.139.138
     port: 8080
     _excluded_times: 5
-  - type: ss
-    server: 193.29.139.217
-    port: 8080
-    _excluded_times: 1
-  - type: ss
-    server: 193.29.139.227
-    port: 8080
-    _excluded_times: 1
   - type: ss
     server: 193.29.139.248
     port: 8080
@@ -10036,10 +9924,6 @@ proxies:
     port: 14453
     _excluded_times: 1
   - type: ss
-    server: 194.233.73.51
-    port: 48803
-    _excluded_times: 2
-  - type: ss
     server: 194.38.23.137
     port: 31348
     _excluded_times: 5
@@ -10062,7 +9946,7 @@ proxies:
   - type: ss
     server: 194.87.10.161
     port: 8388
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 194.87.216.121
     port: 443
@@ -10106,7 +9990,7 @@ proxies:
   - type: ss
     server: 195.133.5.213
     port: 20219
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 195.133.5.38
     port: 1012
@@ -10134,7 +10018,7 @@ proxies:
   - type: ss
     server: 195.181.160.6
     port: 990
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 195.35.113.79
     port: 443
@@ -10246,7 +10130,7 @@ proxies:
   - type: ss
     server: 203.23.128.33
     port: 990
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 203.23.128.92
     port: 990
@@ -10459,10 +10343,6 @@ proxies:
     server: 212.34.150.176
     port: 4199
     _excluded_times: 5
-  - type: ss
-    server: 213.109.147.242
-    port: 62685
-    _excluded_times: 1
   - type: ss
     server: 213.159.214.82
     port: 20
@@ -11724,10 +11604,6 @@ proxies:
     port: 990
     _excluded_times: 5
   - type: ss
-    server: 38.180.113.194
-    port: 8119
-    _excluded_times: 1
-  - type: ss
     server: 38.180.146.42
     port: 22135
     _excluded_times: 5
@@ -11835,6 +11711,10 @@ proxies:
     server: 38.60.223.8
     port: 989
     _excluded_times: 5
+  - type: ss
+    server: 38.60.250.107
+    port: 990
+    _excluded_times: 1
   - type: ss
     server: 38.60.255.97
     port: 11201
@@ -12058,7 +11938,7 @@ proxies:
   - type: ss
     server: 45.154.206.192
     port: 990
-    _excluded_times: 4
+    _excluded_times: 5
   - type: ss
     server: 45.158.171.110
     port: 8080
@@ -12214,7 +12094,7 @@ proxies:
   - type: ss
     server: 46.17.43.151
     port: 10081
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 46.183.184.60
     port: 989
@@ -12264,6 +12144,10 @@ proxies:
     port: 18660
     _excluded_times: 5
   - type: ss
+    server: 5.181.21.246
+    port: 443
+    _excluded_times: 1
+  - type: ss
     server: 5.187.51.212
     port: 40030
     _excluded_times: 5
@@ -12274,7 +12158,7 @@ proxies:
   - type: ss
     server: 5.188.181.201
     port: 9003
-    _excluded_times: 3
+    _excluded_times: 4
   - type: ss
     server: 5.188.181.201
     port: 9005
@@ -12386,7 +12270,7 @@ proxies:
   - type: ss
     server: 54.150.212.193
     port: 15099
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 54.159.62.233
     port: 443
@@ -12834,7 +12718,7 @@ proxies:
   - type: ss
     server: 79.127.233.170
     port: 990
-    _excluded_times: 4
+    _excluded_times: 5
   - type: ss
     server: 8.138.92.143
     port: 23382
@@ -12911,14 +12795,6 @@ proxies:
     server: 82.146.46.28
     port: 20
     _excluded_times: 5
-  - type: ss
-    server: 82.38.31.208
-    port: 8080
-    _excluded_times: 1
-  - type: ss
-    server: 82.38.31.218
-    port: 8080
-    _excluded_times: 1
   - type: ss
     server: 83.147.216.173
     port: 9848
@@ -13142,7 +13018,7 @@ proxies:
   - type: ss
     server: 91.149.236.182
     port: 8388
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 91.186.217.246
     port: 31764
@@ -13302,7 +13178,7 @@ proxies:
   - type: ss
     server: 95.40.103.62
     port: 29000
-    _excluded_times: 2
+    _excluded_times: 3
   - type: ss
     server: 95.40.17.23
     port: 11688
@@ -14438,6 +14314,38 @@ proxies:
   - type: ss
     server: id094.jd.kunlunpx.com
     port: 45590
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 15028
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 20256
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 22754
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 24825
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 26892
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 36492
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 54619
+    _excluded_times: 1
+  - type: ss
+    server: ilove.lulu.autos
+    port: 57362
     _excluded_times: 1
   - type: ss
     server: in01.network-cdn-gw-yd.net
@@ -20612,10 +20520,6 @@ proxies:
     port: 2087
     _excluded_times: 5
   - type: trojan
-    server: 109.234.211.66
-    port: 8443
-    _excluded_times: 1
-  - type: trojan
     server: 110.12.52.95
     port: 10250
     _excluded_times: 5
@@ -21912,10 +21816,6 @@ proxies:
     port: 1111
     _excluded_times: 5
   - type: trojan
-    server: 138.226.236.46
-    port: 4444
-    _excluded_times: 1
-  - type: trojan
     server: 138.3.222.124
     port: 46209
     _excluded_times: 1
@@ -22997,10 +22897,6 @@ proxies:
     _excluded_times: 5
   - type: trojan
     server: 153.121.38.213
-    port: 3423
-    _excluded_times: 1
-  - type: trojan
-    server: 153.121.38.213
     port: 3901
     _excluded_times: 5
   - type: trojan
@@ -23034,7 +22930,7 @@ proxies:
   - type: trojan
     server: 153.121.39.240
     port: 5076
-    _excluded_times: 3
+    _excluded_times: 4
   - type: trojan
     server: 153.121.41.97
     port: 2381
@@ -23087,10 +22983,6 @@ proxies:
     server: 153.121.45.139
     port: 3169
     _excluded_times: 5
-  - type: trojan
-    server: 153.121.45.139
-    port: 3423
-    _excluded_times: 1
   - type: trojan
     server: 153.121.45.139
     port: 3901
@@ -23708,18 +23600,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: trojan
-    server: 159.100.6.21
-    port: 27017
-    _excluded_times: 2
-  - type: trojan
-    server: 159.195.20.112
-    port: 8444
-    _excluded_times: 1
-  - type: trojan
-    server: 159.195.21.31
-    port: 8444
-    _excluded_times: 1
-  - type: trojan
     server: 159.195.22.152
     port: 8444
     _excluded_times: 5
@@ -23995,6 +23875,10 @@ proxies:
     server: 160.16.124.55
     port: 6752
     _excluded_times: 5
+  - type: trojan
+    server: 160.16.130.21
+    port: 1933
+    _excluded_times: 1
   - type: trojan
     server: 160.16.130.66
     port: 1596
@@ -24553,10 +24437,6 @@ proxies:
     _excluded_times: 5
   - type: trojan
     server: 160.16.72.33
-    port: 3901
-    _excluded_times: 1
-  - type: trojan
-    server: 160.16.72.33
     port: 5076
     _excluded_times: 5
   - type: trojan
@@ -24611,10 +24491,6 @@ proxies:
     server: 160.16.87.174
     port: 1933
     _excluded_times: 5
-  - type: trojan
-    server: 160.16.87.174
-    port: 3076
-    _excluded_times: 1
   - type: trojan
     server: 160.16.87.174
     port: 3093
@@ -28132,6 +28008,10 @@ proxies:
     port: 8444
     _excluded_times: 5
   - type: trojan
+    server: 178.208.90.124
+    port: 445
+    _excluded_times: 1
+  - type: trojan
     server: 178.250.159.120
     port: 2053
     _excluded_times: 5
@@ -28250,7 +28130,7 @@ proxies:
   - type: trojan
     server: 18.166.15.25
     port: 4650
-    _excluded_times: 3
+    _excluded_times: 4
   - type: trojan
     server: 18.166.223.179
     port: 2890
@@ -28896,10 +28776,6 @@ proxies:
     port: 7171
     _excluded_times: 5
   - type: trojan
-    server: 185.254.97.208
-    port: 2052
-    _excluded_times: 1
-  - type: trojan
     server: 185.44.76.188
     port: 443
     _excluded_times: 5
@@ -28986,7 +28862,7 @@ proxies:
   - type: trojan
     server: 188.127.247.194
     port: 445
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: 188.164.159.107
     port: 2096
@@ -29139,6 +29015,10 @@ proxies:
     server: 188.42.88.144
     port: 2096
     _excluded_times: 5
+  - type: trojan
+    server: 188.68.58.109
+    port: 8444
+    _excluded_times: 1
   - type: trojan
     server: 190.93.244.105
     port: 443
@@ -29714,7 +29594,7 @@ proxies:
   - type: trojan
     server: 2.59.134.116
     port: 2013
-    _excluded_times: 2
+    _excluded_times: 3
   - type: trojan
     server: 2.59.134.207
     port: 8008
@@ -30342,7 +30222,7 @@ proxies:
   - type: trojan
     server: 218.250.156.130
     port: 443
-    _excluded_times: 3
+    _excluded_times: 4
   - type: trojan
     server: 219.249.105.205
     port: 18001
@@ -32192,10 +32072,6 @@ proxies:
     port: 8444
     _excluded_times: 1
   - type: trojan
-    server: 43.250.54.141
-    port: 8444
-    _excluded_times: 1
-  - type: trojan
     server: 44.194.46.61
     port: 22222
     _excluded_times: 1
@@ -32442,7 +32318,7 @@ proxies:
   - type: trojan
     server: 45.32.158.138
     port: 20994
-    _excluded_times: 2
+    _excluded_times: 3
   - type: trojan
     server: 45.32.223.2
     port: 443
@@ -32687,10 +32563,6 @@ proxies:
     server: 45.95.174.14
     port: 50443
     _excluded_times: 5
-  - type: trojan
-    server: 45.95.2.173
-    port: 6666
-    _excluded_times: 2
   - type: trojan
     server: 45.95.241.101
     port: 8443
@@ -33478,7 +33350,7 @@ proxies:
   - type: trojan
     server: 52.195.11.229
     port: 2595
-    _excluded_times: 2
+    _excluded_times: 3
   - type: trojan
     server: 52.195.176.26
     port: 2145
@@ -34512,10 +34384,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: trojan
-    server: 62.60.239.218
-    port: 3085
-    _excluded_times: 2
-  - type: trojan
     server: 62.60.246.168
     port: 443
     _excluded_times: 5
@@ -34671,10 +34539,6 @@ proxies:
     server: 64.69.32.12
     port: 2003
     _excluded_times: 5
-  - type: trojan
-    server: 64.94.95.118
-    port: 57142
-    _excluded_times: 1
   - type: trojan
     server: 65.108.249.15
     port: 512
@@ -34971,6 +34835,10 @@ proxies:
     server: 77.233.223.128
     port: 1001
     _excluded_times: 5
+  - type: trojan
+    server: 77.238.233.156
+    port: 9443
+    _excluded_times: 1
   - type: trojan
     server: 77.238.236.134
     port: 8443
@@ -35340,10 +35208,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: trojan
-    server: 91.107.148.163
-    port: 2082
-    _excluded_times: 1
-  - type: trojan
     server: 91.107.151.39
     port: 2053
     _excluded_times: 5
@@ -35363,10 +35227,6 @@ proxies:
     server: 91.107.161.243
     port: 2082
     _excluded_times: 5
-  - type: trojan
-    server: 91.107.166.206
-    port: 2051
-    _excluded_times: 1
   - type: trojan
     server: 91.107.166.26
     port: 2052
@@ -35390,7 +35250,7 @@ proxies:
   - type: trojan
     server: 91.107.173.219
     port: 7171
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: 91.107.178.200
     port: 2501
@@ -35419,10 +35279,6 @@ proxies:
     server: 91.107.243.237
     port: 2086
     _excluded_times: 5
-  - type: trojan
-    server: 91.107.245.83
-    port: 3085
-    _excluded_times: 1
   - type: trojan
     server: 91.107.249.210
     port: 2083
@@ -35539,10 +35395,6 @@ proxies:
     server: 91.98.119.52
     port: 2233
     _excluded_times: 4
-  - type: trojan
-    server: 91.98.123.18
-    port: 104
-    _excluded_times: 1
   - type: trojan
     server: 91.99.149.94
     port: 11001
@@ -36294,10 +36146,14 @@ proxies:
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 26003
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 26004
+    _excluded_times: 2
+  - type: trojan
+    server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+    port: 26005
     _excluded_times: 1
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
@@ -36306,35 +36162,35 @@ proxies:
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 26009
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 26010
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27001
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27003
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27005
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27006
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27007
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
     port: 27009
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: f5465c4.pg.gladns.com
     port: 3389
@@ -36960,6 +36816,10 @@ proxies:
     port: 52251
     _excluded_times: 3
   - type: trojan
+    server: ip.sb
+    port: 8443
+    _excluded_times: 1
+  - type: trojan
     server: iplc.xiaohouzi.club
     port: 20011
     _excluded_times: 5
@@ -37122,7 +36982,7 @@ proxies:
   - type: trojan
     server: kfjdi.pages.dev
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: trojan
     server: koma-yt.pages.dev
     port: 8443
@@ -37862,7 +37722,7 @@ proxies:
   - type: trojan
     server: speedtest.net.za
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: trojan
     server: starlink-de1.2513142.xyz
     port: 443
@@ -38131,10 +37991,6 @@ proxies:
     server: us2.3f770769-74b9-c6b9-315d-4507cf42dd90.2f6cd430.the-best-airport.com
     port: 443
     _excluded_times: 1
-  - type: trojan
-    server: usa.visa.com
-    port: 443
-    _excluded_times: 2
   - type: trojan
     server: usable-stallion.marlin387.pics
     port: 443
@@ -39431,10 +39287,6 @@ proxies:
     server: 01.91md.fun
     port: 80
     _excluded_times: 5
-  - type: vless
-    server: 017.electrocellco-cf-017.workers.dev
-    port: 443
-    _excluded_times: 2
   - type: vless
     server: 1-hk.ap.ku-ke.cc
     port: 443
@@ -40799,6 +40651,10 @@ proxies:
     server: 104.16.103.112
     port: 2096
     _excluded_times: 5
+  - type: vless
+    server: 104.16.103.228
+    port: 2096
+    _excluded_times: 1
   - type: vless
     server: 104.16.103.250
     port: 80
@@ -42212,6 +42068,10 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: vless
+    server: 104.16.227.136
+    port: 2087
+    _excluded_times: 1
+  - type: vless
     server: 104.16.227.84
     port: 443
     _excluded_times: 5
@@ -43396,10 +43256,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: vless
-    server: 104.16.63.239
-    port: 80
-    _excluded_times: 1
-  - type: vless
     server: 104.16.63.37
     port: 443
     _excluded_times: 5
@@ -43550,7 +43406,7 @@ proxies:
   - type: vless
     server: 104.16.81.162
     port: 2053
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 104.16.82.210
     port: 2087
@@ -44819,10 +44675,6 @@ proxies:
     server: 104.17.254.211
     port: 443
     _excluded_times: 5
-  - type: vless
-    server: 104.17.254.236
-    port: 80
-    _excluded_times: 1
   - type: vless
     server: 104.17.254.75
     port: 443
@@ -47333,10 +47185,6 @@ proxies:
     _excluded_times: 5
   - type: vless
     server: 104.18.7.36
-    port: 2086
-    _excluded_times: 1
-  - type: vless
-    server: 104.18.7.36
     port: 8443
     _excluded_times: 5
   - type: vless
@@ -49254,7 +49102,7 @@ proxies:
   - type: vless
     server: 104.19.47.226
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 104.19.47.9
     port: 443
@@ -51362,7 +51210,7 @@ proxies:
   - type: vless
     server: 104.21.43.168
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 104.21.43.18
     port: 443
@@ -56804,6 +56652,10 @@ proxies:
     port: 8080
     _excluded_times: 5
   - type: vless
+    server: 107.191.53.228
+    port: 443
+    _excluded_times: 1
+  - type: vless
     server: 108.160.139.154
     port: 8443
     _excluded_times: 5
@@ -57914,7 +57766,7 @@ proxies:
   - type: vless
     server: 115.22.216.16
     port: 12187
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 115.90.84.220
     port: 50001
@@ -58479,6 +58331,10 @@ proxies:
     server: 13.230.34.30
     port: 443
     _excluded_times: 3
+  - type: vless
+    server: 13.231.41.231
+    port: 35999
+    _excluded_times: 1
   - type: vless
     server: 13.231.70.133
     port: 443
@@ -60130,7 +59986,7 @@ proxies:
   - type: vless
     server: 141.101.114.146
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 141.101.114.20
     port: 8880
@@ -60232,10 +60088,6 @@ proxies:
     port: 2053
     _excluded_times: 5
   - type: vless
-    server: 141.101.120.141
-    port: 443
-    _excluded_times: 1
-  - type: vless
     server: 141.101.120.143
     port: 2086
     _excluded_times: 5
@@ -60318,7 +60170,7 @@ proxies:
   - type: vless
     server: 141.101.120.23
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 141.101.120.235
     port: 443
@@ -60334,7 +60186,7 @@ proxies:
   - type: vless
     server: 141.101.120.247
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 141.101.120.251
     port: 8880
@@ -60610,7 +60462,7 @@ proxies:
   - type: vless
     server: 141.101.121.75
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 141.101.121.80
     port: 2083
@@ -62402,7 +62254,7 @@ proxies:
   - type: vless
     server: 144.31.0.228
     port: 443
-    _excluded_times: 3
+    _excluded_times: 1
   - type: vless
     server: 144.31.0.64
     port: 443
@@ -62450,7 +62302,7 @@ proxies:
   - type: vless
     server: 144.31.2.122
     port: 443
-    _excluded_times: 3
+    _excluded_times: 4
   - type: vless
     server: 144.31.213.7
     port: 443
@@ -62535,6 +62387,10 @@ proxies:
     server: 146.103.42.175
     port: 2087
     _excluded_times: 5
+  - type: vless
+    server: 146.185.208.60
+    port: 443
+    _excluded_times: 1
   - type: vless
     server: 146.19.143.8
     port: 8443
@@ -63111,10 +62967,6 @@ proxies:
     server: 149.104.30.244
     port: 443
     _excluded_times: 5
-  - type: vless
-    server: 149.104.30.56
-    port: 443
-    _excluded_times: 4
   - type: vless
     server: 149.104.30.91
     port: 443
@@ -64464,6 +64316,10 @@ proxies:
     port: 80
     _excluded_times: 5
   - type: vless
+    server: 151.101.241.242
+    port: 80
+    _excluded_times: 1
+  - type: vless
     server: 151.101.242.133
     port: 80
     _excluded_times: 5
@@ -64966,7 +64822,7 @@ proxies:
   - type: vless
     server: 154.17.13.69
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 154.17.18.105
     port: 8443
@@ -64994,7 +64850,7 @@ proxies:
   - type: vless
     server: 154.17.227.191
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 154.17.228.219
     port: 1311
@@ -65674,7 +65530,7 @@ proxies:
   - type: vless
     server: 154.36.144.216
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 154.40.46.28
     port: 46757
@@ -74250,7 +74106,7 @@ proxies:
   - type: vless
     server: 172.64.157.136
     port: 8443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 172.64.157.14
     port: 443
@@ -78053,10 +77909,6 @@ proxies:
     _excluded_times: 5
   - type: vless
     server: 172.67.161.104
-    port: 2095
-    _excluded_times: 1
-  - type: vless
-    server: 172.67.161.104
     port: 443
     _excluded_times: 5
   - type: vless
@@ -81658,7 +81510,7 @@ proxies:
   - type: vless
     server: 178.154.202.184
     port: 8443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 178.154.202.196
     port: 7443
@@ -85814,7 +85666,7 @@ proxies:
   - type: vless
     server: 185.254.97.248
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 185.255.112.147
     port: 7580
@@ -91438,7 +91290,7 @@ proxies:
   - type: vless
     server: 198.41.208.102
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 198.41.208.176
     port: 443
@@ -95010,7 +94862,7 @@ proxies:
   - type: vless
     server: 217.142.185.111
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 217.142.230.253
     port: 587
@@ -95862,7 +95714,7 @@ proxies:
   - type: vless
     server: 25.26.27.28
     port: 2052
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 25.26.27.29
     port: 8880
@@ -98218,7 +98070,7 @@ proxies:
   - type: vless
     server: 38.207.189.188
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 38.22.92.72
     port: 34045
@@ -103774,7 +103626,7 @@ proxies:
   - type: vless
     server: 45.82.246.114
     port: 4443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 45.82.246.85
     port: 19511
@@ -104892,6 +104744,10 @@ proxies:
     port: 3479
     _excluded_times: 5
   - type: vless
+    server: 47.129.227.145
+    port: 35999
+    _excluded_times: 1
+  - type: vless
     server: 47.129.30.173
     port: 20230
     _excluded_times: 5
@@ -105249,11 +105105,11 @@ proxies:
     _excluded_times: 3
   - type: vless
     server: 5.10.214.0
-    port: 2096
+    port: 2087
     _excluded_times: 1
   - type: vless
     server: 5.10.214.0
-    port: 443
+    port: 2096
     _excluded_times: 1
   - type: vless
     server: 5.10.214.0
@@ -106482,7 +106338,7 @@ proxies:
   - type: vless
     server: 5.101.36.154
     port: 443
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 5.104.107.135
     port: 443
@@ -106891,6 +106747,10 @@ proxies:
     server: 5.180.45.176
     port: 4443
     _excluded_times: 5
+  - type: vless
+    server: 5.180.45.36
+    port: 443
+    _excluded_times: 1
   - type: vless
     server: 5.180.46.81
     port: 2443
@@ -107720,25 +107580,13 @@ proxies:
     port: 8443
     _excluded_times: 5
   - type: vless
-    server: 51.250.33.87
-    port: 443
-    _excluded_times: 1
-  - type: vless
     server: 51.250.37.12
     port: 443
     _excluded_times: 5
   - type: vless
-    server: 51.250.38.137
-    port: 4443
-    _excluded_times: 1
-  - type: vless
     server: 51.250.4.181
     port: 443
     _excluded_times: 5
-  - type: vless
-    server: 51.250.41.54
-    port: 47051
-    _excluded_times: 1
   - type: vless
     server: 51.250.42.182
     port: 443
@@ -107891,6 +107739,10 @@ proxies:
     server: 51.38.227.155
     port: 8443
     _excluded_times: 5
+  - type: vless
+    server: 51.38.30.155
+    port: 2082
+    _excluded_times: 1
   - type: vless
     server: 51.38.44.17
     port: 443
@@ -108436,10 +108288,6 @@ proxies:
     port: 443
     _excluded_times: 4
   - type: vless
-    server: 54d-bd0d-c3f111d0b879.664.qzz.io
-    port: 443
-    _excluded_times: 1
-  - type: vless
     server: 55b6-2cb7-7e3290ec7fd3.003330333.xyz
     port: 443
     _excluded_times: 5
@@ -108482,7 +108330,7 @@ proxies:
   - type: vless
     server: 57.128.235.192
     port: 2082
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: 57.129.137.206
     port: 8443
@@ -109290,7 +109138,7 @@ proxies:
   - type: vless
     server: 62.60.229.31
     port: 8880
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: 62.60.230.211
     port: 10883
@@ -112156,6 +112004,10 @@ proxies:
     port: 2096
     _excluded_times: 1
   - type: vless
+    server: 8.34.70.2
+    port: 2096
+    _excluded_times: 2
+  - type: vless
     server: 8.34.70.236
     port: 2096
     _excluded_times: 5
@@ -112438,7 +112290,7 @@ proxies:
   - type: vless
     server: 82.117.84.62
     port: 8080
-    _excluded_times: 3
+    _excluded_times: 4
   - type: vless
     server: 82.117.87.48
     port: 62641
@@ -112450,7 +112302,7 @@ proxies:
   - type: vless
     server: 82.152.18.225
     port: 45180
-    _excluded_times: 3
+    _excluded_times: 4
   - type: vless
     server: 82.153.50.30
     port: 443
@@ -112623,10 +112475,6 @@ proxies:
     server: 84.201.143.90
     port: 443
     _excluded_times: 5
-  - type: vless
-    server: 84.201.148.218
-    port: 2083
-    _excluded_times: 1
   - type: vless
     server: 84.201.151.173
     port: 443
@@ -117268,10 +117116,6 @@ proxies:
     port: 4443
     _excluded_times: 5
   - type: vless
-    server: 94.141.161.83
-    port: 2584
-    _excluded_times: 2
-  - type: vless
     server: 94.142.138.73
     port: 443
     _excluded_times: 5
@@ -118244,6 +118088,10 @@ proxies:
     port: 443
     _excluded_times: 1
   - type: vless
+    server: api.dark-coffe.com
+    port: 8443
+    _excluded_times: 1
+  - type: vless
     server: apple.land200.netmeli.com
     port: 51921
     _excluded_times: 4
@@ -118372,10 +118220,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: vless
-    server: blackshadow.dpdns.org
-    port: 443
-    _excluded_times: 1
-  - type: vless
     server: blog.646474.xyz
     port: 443
     _excluded_times: 5
@@ -118430,7 +118274,7 @@ proxies:
   - type: vless
     server: cache.nlb.cdn.stemstep.cloud
     port: 443
-    _excluded_times: 4
+    _excluded_times: 5
   - type: vless
     server: cafearz.com
     port: 8080
@@ -119172,10 +119016,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: vless
-    server: ficdn19.suio.me
-    port: 443
-    _excluded_times: 2
-  - type: vless
     server: filma.video-fun-new.com.de
     port: 443
     _excluded_times: 5
@@ -119354,7 +119194,7 @@ proxies:
   - type: vless
     server: german.torprospeed.ir
     port: 587
-    _excluded_times: 4
+    _excluded_times: 5
   - type: vless
     server: go.inmobi.com
     port: 8080
@@ -119594,7 +119434,7 @@ proxies:
   - type: vless
     server: ip-range.web3.name.ng
     port: 8443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: ip.cloudflare.com.appcity-download.ir
     port: 2053
@@ -120056,10 +119896,6 @@ proxies:
     port: 443
     _excluded_times: 5
   - type: vless
-    server: medium.com
-    port: 443
-    _excluded_times: 2
-  - type: vless
     server: medrd.vtpmng.top
     port: 8443
     _excluded_times: 5
@@ -120098,7 +119934,7 @@ proxies:
   - type: vless
     server: mr13.digitalcity2.fun
     port: 58756
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: msk.cdn.stun.su
     port: 443
@@ -120498,11 +120334,7 @@ proxies:
   - type: vless
     server: plcdn1.suio.me
     port: 443
-    _excluded_times: 1
-  - type: vless
-    server: plcdn14.suio.me
-    port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: plcdn17.suio.me
     port: 443
@@ -120510,7 +120342,7 @@ proxies:
   - type: vless
     server: plcdn5.suio.me
     port: 443
-    _excluded_times: 2
+    _excluded_times: 1
   - type: vless
     server: plr.strelkavpn.ru
     port: 8443
@@ -120842,7 +120674,7 @@ proxies:
   - type: vless
     server: s1.db-link.in
     port: 443
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: s1.tun.cloudnsas.ir
     port: 443
@@ -121138,7 +120970,7 @@ proxies:
   - type: vless
     server: saas.sin.fan
     port: 2096
-    _excluded_times: 1
+    _excluded_times: 2
   - type: vless
     server: saas.sin.fan
     port: 443
@@ -121738,7 +121570,7 @@ proxies:
   - type: vless
     server: v1.dabache.top
     port: 8443
-    _excluded_times: 4
+    _excluded_times: 5
   - type: vless
     server: v2.dabache.top
     port: 2096
@@ -121750,7 +121582,7 @@ proxies:
   - type: vless
     server: v2.dabache.top
     port: 8443
-    _excluded_times: 4
+    _excluded_times: 5
   - type: vless
     server: v22.vipshopkar8.shop
     port: 8412
@@ -122058,7 +121890,7 @@ proxies:
   - type: vless
     server: www.csgo.net
     port: 2095
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vless
     server: www.digitalocean.com
     port: 80
@@ -123043,6 +122875,10 @@ proxies:
     server: 104.18.2.186
     port: 80
     _excluded_times: 5
+  - type: vmess
+    server: 104.18.32.47
+    port: 443
+    _excluded_times: 1
   - type: vmess
     server: 104.19.150.10
     port: 2095
@@ -126662,7 +126498,7 @@ proxies:
   - type: vmess
     server: 45.196.235.171
     port: 80
-    _excluded_times: 2
+    _excluded_times: 3
   - type: vmess
     server: 45.199.138.152
     port: 45886
@@ -127266,7 +127102,7 @@ proxies:
   - type: vmess
     server: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
     port: 80
-    _excluded_times: 4
+    _excluded_times: 5
   - type: vmess
     server: 57.128.189.143
     port: 443
@@ -128035,6 +127871,10 @@ proxies:
     server: 8.210.248.133
     port: 43307
     _excluded_times: 5
+  - type: vmess
+    server: 8.210.248.133
+    port: 43425
+    _excluded_times: 1
   - type: vmess
     server: 8.211.129.248
     port: 8080
@@ -129019,6 +128859,10 @@ proxies:
     server: b-v1.888988866.xyz
     port: 443
     _excluded_times: 5
+  - type: vmess
+    server: b07b7851-t8ysg0-tc2x42-n09f.hkt.gotochinatown.net
+    port: 80
+    _excluded_times: 1
   - type: vmess
     server: b09997b1-t8ysg0-t9byd7-1jfvb.hkt.gotochinatown.net
     port: 80
