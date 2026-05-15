@@ -1,0 +1,448 @@
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+geox-url:
+  geoip: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb
+  asn: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  use-system-hosts: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  respect-rules: true
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:private,cn,geolocation-cn:
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    geosite:google,youtube,telegram,gfw,geolocation-!cn:
+      - https://1.1.1.1/dns-query
+      - https://1.0.0.1/dns-query
+      - https://208.67.222.222/dns-query
+      - https://208.67.220.220/dns-query
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+        - 443
+        - 8443
+    QUIC:
+      ports:
+        - 443
+        - 8443
+  skip-domain:
+    - Mijia Cloud
+    - +.push.apple.com
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🚑 故障转移
+      - DIRECT
+      - 🏁 未知-535DDB12
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-31AA0468
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇭🇰 香港-1E3D1CFC
+      - 🇷🇴 罗马尼亚-32140830
+      - 🇷🇴 罗马尼亚-A1C17CEB
+      - 🇷🇴 罗马尼亚-448E0826
+      - 🇷🇴 罗马尼亚-9173CD2C
+      - 🇷🇴 罗马尼亚-B312F1E8
+      - 🇷🇴 罗马尼亚-002057EC
+      - 🇷🇴 罗马尼亚-7000F441
+      - 🇷🇴 罗马尼亚-2990C34E
+      - 🇷🇴 罗马尼亚-AA6ADB2E
+      - 🇷🇴 罗马尼亚-2B98384D
+      - 🇷🇴 罗马尼亚-899BB22B
+      - 🇷🇴 罗马尼亚-7B5940AE
+      - 🇷🇴 罗马尼亚-6267002F
+      - 🇷🇴 罗马尼亚-98B54927
+      - 🇷🇴 罗马尼亚-C9A664C0
+      - 🇷🇴 罗马尼亚-6E78D533
+      - 🇷🇴 罗马尼亚-168A5030
+      - 🇷🇴 罗马尼亚-3E9BC3C8
+      - 🇷🇴 罗马尼亚-0B108C7A
+      - 🇷🇴 罗马尼亚-5A7730E8
+      - 🇷🇴 罗马尼亚-DC100997
+      - 🇷🇴 罗马尼亚-9663BA60
+      - 🇷🇴 罗马尼亚-0A6652EF
+      - 🇷🇴 罗马尼亚-2763F7BE
+      - 🇷🇴 罗马尼亚-BF05A647
+      - 🇷🇴 罗马尼亚-6A89CF96
+      - 🇷🇴 罗马尼亚-15662C2C
+      - 🇷🇴 罗马尼亚-E41E79CC
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    lazy: true
+    interval: 180
+    timeout: 3000
+    tolerance: 200
+    max-failed-times: 3
+    proxies:
+      - 🏁 未知-535DDB12
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-31AA0468
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇭🇰 香港-1E3D1CFC
+      - 🇷🇴 罗马尼亚-32140830
+      - 🇷🇴 罗马尼亚-A1C17CEB
+      - 🇷🇴 罗马尼亚-448E0826
+      - 🇷🇴 罗马尼亚-9173CD2C
+      - 🇷🇴 罗马尼亚-B312F1E8
+      - 🇷🇴 罗马尼亚-002057EC
+      - 🇷🇴 罗马尼亚-7000F441
+      - 🇷🇴 罗马尼亚-2990C34E
+      - 🇷🇴 罗马尼亚-AA6ADB2E
+      - 🇷🇴 罗马尼亚-2B98384D
+      - 🇷🇴 罗马尼亚-899BB22B
+      - 🇷🇴 罗马尼亚-7B5940AE
+      - 🇷🇴 罗马尼亚-6267002F
+      - 🇷🇴 罗马尼亚-98B54927
+      - 🇷🇴 罗马尼亚-C9A664C0
+      - 🇷🇴 罗马尼亚-6E78D533
+      - 🇷🇴 罗马尼亚-168A5030
+      - 🇷🇴 罗马尼亚-3E9BC3C8
+      - 🇷🇴 罗马尼亚-0B108C7A
+      - 🇷🇴 罗马尼亚-5A7730E8
+      - 🇷🇴 罗马尼亚-DC100997
+      - 🇷🇴 罗马尼亚-9663BA60
+      - 🇷🇴 罗马尼亚-0A6652EF
+      - 🇷🇴 罗马尼亚-2763F7BE
+      - 🇷🇴 罗马尼亚-BF05A647
+      - 🇷🇴 罗马尼亚-6A89CF96
+      - 🇷🇴 罗马尼亚-15662C2C
+      - 🇷🇴 罗马尼亚-E41E79CC
+  - name: 🚑 故障转移
+    type: fallback
+    url: https://cp.cloudflare.com/generate_204
+    lazy: true
+    interval: 180
+    timeout: 3000
+    max-failed-times: 3
+    proxies:
+      - 🏁 未知-535DDB12
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-31AA0468
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇭🇰 香港-1E3D1CFC
+      - 🇷🇴 罗马尼亚-32140830
+      - 🇷🇴 罗马尼亚-A1C17CEB
+      - 🇷🇴 罗马尼亚-448E0826
+      - 🇷🇴 罗马尼亚-9173CD2C
+      - 🇷🇴 罗马尼亚-B312F1E8
+      - 🇷🇴 罗马尼亚-002057EC
+      - 🇷🇴 罗马尼亚-7000F441
+      - 🇷🇴 罗马尼亚-2990C34E
+      - 🇷🇴 罗马尼亚-AA6ADB2E
+      - 🇷🇴 罗马尼亚-2B98384D
+      - 🇷🇴 罗马尼亚-899BB22B
+      - 🇷🇴 罗马尼亚-7B5940AE
+      - 🇷🇴 罗马尼亚-6267002F
+      - 🇷🇴 罗马尼亚-98B54927
+      - 🇷🇴 罗马尼亚-C9A664C0
+      - 🇷🇴 罗马尼亚-6E78D533
+      - 🇷🇴 罗马尼亚-168A5030
+      - 🇷🇴 罗马尼亚-3E9BC3C8
+      - 🇷🇴 罗马尼亚-0B108C7A
+      - 🇷🇴 罗马尼亚-5A7730E8
+      - 🇷🇴 罗马尼亚-DC100997
+      - 🇷🇴 罗马尼亚-9663BA60
+      - 🇷🇴 罗马尼亚-0A6652EF
+      - 🇷🇴 罗马尼亚-2763F7BE
+      - 🇷🇴 罗马尼亚-BF05A647
+      - 🇷🇴 罗马尼亚-6A89CF96
+      - 🇷🇴 罗马尼亚-15662C2C
+      - 🇷🇴 罗马尼亚-E41E79CC
+  - name: 🎯 全局直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🚑 故障转移
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🚑 故障转移
+      - DIRECT
+proxies:
+  - name: 🏁 未知-535DDB12
+    type: http
+    server: 154.26.192.123
+    port: 10988
+    password: gs4BXwT6SW
+    tls: false
+    username: fQ67Dpe5dU
+  - name: 🇷🇴 罗马尼亚-79ABF0C2
+    type: http
+    server: 193.176.84.40
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-788320FD
+    type: http
+    server: 193.176.84.34
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-C180F418
+    type: http
+    server: 193.176.84.20
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-31AA0468
+    type: http
+    server: 193.176.84.39
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-88784180
+    type: http
+    server: 193.176.84.25
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-BB6FE7AB
+    type: http
+    server: 193.176.84.24
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇭🇰 香港-1E3D1CFC
+    type: http
+    server: 47.238.199.39
+    port: 36735
+    password: VCYBW8pH4z
+    tls: false
+    username: 2XPTvGKBjj
+  - name: 🇷🇴 罗马尼亚-32140830
+    type: http
+    server: 84.239.49.156
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-A1C17CEB
+    type: http
+    server: 84.239.49.211
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-448E0826
+    type: http
+    server: 84.239.49.154
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-9173CD2C
+    type: http
+    server: 84.239.49.170
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-B312F1E8
+    type: http
+    server: 84.239.49.42
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-002057EC
+    type: http
+    server: 84.239.49.159
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-7000F441
+    type: http
+    server: 84.239.49.187
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-2990C34E
+    type: http
+    server: 84.239.49.198
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-AA6ADB2E
+    type: http
+    server: 84.239.49.175
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-2B98384D
+    type: http
+    server: 84.239.49.37
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-899BB22B
+    type: http
+    server: 84.239.49.185
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-7B5940AE
+    type: http
+    server: 84.239.49.163
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-6267002F
+    type: http
+    server: 84.239.14.159
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-98B54927
+    type: http
+    server: 84.239.49.214
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-C9A664C0
+    type: http
+    server: 84.239.14.158
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-6E78D533
+    type: http
+    server: 84.239.49.219
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-168A5030
+    type: http
+    server: 84.239.49.224
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-3E9BC3C8
+    type: http
+    server: 84.239.49.183
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-0B108C7A
+    type: http
+    server: 84.239.49.247
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-5A7730E8
+    type: http
+    server: 84.239.49.253
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-DC100997
+    type: http
+    server: 84.239.14.146
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-9663BA60
+    type: http
+    server: 84.239.49.241
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-0A6652EF
+    type: http
+    server: 84.239.49.233
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-2763F7BE
+    type: http
+    server: 84.239.49.239
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-BF05A647
+    type: http
+    server: 84.239.49.223
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-6A89CF96
+    type: http
+    server: 84.239.49.234
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-15662C2C
+    type: http
+    server: 84.239.49.201
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-E41E79CC
+    type: http
+    server: 84.239.49.58
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+rules:
+  - GEOIP,lan,🎯 全局直连,no-resolve
+  - GEOSITE,github,🚀 节点选择
+  - GEOSITE,twitter,🚀 节点选择
+  - GEOSITE,youtube,🚀 节点选择
+  - GEOSITE,google,🚀 节点选择
+  - GEOSITE,telegram,🚀 节点选择
+  - GEOSITE,netflix,🚀 节点选择
+  - GEOSITE,bilibili,🎯 全局直连
+  - GEOSITE,bahamut,🚀 节点选择
+  - GEOSITE,spotify,🚀 节点选择
+  - GEOSITE,CN,🎯 全局直连
+  - GEOSITE,geolocation-!cn,🐟 漏网之鱼
+  - GEOIP,google,🚀 节点选择
+  - GEOIP,netflix,🚀 节点选择
+  - GEOIP,telegram,🚀 节点选择
+  - GEOIP,twitter,🚀 节点选择
+  - GEOIP,CN,🎯 全局直连
+  - MATCH,🐟 漏网之鱼

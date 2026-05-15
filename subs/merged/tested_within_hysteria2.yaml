@@ -1,0 +1,480 @@
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+geox-url:
+  geoip: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb
+  asn: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  use-system-hosts: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  respect-rules: true
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:private,cn,geolocation-cn:
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    geosite:google,youtube,telegram,gfw,geolocation-!cn:
+      - https://1.1.1.1/dns-query
+      - https://1.0.0.1/dns-query
+      - https://208.67.222.222/dns-query
+      - https://208.67.220.220/dns-query
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+        - 443
+        - 8443
+    QUIC:
+      ports:
+        - 443
+        - 8443
+  skip-domain:
+    - Mijia Cloud
+    - +.push.apple.com
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🚑 故障转移
+      - DIRECT
+      - 🏁 未知-7525F8CD
+      - 🏁 未知-FC845D5C
+      - 🇺🇸 美国-2844BECE
+      - 🇺🇸 美国-49D8E407
+      - 🏁 未知-363CE1EF
+      - 🏁 未知-51E34B0E
+      - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-25BF7CEF
+      - 🇩🇪 德国-2ED85C68
+      - 🇬🇧 英国-BFD72AC5
+      - 🇫🇷 法国-5B1F60E2
+      - 🏁 未知-765E5242
+      - 🇯🇵 日本-8F11F6D1
+      - 🇯🇵 日本-218068AE
+      - 🇯🇵 日本-8F17FA97
+      - 🇱🇻 拉脱维亚-927C31CC
+      - 🇫🇮 芬兰-42970FDC
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-2D6961B3
+      - 🇩🇪 德国-BE47CD2F
+      - 🏁 未知-BC11F269
+      - 🇳🇱 荷兰-CE26533E
+      - 🇮🇳 印度-4229ED78
+      - 🇦🇺 澳大利亚-A33427B3
+      - 🇸🇬 新加坡-CB2A5E54
+      - 🇸🇬 新加坡-878C4F54
+      - 🇧🇷 巴西-38821B9D
+      - 🇳🇿 新西兰-69DAAF1A
+      - 🇮🇳 印度-8F6E461D
+      - 🇸🇬 新加坡-F07B596F
+      - 🏁 未知-6A7050E0
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    lazy: true
+    interval: 180
+    timeout: 3000
+    tolerance: 200
+    max-failed-times: 3
+    proxies:
+      - 🏁 未知-7525F8CD
+      - 🏁 未知-FC845D5C
+      - 🇺🇸 美国-2844BECE
+      - 🇺🇸 美国-49D8E407
+      - 🏁 未知-363CE1EF
+      - 🏁 未知-51E34B0E
+      - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-25BF7CEF
+      - 🇩🇪 德国-2ED85C68
+      - 🇬🇧 英国-BFD72AC5
+      - 🇫🇷 法国-5B1F60E2
+      - 🏁 未知-765E5242
+      - 🇯🇵 日本-8F11F6D1
+      - 🇯🇵 日本-218068AE
+      - 🇯🇵 日本-8F17FA97
+      - 🇱🇻 拉脱维亚-927C31CC
+      - 🇫🇮 芬兰-42970FDC
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-2D6961B3
+      - 🇩🇪 德国-BE47CD2F
+      - 🏁 未知-BC11F269
+      - 🇳🇱 荷兰-CE26533E
+      - 🇮🇳 印度-4229ED78
+      - 🇦🇺 澳大利亚-A33427B3
+      - 🇸🇬 新加坡-CB2A5E54
+      - 🇸🇬 新加坡-878C4F54
+      - 🇧🇷 巴西-38821B9D
+      - 🇳🇿 新西兰-69DAAF1A
+      - 🇮🇳 印度-8F6E461D
+      - 🇸🇬 新加坡-F07B596F
+      - 🏁 未知-6A7050E0
+  - name: 🚑 故障转移
+    type: fallback
+    url: https://cp.cloudflare.com/generate_204
+    lazy: true
+    interval: 180
+    timeout: 3000
+    max-failed-times: 3
+    proxies:
+      - 🏁 未知-7525F8CD
+      - 🏁 未知-FC845D5C
+      - 🇺🇸 美国-2844BECE
+      - 🇺🇸 美国-49D8E407
+      - 🏁 未知-363CE1EF
+      - 🏁 未知-51E34B0E
+      - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-25BF7CEF
+      - 🇩🇪 德国-2ED85C68
+      - 🇬🇧 英国-BFD72AC5
+      - 🇫🇷 法国-5B1F60E2
+      - 🏁 未知-765E5242
+      - 🇯🇵 日本-8F11F6D1
+      - 🇯🇵 日本-218068AE
+      - 🇯🇵 日本-8F17FA97
+      - 🇱🇻 拉脱维亚-927C31CC
+      - 🇫🇮 芬兰-42970FDC
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-2D6961B3
+      - 🇩🇪 德国-BE47CD2F
+      - 🏁 未知-BC11F269
+      - 🇳🇱 荷兰-CE26533E
+      - 🇮🇳 印度-4229ED78
+      - 🇦🇺 澳大利亚-A33427B3
+      - 🇸🇬 新加坡-CB2A5E54
+      - 🇸🇬 新加坡-878C4F54
+      - 🇧🇷 巴西-38821B9D
+      - 🇳🇿 新西兰-69DAAF1A
+      - 🇮🇳 印度-8F6E461D
+      - 🇸🇬 新加坡-F07B596F
+      - 🏁 未知-6A7050E0
+  - name: 🎯 全局直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🚑 故障转移
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🚑 故障转移
+      - DIRECT
+proxies:
+  - name: 🏁 未知-7525F8CD
+    type: hysteria2
+    server: vpn-us-004.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-004.fastervpn.world
+  - name: 🏁 未知-FC845D5C
+    type: hysteria2
+    server: vpn-us-020.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-020.fastervpn.world
+  - name: 🇺🇸 美国-2844BECE
+    type: hysteria2
+    server: hy2.123266.xyz
+    port: 33333
+    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    skip-cert-verify: true
+    sni: hy2.123266.xyz
+    tfo: false
+  - name: 🇺🇸 美国-49D8E407
+    type: hysteria2
+    server: vpn-us-005.fastervpn.world
+    port: 443
+    obfs-password: ""
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-005.fastervpn.world
+    tfo: false
+  - name: 🏁 未知-363CE1EF
+    type: hysteria2
+    server: vpn-us-021.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-021.fastervpn.world
+  - name: 🏁 未知-51E34B0E
+    type: hysteria2
+    server: vpn-uk-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-uk-001.fastervpn.world
+  - name: 🇧🇪 比利时-816D8E92
+    type: hysteria2
+    server: 45.120.179.89
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
+  - name: 🏁 未知-25BF7CEF
+    type: hysteria2
+    server: vpn-us-018.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-018.fastervpn.world
+  - name: 🇩🇪 德国-2ED85C68
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    skip-cert-verify: true
+    sni: dash.cloudflare.com
+    tfo: false
+  - name: 🇬🇧 英国-BFD72AC5
+    type: hysteria2
+    server: vpn-uk-002.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-uk-002.fastervpn.world
+  - name: 🇫🇷 法国-5B1F60E2
+    type: hysteria2
+    server: vpn-fr-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-fr-001.fastervpn.world
+    tfo: false
+  - name: 🏁 未知-765E5242
+    type: hysteria2
+    server: vpn-us-016.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-us-016.fastervpn.world
+  - name: 🇯🇵 日本-8F11F6D1
+    type: hysteria2
+    server: 172.105.239.243
+    port: 18451
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+    skip-cert-verify: true
+    sni: www.iq.com
+    up: ""
+  - name: 🇯🇵 日本-218068AE
+    type: hysteria2
+    server: 45.12.134.57
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+  - name: 🇯🇵 日本-8F17FA97
+    type: hysteria2
+    server: vpn-jp-003.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-jp-003.fastervpn.world
+    tfo: false
+  - name: 🇱🇻 拉脱维亚-927C31CC
+    type: hysteria2
+    server: 103.231.73.181
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
+  - name: 🇫🇮 芬兰-42970FDC
+    type: hysteria2
+    server: musicclips.videolinks.ru
+    port: 8443
+    obfs: salamander
+    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
+    password: rstnnl:XmFNUbpdnnIy7df1YtfLyzVgzt8U9GUv
+    skip-cert-verify: true
+    sni: musicclips.videolinks.ru
+    tfo: false
+  - name: 🇷🇸 塞尔维亚-DF3E3271
+    type: hysteria2
+    server: 2.56.172.83
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+  - name: 🏁 未知-2D6961B3
+    type: hysteria2
+    server: 178.18.147.66
+    port: 29900
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
+  - name: 🇩🇪 德国-BE47CD2F
+    type: hysteria2
+    server: reddeadfan.rd-team.ru
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
+    tfo: false
+  - name: 🏁 未知-BC11F269
+    type: hysteria2
+    server: vpn-kr-003.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-kr-003.fastervpn.world
+  - name: 🇳🇱 荷兰-CE26533E
+    type: hysteria2
+    server: nrealistic.nn-foto.ru
+    port: 8932
+    obfs: salamander
+    obfs-password: CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W
+    password: rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf
+    skip-cert-verify: true
+    sni: nrealistic.nn-foto.ru
+    tfo: false
+  - name: 🇮🇳 印度-4229ED78
+    type: hysteria2
+    server: 45.149.114.75
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+  - name: 🇦🇺 澳大利亚-A33427B3
+    type: hysteria2
+    server: vpn-au-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-au-001.fastervpn.world
+    tfo: false
+  - name: 🇸🇬 新加坡-CB2A5E54
+    type: hysteria2
+    server: 168.144.40.110
+    port: 20909
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 8de68ddc-e24e-4224-9c2a-457d4a8176df
+    skip-cert-verify: true
+    sni: www.iq.com
+    up: ""
+  - name: 🇸🇬 新加坡-878C4F54
+    type: hysteria2
+    server: vpn-sg-003.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-sg-003.fastervpn.world
+  - name: 🇧🇷 巴西-38821B9D
+    type: hysteria2
+    server: 45.82.245.37
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
+  - name: 🇳🇿 新西兰-69DAAF1A
+    type: hysteria2
+    server: 45.15.140.128
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
+  - name: 🇮🇳 印度-8F6E461D
+    type: hysteria2
+    server: vpn-in-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-in-001.fastervpn.world
+    tfo: false
+  - name: 🇸🇬 新加坡-F07B596F
+    type: hysteria2
+    server: vpn-sg-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-sg-001.fastervpn.world
+    tfo: false
+  - name: 🏁 未知-6A7050E0
+    type: hysteria2
+    server: vpn-sg-002.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    sni: vpn-sg-002.fastervpn.world
+    tfo: false
+rules:
+  - GEOIP,lan,🎯 全局直连,no-resolve
+  - GEOSITE,github,🚀 节点选择
+  - GEOSITE,twitter,🚀 节点选择
+  - GEOSITE,youtube,🚀 节点选择
+  - GEOSITE,google,🚀 节点选择
+  - GEOSITE,telegram,🚀 节点选择
+  - GEOSITE,netflix,🚀 节点选择
+  - GEOSITE,bilibili,🎯 全局直连
+  - GEOSITE,bahamut,🚀 节点选择
+  - GEOSITE,spotify,🚀 节点选择
+  - GEOSITE,CN,🎯 全局直连
+  - GEOSITE,geolocation-!cn,🐟 漏网之鱼
+  - GEOIP,google,🚀 节点选择
+  - GEOIP,netflix,🚀 节点选择
+  - GEOIP,telegram,🚀 节点选择
+  - GEOIP,twitter,🚀 节点选择
+  - GEOIP,CN,🎯 全局直连
+  - MATCH,🐟 漏网之鱼
