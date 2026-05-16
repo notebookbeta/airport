@@ -69,7 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇮🇳 印度-79BC4912
+      - 🇺🇸 美国-CD5C3CBC
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -79,7 +79,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇮🇳 印度-79BC4912
+      - 🇺🇸 美国-CD5C3CBC
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -88,7 +88,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇮🇳 印度-79BC4912
+      - 🇺🇸 美国-CD5C3CBC
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -104,17 +104,16 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇮🇳 印度-79BC4912
+  - name: 🇺🇸 美国-CD5C3CBC
     type: anytls
-    server: orin.9966663.xyz
-    port: 20131
+    server: 23.80.80.18
+    port: 60013
     client-fingerprint: chrome
     fp: chrome
     insecure: "1"
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    servername: orin.9966663.xyz
+    password: f4871135-0f37-44dc-9010-788e760a4b01
+    servername: us05.337777777.xyz
     skip-cert-verify: true
-    sni: orin.9966663.xyz
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
