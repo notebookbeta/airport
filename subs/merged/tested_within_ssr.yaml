@@ -72,6 +72,7 @@ proxy-groups:
       - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
       - 🇦🇿 阿塞拜疆-DD44C449
+      - 🏁 未知-95950301
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -84,6 +85,7 @@ proxy-groups:
       - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
       - 🇦🇿 阿塞拜疆-DD44C449
+      - 🏁 未知-95950301
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -95,6 +97,7 @@ proxy-groups:
       - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
       - 🇦🇿 阿塞拜疆-DD44C449
+      - 🏁 未知-95950301
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -138,6 +141,14 @@ proxies:
     obfs: http_post
     password: $$Turb0VPN$$
     protocol: auth_aes128_md5
+  - name: 🏁 未知-95950301
+    type: ssr
+    server: ssr2.762988.xyz
+    port: 33336
+    cipher: chacha20-ietf
+    obfs: tls1.2_ticket_auth
+    password: dongtaiwang.com
+    protocol: auth_chain_a
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
