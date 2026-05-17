@@ -71,13 +71,12 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-79ABF0C2
-      - 🇷🇴 罗马尼亚-88784180
       - 🏁 未知-5566999F
+      - 🇦🇺 澳大利亚-43311E6E
       - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-C180F418
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -89,13 +88,12 @@ proxy-groups:
     proxies:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-79ABF0C2
-      - 🇷🇴 罗马尼亚-88784180
       - 🏁 未知-5566999F
+      - 🇦🇺 澳大利亚-43311E6E
       - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-C180F418
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -106,13 +104,12 @@ proxy-groups:
     proxies:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-79ABF0C2
-      - 🇷🇴 罗马尼亚-88784180
       - 🏁 未知-5566999F
+      - 🇦🇺 澳大利亚-43311E6E
       - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
+      - 🇷🇴 罗马尼亚-88784180
+      - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-C180F418
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -142,24 +139,6 @@ proxies:
     password: VCYBW8pH4z
     tls: false
     username: 2XPTvGKBjj
-  - name: 🇦🇺 澳大利亚-43311E6E
-    type: http
-    server: 103.62.50.130
-    port: 443
-    skip-cert-verify: true
-    tls: true
-  - name: 🇷🇴 罗马尼亚-79ABF0C2
-    type: http
-    server: 193.176.84.40
-    port: 9002
-    skip-cert-verify: true
-    tls: true
-  - name: 🇷🇴 罗马尼亚-88784180
-    type: http
-    server: 193.176.84.25
-    port: 9002
-    skip-cert-verify: true
-    tls: true
   - name: 🏁 未知-5566999F
     type: http
     server: twmoon1-cdn-route.couldflare-cdn.com
@@ -169,21 +148,33 @@ proxies:
     sni: twmoon1-cdn-route.couldflare-cdn.com
     tls: true
     username: mrwdfNTD8M79LCukCieldrqZWqs=
+  - name: 🇦🇺 澳大利亚-43311E6E
+    type: http
+    server: 103.62.50.130
+    port: 443
+    skip-cert-verify: true
+    tls: true
   - name: 🇷🇴 罗马尼亚-31AA0468
     type: http
     server: 193.176.84.39
     port: 9002
     skip-cert-verify: true
     tls: true
-  - name: 🇷🇴 罗马尼亚-788320FD
+  - name: 🇷🇴 罗马尼亚-88784180
     type: http
-    server: 193.176.84.34
+    server: 193.176.84.25
     port: 9002
     skip-cert-verify: true
     tls: true
-  - name: 🇷🇴 罗马尼亚-BB6FE7AB
+  - name: 🇷🇴 罗马尼亚-79ABF0C2
     type: http
-    server: 193.176.84.24
+    server: 193.176.84.40
+    port: 9002
+    skip-cert-verify: true
+    tls: true
+  - name: 🇷🇴 罗马尼亚-C180F418
+    type: http
+    server: 193.176.84.20
     port: 9002
     skip-cert-verify: true
     tls: true
