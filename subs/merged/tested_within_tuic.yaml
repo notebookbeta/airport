@@ -69,14 +69,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇯🇵 日本-E652E094
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
-      - 🏁 未知-8015D2B7
       - 🏁 未知-0734C5AC
       - 🇱🇻 拉脱维亚-2DF2A1D6
-      - 🇮🇳 印度-26407A90
+      - 🇯🇵 日本-E652E094
+      - 🏁 未知-8015D2B7
       - 🇧🇷 巴西-2FA24E67
+      - 🇮🇳 印度-26407A90
       - 🇳🇿 新西兰-B378DC11
   - name: ♻️ 自动选择
     type: url-test
@@ -87,14 +87,14 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇯🇵 日本-E652E094
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
-      - 🏁 未知-8015D2B7
       - 🏁 未知-0734C5AC
       - 🇱🇻 拉脱维亚-2DF2A1D6
-      - 🇮🇳 印度-26407A90
+      - 🇯🇵 日本-E652E094
+      - 🏁 未知-8015D2B7
       - 🇧🇷 巴西-2FA24E67
+      - 🇮🇳 印度-26407A90
       - 🇳🇿 新西兰-B378DC11
   - name: 🚑 故障转移
     type: fallback
@@ -104,14 +104,14 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇯🇵 日本-E652E094
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
-      - 🏁 未知-8015D2B7
       - 🏁 未知-0734C5AC
       - 🇱🇻 拉脱维亚-2DF2A1D6
-      - 🇮🇳 印度-26407A90
+      - 🇯🇵 日本-E652E094
+      - 🏁 未知-8015D2B7
       - 🇧🇷 巴西-2FA24E67
+      - 🇮🇳 印度-26407A90
       - 🇳🇿 新西兰-B378DC11
   - name: 🎯 全局直连
     type: select
@@ -128,18 +128,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇯🇵 日本-E652E094
-    type: tuic
-    server: 45.12.134.57
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
   - name: 🇧🇪 比利时-533AADD1
     type: tuic
     server: 45.120.179.89
@@ -163,18 +151,6 @@ proxies:
     skip-cert-verify: true
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
-  - name: 🏁 未知-8015D2B7
-    type: tuic
-    server: sg2-8sb.6121999.dpdns.org
-    port: 33738
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-    sni: sg2-8sb.6121999.dpdns.org
-    udp-relay-mode: quic
-    uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
     version: 5
   - name: 🏁 未知-0734C5AC
     type: tuic
@@ -200,9 +176,9 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: 5
-  - name: 🇮🇳 印度-26407A90
+  - name: 🇯🇵 日本-E652E094
     type: tuic
-    server: 45.149.114.75
+    server: 45.12.134.57
     port: 50043
     alpn:
       - h3
@@ -212,9 +188,33 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: 5
+  - name: 🏁 未知-8015D2B7
+    type: tuic
+    server: sg2-8sb.6121999.dpdns.org
+    port: 33738
+    alpn:
+      - h3
+    congestion-controller: bbr
+    password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+    sni: sg2-8sb.6121999.dpdns.org
+    udp-relay-mode: quic
+    uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+    version: 5
   - name: 🇧🇷 巴西-2FA24E67
     type: tuic
     server: 45.82.245.37
+    port: 50043
+    alpn:
+      - h3
+    congestion-controller: bbr
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    udp-relay-mode: native
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    version: 5
+  - name: 🇮🇳 印度-26407A90
+    type: tuic
+    server: 45.149.114.75
     port: 50043
     alpn:
       - h3
