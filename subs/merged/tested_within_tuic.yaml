@@ -73,11 +73,11 @@ proxy-groups:
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
-      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🏁 未知-0734C5AC
+      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
       - 🇧🇷 巴西-2FA24E67
+      - 🇳🇿 新西兰-B378DC11
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -91,11 +91,11 @@ proxy-groups:
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
-      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🏁 未知-0734C5AC
+      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
       - 🇧🇷 巴西-2FA24E67
+      - 🇳🇿 新西兰-B378DC11
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -108,11 +108,11 @@ proxy-groups:
       - 🇧🇪 比利时-533AADD1
       - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
-      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🏁 未知-0734C5AC
+      - 🇱🇻 拉脱维亚-2DF2A1D6
       - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
       - 🇧🇷 巴西-2FA24E67
+      - 🇳🇿 新西兰-B378DC11
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -176,18 +176,6 @@ proxies:
     udp-relay-mode: quic
     uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
     version: 5
-  - name: 🇱🇻 拉脱维亚-2DF2A1D6
-    type: tuic
-    server: 103.231.73.181
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
   - name: 🏁 未知-0734C5AC
     type: tuic
     server: 2.56.172.83
@@ -200,6 +188,18 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: "5"
+  - name: 🇱🇻 拉脱维亚-2DF2A1D6
+    type: tuic
+    server: 103.231.73.181
+    port: 50043
+    alpn:
+      - h3
+    congestion-controller: bbr
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    udp-relay-mode: native
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    version: 5
   - name: 🇮🇳 印度-26407A90
     type: tuic
     server: 45.149.114.75
@@ -212,9 +212,9 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: 5
-  - name: 🇳🇿 新西兰-B378DC11
+  - name: 🇧🇷 巴西-2FA24E67
     type: tuic
-    server: 45.15.140.128
+    server: 45.82.245.37
     port: 50043
     alpn:
       - h3
@@ -224,9 +224,9 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: 5
-  - name: 🇧🇷 巴西-2FA24E67
+  - name: 🇳🇿 新西兰-B378DC11
     type: tuic
-    server: 45.82.245.37
+    server: 45.15.140.128
     port: 50043
     alpn:
       - h3
