@@ -70,7 +70,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇺🇸 美国-8F1B2D82
-      - 🇭🇰 香港-27E4B9D4
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -81,7 +80,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-8F1B2D82
-      - 🇭🇰 香港-27E4B9D4
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -91,7 +89,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-8F1B2D82
-      - 🇭🇰 香港-27E4B9D4
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -112,14 +109,6 @@ proxies:
     server: 64.69.32.8
     port: 25565
     password: 5d1a1744-0d9d-42d0-b014-28b1bfc6a7e8
-    skip-cert-verify: true
-    udp: true
-  - name: 🇭🇰 香港-27E4B9D4
-    type: anytls
-    server: 45.192.196.109
-    port: 25565
-    client-fingerprint: firefox
-    password: 5f2293ae-a2d5-4e4f-93f1-365d6997d0a0
     skip-cert-verify: true
     udp: true
 rules:
