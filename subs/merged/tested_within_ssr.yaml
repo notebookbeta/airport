@@ -69,8 +69,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
+      - 🇨🇦 加拿大-B546C917
       - 🇦🇿 阿塞拜疆-DD44C449
   - name: ♻️ 自动选择
     type: url-test
@@ -81,8 +81,8 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
+      - 🇨🇦 加拿大-B546C917
       - 🇦🇿 阿塞拜疆-DD44C449
   - name: 🚑 故障转移
     type: fallback
@@ -92,8 +92,8 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇨🇦 加拿大-B546C917
       - 🏁 未知-BAD995AC
+      - 🇨🇦 加拿大-B546C917
       - 🇦🇿 阿塞拜疆-DD44C449
   - name: 🎯 全局直连
     type: select
@@ -110,15 +110,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇨🇦 加拿大-B546C917
-    type: ssr
-    server: 79.127.233.170
-    port: 989
-    cipher: aes-256-cfb
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    protocol-param: "&"
   - name: 🏁 未知-BAD995AC
     type: ssr
     server: 109.201.152.181
@@ -129,6 +120,15 @@ proxies:
     password: shadowsocks
     protocol: origin
     protocol-param: ""
+  - name: 🇨🇦 加拿大-B546C917
+    type: ssr
+    server: 79.127.233.170
+    port: 989
+    cipher: aes-256-cfb
+    obfs: plain
+    password: f8f7aCzcPKbsF8p3
+    protocol: origin
+    protocol-param: "&"
   - name: 🇦🇿 阿塞拜疆-DD44C449
     type: ssr
     server: ssca.irundns.net
