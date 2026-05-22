@@ -69,10 +69,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇦🇿 阿塞拜疆-DD44C449
-      - 🏁 未知-BAD995AC
       - 🇨🇦 加拿大-B546C917
-      - 🏁 未知-95950301
+      - 🏁 未知-BAD995AC
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -82,10 +80,8 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇦🇿 阿塞拜疆-DD44C449
-      - 🏁 未知-BAD995AC
       - 🇨🇦 加拿大-B546C917
-      - 🏁 未知-95950301
+      - 🏁 未知-BAD995AC
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -94,10 +90,8 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇦🇿 阿塞拜疆-DD44C449
-      - 🏁 未知-BAD995AC
       - 🇨🇦 加拿大-B546C917
-      - 🏁 未知-95950301
+      - 🏁 未知-BAD995AC
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -113,15 +107,15 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇦🇿 阿塞拜疆-DD44C449
+  - name: 🇨🇦 加拿大-B546C917
     type: ssr
-    server: ssca.irundns.net
-    port: 443
-    cipher: aes-128-cfb
-    country: 🇦🇿AZ
-    obfs: http_post
-    password: $$Turb0VPN$$
-    protocol: auth_aes128_md5
+    server: 79.127.233.170
+    port: 989
+    cipher: aes-256-cfb
+    obfs: plain
+    password: f8f7aCzcPKbsF8p3
+    protocol: origin
+    protocol-param: "&"
   - name: 🏁 未知-BAD995AC
     type: ssr
     server: 109.201.152.181
@@ -132,23 +126,6 @@ proxies:
     password: shadowsocks
     protocol: origin
     protocol-param: ""
-  - name: 🇨🇦 加拿大-B546C917
-    type: ssr
-    server: 79.127.233.170
-    port: 989
-    cipher: aes-256-cfb
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    protocol-param: "&"
-  - name: 🏁 未知-95950301
-    type: ssr
-    server: ssr2.762988.xyz
-    port: 33336
-    cipher: chacha20-ietf
-    obfs: tls1.2_ticket_auth
-    password: dongtaiwang.com
-    protocol: auth_chain_a
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
