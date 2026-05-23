@@ -71,12 +71,14 @@ proxy-groups:
       - DIRECT
       - 🇺🇸 美国-2844BECE
       - 🇩🇪 德国-2ED85C68
+      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
+      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🇯🇵 日本-218068AE
+      - 🏁 未知-161212B9
       - 🇮🇳 印度-4229ED78
       - 🇧🇷 巴西-38821B9D
       - 🇳🇿 新西兰-69DAAF1A
@@ -91,12 +93,14 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🇩🇪 德国-2ED85C68
+      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
+      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🇯🇵 日本-218068AE
+      - 🏁 未知-161212B9
       - 🇮🇳 印度-4229ED78
       - 🇧🇷 巴西-38821B9D
       - 🇳🇿 新西兰-69DAAF1A
@@ -110,12 +114,14 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🇩🇪 德国-2ED85C68
+      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
+      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🇯🇵 日本-218068AE
+      - 🏁 未知-161212B9
       - 🇮🇳 印度-4229ED78
       - 🇧🇷 巴西-38821B9D
       - 🇳🇿 新西兰-69DAAF1A
@@ -150,6 +156,14 @@ proxies:
     skip-cert-verify: true
     sni: dash.cloudflare.com
     tfo: false
+  - name: 🇺🇸 美国-B46B5253
+    type: hysteria2
+    server: 185.106.96.231
+    port: 443
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s559.ccgfw.top
+    tfo: false
   - name: 🇧🇪 比利时-816D8E92
     type: hysteria2
     server: 45.120.179.89
@@ -177,6 +191,15 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
+  - name: 🇯🇵 日本-218068AE
+    type: hysteria2
+    server: 45.12.134.57
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
     server: 2.56.172.83
@@ -196,15 +219,13 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     tfo: false
-  - name: 🇯🇵 日本-218068AE
+  - name: 🏁 未知-161212B9
     type: hysteria2
-    server: 45.12.134.57
-    port: 444
-    obfs: salamander
-    obfs-password: cry_me_a_r1ver_2026
-    password: strong-secret-pass-777
+    server: vpn-kr-001.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
-    sni: www.microsoft.com
+    sni: vpn-kr-001.fastervpn.world
   - name: 🇮🇳 印度-4229ED78
     type: hysteria2
     server: 45.149.114.75
