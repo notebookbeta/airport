@@ -69,19 +69,19 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
+      - 🇺🇸 美国-265159A1
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-2D6961B3
       - 🏁 未知-CD47471D
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🏁 未知-161212B9
+      - 🇯🇵 日本-218068AE
+      - 🇫🇮 芬兰-C253FA5A
       - 🇮🇳 印度-4229ED78
-      - 🇧🇷 巴西-38821B9D
+      - 🇷🇺 俄罗斯-2569F099
       - 🇳🇿 新西兰-69DAAF1A
+      - 🇧🇷 巴西-38821B9D
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -91,19 +91,19 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
+      - 🇺🇸 美国-265159A1
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-2D6961B3
       - 🏁 未知-CD47471D
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🏁 未知-161212B9
+      - 🇯🇵 日本-218068AE
+      - 🇫🇮 芬兰-C253FA5A
       - 🇮🇳 印度-4229ED78
-      - 🇧🇷 巴西-38821B9D
+      - 🇷🇺 俄罗斯-2569F099
       - 🇳🇿 新西兰-69DAAF1A
+      - 🇧🇷 巴西-38821B9D
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -112,19 +112,19 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
+      - 🇺🇸 美国-265159A1
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🇺🇸 美国-B46B5253
       - 🇧🇪 比利时-816D8E92
+      - 🏁 未知-2D6961B3
       - 🏁 未知-CD47471D
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇯🇵 日本-218068AE
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇱🇻 拉脱维亚-927C31CC
-      - 🏁 未知-161212B9
+      - 🇯🇵 日本-218068AE
+      - 🇫🇮 芬兰-C253FA5A
       - 🇮🇳 印度-4229ED78
-      - 🇧🇷 巴西-38821B9D
+      - 🇷🇺 俄罗斯-2569F099
       - 🇳🇿 新西兰-69DAAF1A
+      - 🇧🇷 巴西-38821B9D
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -140,6 +140,17 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🇺🇸 美国-265159A1
+    type: hysteria2
+    server: usp-hdl9n8ovau.9966690.xyz
+    port: 50000
+    insecure: "1"
+    mport: 50000-59999
+    obfs: salamander
+    obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    skip-cert-verify: true
+    sni: usp-hdl9n8ovau.9966690.xyz
   - name: 🇺🇸 美国-2844BECE
     type: hysteria2
     server: hy2.123266.xyz
@@ -147,22 +158,6 @@ proxies:
     password: bce6c821-200d-421f-bf3d-7159e5246ea0
     skip-cert-verify: true
     sni: hy2.123266.xyz
-    tfo: false
-  - name: 🇩🇪 德国-2ED85C68
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
-    tfo: false
-  - name: 🇺🇸 美国-B46B5253
-    type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
     tfo: false
   - name: 🇧🇪 比利时-816D8E92
     type: hysteria2
@@ -174,6 +169,14 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     tfo: false
+  - name: 🏁 未知-2D6961B3
+    type: hysteria2
+    server: 178.18.147.66
+    port: 29900
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    tfo: false
   - name: 🏁 未知-CD47471D
     type: hysteria2
     server: 138.124.182.202
@@ -182,24 +185,6 @@ proxies:
     skip-cert-verify: false
     sni: latviyaotpusk1.home.kg
     tfo: false
-  - name: 🇫🇮 芬兰-C253FA5A
-    type: hysteria2
-    server: 45.12.146.179
-    port: 444
-    obfs: salamander
-    obfs-password: cry_me_a_r1ver_2026
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    sni: www.microsoft.com
-  - name: 🇯🇵 日本-218068AE
-    type: hysteria2
-    server: 45.12.134.57
-    port: 444
-    obfs: salamander
-    obfs-password: cry_me_a_r1ver_2026
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    sni: www.microsoft.com
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
     server: 2.56.172.83
@@ -219,13 +204,24 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     tfo: false
-  - name: 🏁 未知-161212B9
+  - name: 🇯🇵 日本-218068AE
     type: hysteria2
-    server: vpn-kr-001.fastervpn.world
-    port: 443
-    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    server: 45.12.134.57
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
     skip-cert-verify: true
-    sni: vpn-kr-001.fastervpn.world
+    sni: www.microsoft.com
+  - name: 🇫🇮 芬兰-C253FA5A
+    type: hysteria2
+    server: 45.12.146.179
+    port: 444
+    obfs: salamander
+    obfs-password: cry_me_a_r1ver_2026
+    password: strong-secret-pass-777
+    skip-cert-verify: true
+    sni: www.microsoft.com
   - name: 🇮🇳 印度-4229ED78
     type: hysteria2
     server: 45.149.114.75
@@ -235,9 +231,23 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇧🇷 巴西-38821B9D
+  - name: 🇷🇺 俄罗斯-2569F099
     type: hysteria2
-    server: 45.82.245.37
+    server: 195.133.53.33
+    port: 443
+    alpn:
+      - h3
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s516.okgfw.top
+    up: ""
+  - name: 🇳🇿 新西兰-69DAAF1A
+    type: hysteria2
+    server: 45.15.140.128
     port: 444
     obfs: salamander
     obfs-password: cry_me_a_r1ver_2026
@@ -245,9 +255,9 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     tfo: false
-  - name: 🇳🇿 新西兰-69DAAF1A
+  - name: 🇧🇷 巴西-38821B9D
     type: hysteria2
-    server: 45.15.140.128
+    server: 45.82.245.37
     port: 444
     obfs: salamander
     obfs-password: cry_me_a_r1ver_2026
