@@ -69,15 +69,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇧🇪 比利时-533AADD1
-      - 🏁 未知-0734C5AC
-      - 🇯🇵 日本-E652E094
       - 🇫🇮 芬兰-70CF3BB0
-      - 🇱🇻 拉脱维亚-2DF2A1D6
+      - 🏁 未知-0734C5AC
       - 🏁 未知-8015D2B7
-      - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
-      - 🇩🇪 德国-84158FBE
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -87,15 +81,9 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇧🇪 比利时-533AADD1
-      - 🏁 未知-0734C5AC
-      - 🇯🇵 日本-E652E094
       - 🇫🇮 芬兰-70CF3BB0
-      - 🇱🇻 拉脱维亚-2DF2A1D6
+      - 🏁 未知-0734C5AC
       - 🏁 未知-8015D2B7
-      - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
-      - 🇩🇪 德国-84158FBE
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -104,15 +92,9 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇧🇪 比利时-533AADD1
-      - 🏁 未知-0734C5AC
-      - 🇯🇵 日本-E652E094
       - 🇫🇮 芬兰-70CF3BB0
-      - 🇱🇻 拉脱维亚-2DF2A1D6
+      - 🏁 未知-0734C5AC
       - 🏁 未知-8015D2B7
-      - 🇮🇳 印度-26407A90
-      - 🇳🇿 新西兰-B378DC11
-      - 🇩🇪 德国-84158FBE
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -128,9 +110,9 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇧🇪 比利时-533AADD1
+  - name: 🇫🇮 芬兰-70CF3BB0
     type: tuic
-    server: 45.120.179.89
+    server: 45.12.146.179
     port: 50043
     alpn:
       - h3
@@ -152,42 +134,6 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: "5"
-  - name: 🇯🇵 日本-E652E094
-    type: tuic
-    server: 45.12.134.57
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
-  - name: 🇫🇮 芬兰-70CF3BB0
-    type: tuic
-    server: 45.12.146.179
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
-  - name: 🇱🇻 拉脱维亚-2DF2A1D6
-    type: tuic
-    server: 103.231.73.181
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
   - name: 🏁 未知-8015D2B7
     type: tuic
     server: sg2-8sb.6121999.dpdns.org
@@ -199,43 +145,6 @@ proxies:
     sni: sg2-8sb.6121999.dpdns.org
     udp-relay-mode: quic
     uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-    version: 5
-  - name: 🇮🇳 印度-26407A90
-    type: tuic
-    server: 45.149.114.75
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
-  - name: 🇳🇿 新西兰-B378DC11
-    type: tuic
-    server: 45.15.140.128
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
-  - name: 🇩🇪 德国-84158FBE
-    type: tuic
-    server: ip1.758733.xyz
-    port: 10088
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    sni: apple.com
-    udp-relay-mode: native
-    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
     version: 5
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
