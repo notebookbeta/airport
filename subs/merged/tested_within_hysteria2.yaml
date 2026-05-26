@@ -71,15 +71,17 @@ proxy-groups:
       - DIRECT
       - 🇺🇸 美国-2844BECE
       - 🇫🇮 芬兰-C253FA5A
-      - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-01C59AFD
-      - 🇨🇦 加拿大-D1088BF0
-      - 🇭🇰 香港-0B0B2BA7
-      - 🇺🇸 美国-D4285948
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
+      - 🏁 未知-29E96AA5
+      - 🇺🇸 美国-9FABC3BE
       - 🇨🇦 加拿大-EA596D3A
+      - 🇨🇦 加拿大-D1088BF0
+      - 🇨🇦 加拿大-0F246DD0
+      - 🇷🇺 俄罗斯-2569F099
+      - 🏁 未知-01C59AFD
+      - 🇭🇰 香港-0B0B2BA7
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -91,15 +93,17 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🇫🇮 芬兰-C253FA5A
-      - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-01C59AFD
-      - 🇨🇦 加拿大-D1088BF0
-      - 🇭🇰 香港-0B0B2BA7
-      - 🇺🇸 美国-D4285948
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
+      - 🏁 未知-29E96AA5
+      - 🇺🇸 美国-9FABC3BE
       - 🇨🇦 加拿大-EA596D3A
+      - 🇨🇦 加拿大-D1088BF0
+      - 🇨🇦 加拿大-0F246DD0
+      - 🇷🇺 俄罗斯-2569F099
+      - 🏁 未知-01C59AFD
+      - 🇭🇰 香港-0B0B2BA7
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -110,15 +114,17 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🇫🇮 芬兰-C253FA5A
-      - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-01C59AFD
-      - 🇨🇦 加拿大-D1088BF0
-      - 🇭🇰 香港-0B0B2BA7
-      - 🇺🇸 美国-D4285948
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
+      - 🏁 未知-29E96AA5
+      - 🇺🇸 美国-9FABC3BE
       - 🇨🇦 加拿大-EA596D3A
+      - 🇨🇦 加拿大-D1088BF0
+      - 🇨🇦 加拿大-0F246DD0
+      - 🇷🇺 俄罗斯-2569F099
+      - 🏁 未知-01C59AFD
+      - 🇭🇰 香港-0B0B2BA7
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -151,21 +157,13 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🏁 未知-29E96AA5
+  - name: 🇩🇪 德国-2ED85C68
     type: hysteria2
-    server: 31.59.39.192
-    port: 500
-    password: 8vX6A657pl
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
     skip-cert-verify: true
-    sni: www.amd.com
-    tfo: false
-  - name: 🏁 未知-CD47471D
-    type: hysteria2
-    server: 138.124.182.202
-    port: 8443
-    password: jOIItw1h4D
-    skip-cert-verify: false
-    sni: latviyaotpusk1.home.kg
+    sni: dash.cloudflare.com
     tfo: false
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
@@ -176,50 +174,32 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇩🇪 德国-2ED85C68
+  - name: 🏁 未知-CD47471D
     type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
+    server: 138.124.182.202
+    port: 8443
+    password: jOIItw1h4D
+    skip-cert-verify: false
+    sni: latviyaotpusk1.home.kg
     tfo: false
-  - name: 🏁 未知-01C59AFD
+  - name: 🏁 未知-29E96AA5
     type: hysteria2
-    server: 5.39.254.225
-    port: 2056
-    password: fe9b17e8-41e1-4d1b-b588-93a23665724f
+    server: 31.59.39.192
+    port: 500
+    password: 8vX6A657pl
     skip-cert-verify: true
-    sni: ld1.mangshe.xyz
+    sni: www.amd.com
     tfo: false
-  - name: 🇨🇦 加拿大-D1088BF0
+  - name: 🇺🇸 美国-9FABC3BE
     type: hysteria2
-    server: zf.9966690.xyz
-    port: 60039
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zf.9966690.xyz
-  - name: 🇭🇰 香港-0B0B2BA7
-    type: hysteria2
-    server: hkt.ccwink.cc
-    port: 56309
-    password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887
-    skip-cert-verify: true
-    sni: hkt.ccwink.cc
-    udp: true
-  - name: 🇺🇸 美国-D4285948
-    type: hysteria2
-    server: zfde.9966690.xyz
-    port: 60005
+    server: zfusp.9966690.xyz
+    port: 60004
     insecure: "1"
     obfs: salamander
     obfs-password: ZDQxZDhjZDk4ZFAwYjIwNA==
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
-    sni: zfde.9966690.xyz
+    sni: zfusp.9966690.xyz
   - name: 🇨🇦 加拿大-EA596D3A
     type: hysteria2
     server: zf.9966690.xyz
@@ -230,6 +210,56 @@ proxies:
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
     sni: zf.9966690.xyz
+  - name: 🇨🇦 加拿大-D1088BF0
+    type: hysteria2
+    server: zf.9966690.xyz
+    port: 60039
+    insecure: "1"
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk42TU23T365A==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    skip-cert-verify: true
+    sni: zf.9966690.xyz
+  - name: 🇨🇦 加拿大-0F246DD0
+    type: hysteria2
+    server: zf.9966690.xyz
+    port: 60037
+    insecure: "1"
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk42TU23T365A==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    skip-cert-verify: true
+    sni: zf.9966690.xyz
+  - name: 🇷🇺 俄罗斯-2569F099
+    type: hysteria2
+    server: 195.133.53.33
+    port: 443
+    alpn:
+      - h3
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s516.okgfw.top
+    up: ""
+  - name: 🏁 未知-01C59AFD
+    type: hysteria2
+    server: 5.39.254.225
+    port: 2056
+    password: fe9b17e8-41e1-4d1b-b588-93a23665724f
+    skip-cert-verify: true
+    sni: ld1.mangshe.xyz
+    tfo: false
+  - name: 🇭🇰 香港-0B0B2BA7
+    type: hysteria2
+    server: hkt.ccwink.cc
+    port: 56309
+    password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887
+    skip-cert-verify: true
+    sni: hkt.ccwink.cc
+    udp: true
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
