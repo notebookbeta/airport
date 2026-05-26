@@ -70,7 +70,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🏁 未知-0734C5AC
-      - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
       - 🇩🇪 德国-84158FBE
   - name: ♻️ 自动选择
@@ -83,7 +82,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-0734C5AC
-      - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
       - 🇩🇪 德国-84158FBE
   - name: 🚑 故障转移
@@ -95,7 +93,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-0734C5AC
-      - 🇫🇮 芬兰-70CF3BB0
       - 🏁 未知-8015D2B7
       - 🇩🇪 德国-84158FBE
   - name: 🎯 全局直连
@@ -125,18 +122,6 @@ proxies:
     udp-relay-mode: native
     uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     version: "5"
-  - name: 🇫🇮 芬兰-70CF3BB0
-    type: tuic
-    server: 45.12.146.179
-    port: 50043
-    alpn:
-      - h3
-    congestion-controller: bbr
-    password: strong-secret-pass-777
-    skip-cert-verify: true
-    udp-relay-mode: native
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    version: 5
   - name: 🏁 未知-8015D2B7
     type: tuic
     server: sg2-8sb.6121999.dpdns.org
