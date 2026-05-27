@@ -72,10 +72,8 @@ proxy-groups:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
       - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
       - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -88,10 +86,8 @@ proxy-groups:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
       - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
       - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -103,10 +99,8 @@ proxy-groups:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
       - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-31AA0468
-      - 🇷🇴 罗马尼亚-788320FD
-      - 🇷🇴 罗马尼亚-BB6FE7AB
       - 🇷🇴 罗马尼亚-79ABF0C2
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -142,27 +136,15 @@ proxies:
     port: 443
     skip-cert-verify: true
     tls: true
-  - name: 🇷🇴 罗马尼亚-31AA0468
+  - name: 🇷🇴 罗马尼亚-79ABF0C2
     type: http
-    server: 193.176.84.39
-    port: 9002
-    skip-cert-verify: true
-    tls: true
-  - name: 🇷🇴 罗马尼亚-788320FD
-    type: http
-    server: 193.176.84.34
+    server: 193.176.84.40
     port: 9002
     skip-cert-verify: true
     tls: true
   - name: 🇷🇴 罗马尼亚-BB6FE7AB
     type: http
     server: 193.176.84.24
-    port: 9002
-    skip-cert-verify: true
-    tls: true
-  - name: 🇷🇴 罗马尼亚-79ABF0C2
-    type: http
-    server: 193.176.84.40
     port: 9002
     skip-cert-verify: true
     tls: true

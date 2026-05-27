@@ -71,16 +71,12 @@ proxy-groups:
       - DIRECT
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-B46B5253
+      - 🇺🇸 美国-437AD453
       - 🇯🇵 日本-7F544D7B
-      - 🇬🇧 英国-09A5B37A
-      - 🏁 未知-29E96AA5
-      - 🇬🇧 英国-17F9EA1B
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇺🇸 美国-9FABC3BE
-      - 🇭🇰 香港-C15A0071
+      - 🏁 未知-29E96AA5
+      - 🇬🇧 英国-17F9EA1B
       - 🇹🇼 中国台湾省-B2E90B45
   - name: ♻️ 自动选择
     type: url-test
@@ -93,16 +89,12 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-B46B5253
+      - 🇺🇸 美国-437AD453
       - 🇯🇵 日本-7F544D7B
-      - 🇬🇧 英国-09A5B37A
-      - 🏁 未知-29E96AA5
-      - 🇬🇧 英国-17F9EA1B
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇺🇸 美国-9FABC3BE
-      - 🇭🇰 香港-C15A0071
+      - 🏁 未知-29E96AA5
+      - 🇬🇧 英国-17F9EA1B
       - 🇹🇼 中国台湾省-B2E90B45
   - name: 🚑 故障转移
     type: fallback
@@ -114,16 +106,12 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-B46B5253
+      - 🇺🇸 美国-437AD453
       - 🇯🇵 日本-7F544D7B
-      - 🇬🇧 英国-09A5B37A
-      - 🏁 未知-29E96AA5
-      - 🇬🇧 英国-17F9EA1B
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇫🇮 芬兰-C253FA5A
-      - 🇺🇸 美国-9FABC3BE
-      - 🇭🇰 香港-C15A0071
+      - 🏁 未知-29E96AA5
+      - 🇬🇧 英国-17F9EA1B
       - 🇹🇼 中国台湾省-B2E90B45
   - name: 🎯 全局直连
     type: select
@@ -158,46 +146,20 @@ proxies:
     skip-cert-verify: true
     sni: claude.ai
     tfo: false
-  - name: 🇺🇸 美国-B46B5253
-    type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
-    tfo: false
-  - name: 🇯🇵 日本-7F544D7B
-    type: hysteria2
-    server: zfusp.9966690.xyz
-    port: 60019
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zfusp.9966690.xyz
-  - name: 🇬🇧 英国-09A5B37A
+  - name: 🇺🇸 美国-437AD453
     type: hysteria2
     server: zf.9966690.xyz
-    port: 60025
+    port: 60045
     insecure: "1"
     obfs: salamander
     obfs-password: YzgyOTkwNDk42TU23T365A==
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
     sni: zf.9966690.xyz
-  - name: 🏁 未知-29E96AA5
-    type: hysteria2
-    server: 31.59.39.192
-    port: 500
-    password: 8vX6A657pl
-    skip-cert-verify: true
-    sni: www.amd.com
-    tfo: false
-  - name: 🇬🇧 英国-17F9EA1B
+  - name: 🇯🇵 日本-7F544D7B
     type: hysteria2
     server: zfusp.9966690.xyz
-    port: 60024
+    port: 60019
     insecure: "1"
     obfs: salamander
     obfs-password: YzgyOTkwNDk42TU23T365A==
@@ -221,32 +183,21 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇫🇮 芬兰-C253FA5A
+  - name: 🏁 未知-29E96AA5
     type: hysteria2
-    server: 45.12.146.179
-    port: 444
-    obfs: salamander
-    obfs-password: cry_me_a_r1ver_2026
-    password: strong-secret-pass-777
+    server: 31.59.39.192
+    port: 500
+    password: 8vX6A657pl
     skip-cert-verify: true
-    sni: www.microsoft.com
-  - name: 🇺🇸 美国-9FABC3BE
+    sni: www.amd.com
+    tfo: false
+  - name: 🇬🇧 英国-17F9EA1B
     type: hysteria2
     server: zfusp.9966690.xyz
-    port: 60004
+    port: 60024
     insecure: "1"
     obfs: salamander
-    obfs-password: ZDQxZDhjZDk4ZFAwYjIwNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zfusp.9966690.xyz
-  - name: 🇭🇰 香港-C15A0071
-    type: hysteria2
-    server: zfusp.9966690.xyz
-    port: 60009
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
+    obfs-password: YzgyOTkwNDk42TU23T365A==
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
     sni: zfusp.9966690.xyz
