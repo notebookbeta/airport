@@ -69,18 +69,13 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇺🇸 美国-FBEBD06F
-      - 🇯🇵 日本-7F544D7B
-      - 🇺🇸 美国-CA8F405E
-      - 🇺🇸 美国-99115BC2
-      - 🇬🇧 英国-17F9EA1B
-      - 🇺🇸 美国-143BFE88
+      - 🏁 未知-01C59AFD
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -90,18 +85,13 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇺🇸 美国-FBEBD06F
-      - 🇯🇵 日本-7F544D7B
-      - 🇺🇸 美国-CA8F405E
-      - 🇺🇸 美国-99115BC2
-      - 🇬🇧 英国-17F9EA1B
-      - 🇺🇸 美国-143BFE88
+      - 🏁 未知-01C59AFD
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -110,18 +100,13 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
       - 🏁 未知-CD47471D
       - 🇫🇮 芬兰-C253FA5A
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇺🇸 美国-FBEBD06F
-      - 🇯🇵 日本-7F544D7B
-      - 🇺🇸 美国-CA8F405E
-      - 🇺🇸 美国-99115BC2
-      - 🇬🇧 英国-17F9EA1B
-      - 🇺🇸 美国-143BFE88
+      - 🏁 未知-01C59AFD
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -137,6 +122,14 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🇺🇸 美国-2844BECE
+    type: hysteria2
+    server: hy2.123266.xyz
+    port: 33333
+    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    skip-cert-verify: true
+    sni: hy2.123266.xyz
+    tfo: false
   - name: 🏁 未知-DBEA1307
     type: hysteria2
     server: 204.12.170.168
@@ -146,14 +139,6 @@ proxies:
     password: de72b066a61a39af
     skip-cert-verify: true
     sni: claude.ai
-    tfo: false
-  - name: 🇺🇸 美国-2844BECE
-    type: hysteria2
-    server: hy2.123266.xyz
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
-    skip-cert-verify: true
-    sni: hy2.123266.xyz
     tfo: false
   - name: 🏁 未知-29E96AA5
     type: hysteria2
@@ -189,66 +174,14 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇺🇸 美国-FBEBD06F
+  - name: 🏁 未知-01C59AFD
     type: hysteria2
-    server: zfusp.9966690.xyz
-    port: 60044
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    server: 5.39.254.225
+    port: 2056
+    password: fe9b17e8-41e1-4d1b-b588-93a23665724f
     skip-cert-verify: true
-    sni: zfusp.9966690.xyz
-  - name: 🇯🇵 日本-7F544D7B
-    type: hysteria2
-    server: zfusp.9966690.xyz
-    port: 60019
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zfusp.9966690.xyz
-  - name: 🇺🇸 美国-CA8F405E
-    type: hysteria2
-    server: zf.9966690.xyz
-    port: 60041
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zf.9966690.xyz
-  - name: 🇺🇸 美国-99115BC2
-    type: hysteria2
-    server: zf.9966690.xyz
-    port: 60044
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zf.9966690.xyz
-  - name: 🇬🇧 英国-17F9EA1B
-    type: hysteria2
-    server: zfusp.9966690.xyz
-    port: 60024
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zfusp.9966690.xyz
-  - name: 🇺🇸 美国-143BFE88
-    type: hysteria2
-    server: zfde.9966690.xyz
-    port: 60045
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: zfde.9966690.xyz
+    sni: ld1.mangshe.xyz
+    tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
