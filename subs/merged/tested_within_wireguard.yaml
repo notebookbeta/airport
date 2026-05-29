@@ -70,12 +70,10 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇨🇦 加拿大-52A221D5
-      - 🏁 未知-CF2ACCA0
-      - 🏁 未知-096B9834
-      - 🏁 未知-C1A8FD06
       - 🏁 未知-4A562C25
-      - 🏁 未知-10E78D28
       - 🏁 未知-20BF05D2
+      - 🏁 未知-096B9834
+      - 🏁 未知-B2718582
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -86,12 +84,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇨🇦 加拿大-52A221D5
-      - 🏁 未知-CF2ACCA0
-      - 🏁 未知-096B9834
-      - 🏁 未知-C1A8FD06
       - 🏁 未知-4A562C25
-      - 🏁 未知-10E78D28
       - 🏁 未知-20BF05D2
+      - 🏁 未知-096B9834
+      - 🏁 未知-B2718582
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -101,12 +97,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇨🇦 加拿大-52A221D5
-      - 🏁 未知-CF2ACCA0
-      - 🏁 未知-096B9834
-      - 🏁 未知-C1A8FD06
       - 🏁 未知-4A562C25
-      - 🏁 未知-10E78D28
       - 🏁 未知-20BF05D2
+      - 🏁 未知-096B9834
+      - 🏁 未知-B2718582
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -141,53 +135,6 @@ proxies:
     wnoisecount: "5"
     wnoisedelay: "5"
     wpayloadsize: 40-90
-  - name: 🏁 未知-CF2ACCA0
-    type: wireguard
-    server: 162.159.192.2
-    port: 500
-    ip: 172.16.0.2/32
-    keepalive: "5"
-    mtu: 1280
-    persistent-keepalive: "5"
-    private-key: +AYnqJYinZIJ6yZwIjmirctmPqzfctf6H2fTqywa/XM=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    reserved:
-      - 39
-      - 4
-      - 107
-    udp: true
-    wnoise: quic
-    wnoisecount: "5"
-    wnoisedelay: "5"
-    wpayloadsize: 40-90
-  - name: 🏁 未知-096B9834
-    type: wireguard
-    server: 162.159.195.4
-    port: 2371
-    ip: 172.16.0.2/32
-    mtu: 1380
-    presharedkey: ""
-    private-key: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    reserved:
-      - 225
-      - 17
-      - 205
-    udp: true
-  - name: 🏁 未知-C1A8FD06
-    type: wireguard
-    server: 162.159.192.1
-    port: 500
-    ip: 172.16.0.2/32
-    mtu: 1280
-    presharedkey: ""
-    private-key: cMxekgAnVSNb+rgOySV+74ogaJhqpJtShZaECZCY6k4=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    reserved:
-      - 236
-      - 210
-      - 245
-    udp: true
   - name: 🏁 未知-4A562C25
     type: wireguard
     server: 162.159.192.6
@@ -207,20 +154,6 @@ proxies:
     wnoisecount: "5"
     wnoisedelay: "5"
     wpayloadsize: 40-90
-  - name: 🏁 未知-10E78D28
-    type: wireguard
-    server: 162.159.192.3
-    port: 500
-    ip: 172.16.0.2/32
-    mtu: 1280
-    presharedkey: ""
-    private-key: 2D+QMolgGWVRVGdJJvsQ4VBDCcZTym0c1sFN00PeMUs=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    reserved:
-      - 213
-      - 74
-      - 19
-    udp: true
   - name: 🏁 未知-20BF05D2
     type: wireguard
     server: 162.159.192.5
@@ -235,6 +168,39 @@ proxies:
       - 220
       - 50
       - 126
+    udp: true
+    wnoise: quic
+    wnoisecount: "5"
+    wnoisedelay: "5"
+    wpayloadsize: 40-90
+  - name: 🏁 未知-096B9834
+    type: wireguard
+    server: 162.159.195.4
+    port: 2371
+    ip: 172.16.0.2/32
+    mtu: 1380
+    presharedkey: ""
+    private-key: CBMxaub4dG7Q9W91x4+lUCqtF9eV1BN+4osBfWZNXHs=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    reserved:
+      - 225
+      - 17
+      - 205
+    udp: true
+  - name: 🏁 未知-B2718582
+    type: wireguard
+    server: 162.159.192.6
+    port: 2408
+    ip: 172.16.0.2/32
+    keepalive: "5"
+    mtu: 1280
+    persistent-keepalive: "5"
+    private-key: GGdi0j+S7ypUOCm+Rj/h5R3ifRHRyQHcKkK8rZeE+Ho=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    reserved:
+      - 247
+      - 153
+      - 203
     udp: true
     wnoise: quic
     wnoisecount: "5"

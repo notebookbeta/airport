@@ -71,9 +71,8 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🏁 未知-6CB3CBB7
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -85,9 +84,8 @@ proxy-groups:
     proxies:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🏁 未知-6CB3CBB7
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -98,9 +96,8 @@ proxy-groups:
     proxies:
       - 🏁 未知-535DDB12
       - 🇭🇰 香港-1E3D1CFC
-      - 🏁 未知-6CB3CBB7
-      - 🇦🇺 澳大利亚-43311E6E
-      - 🇷🇴 罗马尼亚-C180F418
+      - 🇷🇴 罗马尼亚-788320FD
+      - 🇷🇴 罗马尼亚-BB6FE7AB
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -130,23 +127,15 @@ proxies:
     password: VCYBW8pH4z
     tls: false
     username: 2XPTvGKBjj
-  - name: 🏁 未知-6CB3CBB7
+  - name: 🇷🇴 罗马尼亚-788320FD
     type: http
-    server: fb473ba2-te7og0-tfmrui-duku.hkt.cdnhuawei.com
-    port: 8443
-    password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-    sni: fb473ba2-te7og0-tfmrui-duku.hkt.cdnhuawei.com
-    tls: true
-    username: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-  - name: 🇦🇺 澳大利亚-43311E6E
-    type: http
-    server: 103.62.50.130
-    port: 443
+    server: 193.176.84.34
+    port: 9002
     skip-cert-verify: true
     tls: true
-  - name: 🇷🇴 罗马尼亚-C180F418
+  - name: 🇷🇴 罗马尼亚-BB6FE7AB
     type: http
-    server: 193.176.84.20
+    server: 193.176.84.24
     port: 9002
     skip-cert-verify: true
     tls: true
