@@ -69,11 +69,11 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -83,11 +83,11 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -96,11 +96,11 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DBEA1307
       - 🏁 未知-29E96AA5
-      - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-CD47471D
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -116,6 +116,14 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🇺🇸 美国-2844BECE
+    type: hysteria2
+    server: hy2.123266.xyz
+    port: 33333
+    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    skip-cert-verify: true
+    sni: hy2.123266.xyz
+    tfo: false
   - name: 🏁 未知-DBEA1307
     type: hysteria2
     server: 204.12.170.168
@@ -126,14 +134,6 @@ proxies:
     skip-cert-verify: true
     sni: claude.ai
     tfo: false
-  - name: 🇺🇸 美国-2844BECE
-    type: hysteria2
-    server: hy2.123266.xyz
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
-    skip-cert-verify: true
-    sni: hy2.123266.xyz
-    tfo: false
   - name: 🏁 未知-29E96AA5
     type: hysteria2
     server: 31.59.39.192
@@ -141,14 +141,6 @@ proxies:
     password: 8vX6A657pl
     skip-cert-verify: true
     sni: www.amd.com
-    tfo: false
-  - name: 🏁 未知-CD47471D
-    type: hysteria2
-    server: 138.124.182.202
-    port: 8443
-    password: jOIItw1h4D
-    skip-cert-verify: false
-    sni: latviyaotpusk1.home.kg
     tfo: false
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
@@ -159,6 +151,14 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
+  - name: 🏁 未知-CD47471D
+    type: hysteria2
+    server: 138.124.182.202
+    port: 8443
+    password: jOIItw1h4D
+    skip-cert-verify: false
+    sni: latviyaotpusk1.home.kg
+    tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
