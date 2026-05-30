@@ -72,10 +72,8 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-29E96AA5
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-2569F099
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -88,10 +86,8 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-29E96AA5
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-2569F099
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -103,10 +99,8 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-29E96AA5
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-CD47471D
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-2569F099
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -148,14 +142,6 @@ proxies:
     skip-cert-verify: true
     sni: www.amd.com
     tfo: false
-  - name: 🇩🇪 德国-2ED85C68
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
-    tfo: false
   - name: 🏁 未知-CD47471D
     type: hysteria2
     server: 138.124.182.202
@@ -173,20 +159,6 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇷🇺 俄罗斯-2569F099
-    type: hysteria2
-    server: 195.133.53.33
-    port: 443
-    alpn:
-      - h3
-    down: ""
-    fingerprint: ""
-    obfs: ""
-    obfs-password: ""
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s516.okgfw.top
-    up: ""
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
