@@ -71,6 +71,7 @@ proxy-groups:
       - DIRECT
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
+      - 🏁 未知-29E96AA5
       - 🇷🇸 塞尔维亚-DF3E3271
   - name: ♻️ 自动选择
     type: url-test
@@ -83,6 +84,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
+      - 🏁 未知-29E96AA5
       - 🇷🇸 塞尔维亚-DF3E3271
   - name: 🚑 故障转移
     type: fallback
@@ -94,6 +96,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-DBEA1307
+      - 🏁 未知-29E96AA5
       - 🇷🇸 塞尔维亚-DF3E3271
   - name: 🎯 全局直连
     type: select
@@ -127,6 +130,14 @@ proxies:
     password: de72b066a61a39af
     skip-cert-verify: true
     sni: claude.ai
+    tfo: false
+  - name: 🏁 未知-29E96AA5
+    type: hysteria2
+    server: 31.59.39.192
+    port: 500
+    password: 8vX6A657pl
+    skip-cert-verify: true
+    sni: www.amd.com
     tfo: false
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
