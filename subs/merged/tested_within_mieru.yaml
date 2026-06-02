@@ -70,7 +70,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇿🇦 南非-25652E3A
-      - 🇺🇸 美国-EFA0B6A9
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -81,7 +80,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇿🇦 南非-25652E3A
-      - 🇺🇸 美国-EFA0B6A9
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -91,7 +89,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇿🇦 南非-25652E3A
-      - 🇺🇸 美国-EFA0B6A9
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -111,14 +108,6 @@ proxies:
     type: mieru
     server: 45.221.98.11
     port: 28866
-    multiplexing: MULTIPLEXING_LOW
-    password: dongtaiwang.com
-    transport: TCP
-    username: dongtaiwang.com
-  - name: 🇺🇸 美国-EFA0B6A9
-    type: mieru
-    server: 157.254.223.44
-    port: 34567
     multiplexing: MULTIPLEXING_LOW
     password: dongtaiwang.com
     transport: TCP
