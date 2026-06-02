@@ -73,8 +73,13 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇩🇪 德国-AB6299D1
+      - 🇩🇪 德国-B424B2DF
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-F85ADBB2
+      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -88,8 +93,13 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇩🇪 德国-AB6299D1
+      - 🇩🇪 德国-B424B2DF
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-F85ADBB2
+      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -102,8 +112,13 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇩🇪 德国-AB6299D1
+      - 🇩🇪 德国-B424B2DF
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-F85ADBB2
+      - 🇷🇺 俄罗斯-FC7BDE33
+      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -154,6 +169,42 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
+  - name: 🇩🇪 德国-AB6299D1
+    type: hysteria2
+    server: gy.gotogle.com
+    port: 443
+    alpn:
+      - h3
+    password: 7ce9a8d0-2cb2-4b8d-8de9-262c1d6597ac
+    sni: gy.gotogle.com
+    udp: true
+  - name: 🇩🇪 德国-B424B2DF
+    type: hysteria2
+    server: fd.gotogle.com
+    port: 443
+    alpn:
+      - h3
+    password: 7ce9a8d0-2cb2-4b8d-8de9-262c1d6597ac
+    sni: fd.gotogle.com
+    udp: true
+  - name: 🏁 未知-9418FEA2
+    type: hysteria2
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
+    tfo: false
+  - name: 🇭🇰 香港-F85ADBB2
+    type: hysteria2
+    server: 47.76.94.197
+    port: 58771
+    password: IG9Sundefinedvx6RJ
+    skip-cert-verify: true
+    sni: go.microsoft.com
+    tfo: false
   - name: 🇷🇺 俄罗斯-FC7BDE33
     type: hysteria2
     server: 80.66.81.78
@@ -164,14 +215,24 @@ proxies:
     skip-cert-verify: false
     sni: tunel1.washing.help
     tfo: false
-  - name: 🇭🇰 香港-F85ADBB2
+  - name: 🇰🇷 韩国-90A45407
     type: hysteria2
-    server: 47.76.94.197
-    port: 58771
-    password: IG9Sundefinedvx6RJ
-    skip-cert-verify: true
-    sni: go.microsoft.com
-    tfo: false
+    server: okrs01.7770123.xyz
+    port: 15219
+    alpn:
+      - h3
+    password: ff488c48-b745-4d65-a6a1-0339be0b7fd7
+    sni: okrs01.7770123.xyz
+    udp: true
+  - name: 🇸🇬 新加坡-B84003E3
+    type: hysteria2
+    server: osg01.7770123.xyz
+    port: 17398
+    alpn:
+      - h3
+    password: ff488c48-b745-4d65-a6a1-0339be0b7fd7
+    sni: osg01.7770123.xyz
+    udp: true
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择

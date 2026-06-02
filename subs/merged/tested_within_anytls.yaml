@@ -71,6 +71,8 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港-E3CA91F6
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-4675C8FF
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -82,6 +84,8 @@ proxy-groups:
     proxies:
       - 🇭🇰 香港-E3CA91F6
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-4675C8FF
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -92,6 +96,8 @@ proxy-groups:
     proxies:
       - 🇭🇰 香港-E3CA91F6
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-4675C8FF
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -124,6 +130,22 @@ proxies:
     password: 1b609740-eec2-11ef-8543-f23c93136cb3
     skip-cert-verify: true
     sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+    udp: true
+  - name: 🇭🇰 香港-A2B049D4
+    type: anytls
+    server: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
+    port: 8443
+    password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    skip-cert-verify: true
+    sni: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
+    udp: true
+  - name: 🇭🇰 香港-4675C8FF
+    type: anytls
+    server: a7d75baa-te5ts0-tip01z-1gevg.hkt2.cdnhuawei.com
+    port: 8443
+    password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+    skip-cert-verify: true
+    sni: a7d75baa-te5ts0-tip01z-1gevg.hkt2.cdnhuawei.com
     udp: true
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
