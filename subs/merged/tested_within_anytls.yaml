@@ -70,8 +70,10 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-B25F5C85
+      - 🇭🇰 香港-88D61D2B
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -82,8 +84,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-B25F5C85
+      - 🇭🇰 香港-88D61D2B
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -93,8 +97,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-7BC094F3
+      - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-B25F5C85
+      - 🇭🇰 香港-88D61D2B
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -123,6 +129,23 @@ proxies:
     skip-cert-verify: false
     sni: nauk.eu.cc
     udp: true
+  - name: 🇭🇰 香港-7BC094F3
+    type: anytls
+    server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+    port: 8300
+    client-fingerprint: chrome
+    password: 1b609740-eec2-11ef-8543-f23c93136cb3
+    skip-cert-verify: true
+    sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+    udp: true
+  - name: 🇭🇰 香港-A2B049D4
+    type: anytls
+    server: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
+    port: 8443
+    password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    skip-cert-verify: true
+    sni: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
+    udp: true
   - name: 🇭🇰 香港-B25F5C85
     type: anytls
     server: 56518553-te8ao0-tfnl0i-au6.hkt.east.wctype.com
@@ -133,15 +156,13 @@ proxies:
     skip-cert-verify: true
     sni: 56518553-te8ao0-tfnl0i-au6.hkt.east.wctype.com
     udp: true
-  - name: 🇭🇰 香港-7BC094F3
+  - name: 🇭🇰 香港-88D61D2B
     type: anytls
-    server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    port: 8300
-    client-fingerprint: chrome
-    password: 1b609740-eec2-11ef-8543-f23c93136cb3
+    server: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+    port: 8443
+    password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
     skip-cert-verify: true
-    sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    udp: true
+    sni: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
