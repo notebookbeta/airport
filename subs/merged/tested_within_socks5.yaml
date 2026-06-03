@@ -69,7 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇰🇷 韩国-453F7315
+      - 🏁 未知-A410DB6D
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -79,7 +79,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇰🇷 韩国-453F7315
+      - 🏁 未知-A410DB6D
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -88,7 +88,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇰🇷 韩国-453F7315
+      - 🏁 未知-A410DB6D
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -104,12 +104,12 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇰🇷 韩国-453F7315
+  - name: 🏁 未知-A410DB6D
     type: socks5
-    server: 121.169.46.116
-    port: 1090
-    tls: false
-    username: T2clM0QlM0Q6
+    server: 5.255.99.75
+    port: 1080
+    password: ""
+    username: ""
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择

@@ -71,13 +71,15 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-4C17BEE4
       - 🏁 未知-DBEA1307
-      - 🏁 未知-6F1C3C98
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DF92102A
+      - 🇩🇪 德国-2ED85C68
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-11E85382
+      - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
-      - 🏁 未知-E62EEA49
+      - 🏁 未知-9418FEA2
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -89,13 +91,15 @@ proxy-groups:
     proxies:
       - 🏁 未知-4C17BEE4
       - 🏁 未知-DBEA1307
-      - 🏁 未知-6F1C3C98
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DF92102A
+      - 🇩🇪 德国-2ED85C68
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-11E85382
+      - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
-      - 🏁 未知-E62EEA49
+      - 🏁 未知-9418FEA2
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -106,13 +110,15 @@ proxy-groups:
     proxies:
       - 🏁 未知-4C17BEE4
       - 🏁 未知-DBEA1307
-      - 🏁 未知-6F1C3C98
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-DF92102A
+      - 🇩🇪 德国-2ED85C68
       - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-11E85382
+      - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
-      - 🏁 未知-E62EEA49
+      - 🏁 未知-9418FEA2
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -146,14 +152,6 @@ proxies:
     skip-cert-verify: true
     sni: claude.ai
     tfo: false
-  - name: 🏁 未知-6F1C3C98
-    type: hysteria2
-    server: s544.ccgfw.online
-    port: 443
-    password: 205d6869-02ca-3b36-b933-be2465250c7e
-    skip-cert-verify: false
-    sni: u716087us544.ccgfw.online
-    tfo: false
   - name: 🏁 未知-798A29E5
     type: hysteria2
     server: 155.248.209.237
@@ -170,6 +168,22 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
+  - name: 🏁 未知-DF92102A
+    type: hysteria2
+    server: 31.59.129.225
+    port: 443
+    password: 205d6869-02ca-3b36-b933-be2465250c7e
+    skip-cert-verify: false
+    sni: u716087us1218.csgfw.top
+    tfo: false
+  - name: 🇩🇪 德国-2ED85C68
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    skip-cert-verify: true
+    sni: dash.cloudflare.com
+    tfo: false
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
     server: 2.56.172.83
@@ -179,6 +193,22 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
+  - name: 🏁 未知-11E85382
+    type: hysteria2
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    skip-cert-verify: false
+    sni: files.fantoff.online
+    tfo: false
+  - name: 🇺🇸 美国-B46B5253
+    type: hysteria2
+    server: 185.106.96.231
+    port: 443
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s559.ccgfw.top
+    tfo: false
   - name: 🇷🇺 俄罗斯-FC7BDE33
     type: hysteria2
     server: 80.66.81.78
@@ -189,22 +219,15 @@ proxies:
     skip-cert-verify: false
     sni: tunel1.washing.help
     tfo: false
-  - name: 🇸🇬 新加坡-B84003E3
+  - name: 🏁 未知-9418FEA2
     type: hysteria2
-    server: osg01.7770123.xyz
-    port: 17398
-    alpn:
-      - h3
-    password: ff488c48-b745-4d65-a6a1-0339be0b7fd7
-    sni: osg01.7770123.xyz
-    udp: true
-  - name: 🏁 未知-E62EEA49
-    type: hysteria2
-    server: 154.36.158.117
-    port: 443
-    password: v4inZq1ZiWniPmJsz6Le
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
     skip-cert-verify: true
-    sni: www.bing.com
+    sni: reddeadfan.rd-team.ru
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
