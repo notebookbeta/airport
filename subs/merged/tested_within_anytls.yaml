@@ -70,9 +70,10 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇭🇰 香港-E3CA91F6
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
       - 🇭🇰 香港-4675C8FF
+      - 🇭🇰 香港-88D61D2B
+      - 🇭🇰 香港-7BC094F3
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -83,9 +84,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇭🇰 香港-E3CA91F6
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
       - 🇭🇰 香港-4675C8FF
+      - 🇭🇰 香港-88D61D2B
+      - 🇭🇰 香港-7BC094F3
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -95,9 +97,10 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇭🇰 香港-E3CA91F6
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
       - 🇭🇰 香港-4675C8FF
+      - 🇭🇰 香港-88D61D2B
+      - 🇭🇰 香港-7BC094F3
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -122,15 +125,6 @@ proxies:
     skip-cert-verify: true
     sni: 1b30bbb8-t9wqo0-tb5ob4-64gc.hkt.east.wctype.com
     udp: true
-  - name: 🇭🇰 香港-7BC094F3
-    type: anytls
-    server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    port: 8300
-    client-fingerprint: chrome
-    password: 1b609740-eec2-11ef-8543-f23c93136cb3
-    skip-cert-verify: true
-    sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    udp: true
   - name: 🇭🇰 香港-A2B049D4
     type: anytls
     server: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
@@ -146,6 +140,22 @@ proxies:
     password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
     skip-cert-verify: true
     sni: a7d75baa-te5ts0-tip01z-1gevg.hkt2.cdnhuawei.com
+    udp: true
+  - name: 🇭🇰 香港-88D61D2B
+    type: anytls
+    server: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+    port: 8443
+    password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+    skip-cert-verify: true
+    sni: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+  - name: 🇭🇰 香港-7BC094F3
+    type: anytls
+    server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
+    port: 8300
+    client-fingerprint: chrome
+    password: 1b609740-eec2-11ef-8543-f23c93136cb3
+    skip-cert-verify: true
+    sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
     udp: true
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
