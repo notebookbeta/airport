@@ -69,9 +69,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-88D61D2B
   - name: ♻️ 自动选择
@@ -83,9 +82,8 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-88D61D2B
   - name: 🚑 故障转移
@@ -96,9 +94,8 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-C3404006
-      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-7BC094F3
       - 🇭🇰 香港-B25F5C85
       - 🇭🇰 香港-88D61D2B
   - name: 🎯 全局直连
@@ -116,18 +113,13 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇺🇸 美国-C3404006
+  - name: 🇭🇰 香港-A2B049D4
     type: anytls
-    server: 38.99.248.217
-    port: 51112
-    alpn:
-      - h2
-    client-fingerprint: chrome
-    fp: chrome
-    packet-encoding: xudp
-    password: 1c61845e-2a5c-45ae-a34e-8968cb85cc0d
-    skip-cert-verify: false
-    sni: nauk.eu.cc
+    server: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
+    port: 8443
+    password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    skip-cert-verify: true
+    sni: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
     udp: true
   - name: 🇭🇰 香港-7BC094F3
     type: anytls
@@ -137,14 +129,6 @@ proxies:
     password: 1b609740-eec2-11ef-8543-f23c93136cb3
     skip-cert-verify: true
     sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    udp: true
-  - name: 🇭🇰 香港-A2B049D4
-    type: anytls
-    server: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
-    port: 8443
-    password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-    skip-cert-verify: true
-    sni: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
     udp: true
   - name: 🇭🇰 香港-B25F5C85
     type: anytls
