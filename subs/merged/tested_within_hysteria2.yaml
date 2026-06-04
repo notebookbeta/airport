@@ -72,15 +72,15 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-11E85382
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
       - 🇷🇺 俄罗斯-2569F099
-      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
+      - 🏁 未知-E2022774
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -93,15 +93,15 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-11E85382
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
       - 🇷🇺 俄罗斯-2569F099
-      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
+      - 🏁 未知-E2022774
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -113,15 +113,15 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-11E85382
       - 🇷🇸 塞尔维亚-DF3E3271
       - 🇺🇸 美国-B46B5253
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇸🇬 新加坡-B84003E3
       - 🇷🇺 俄罗斯-2569F099
-      - 🇰🇷 韩国-90A45407
+      - 🇸🇬 新加坡-B84003E3
+      - 🏁 未知-E2022774
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -163,14 +163,6 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🇩🇪 德国-2ED85C68
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
-    tfo: false
   - name: 🏁 未知-9418FEA2
     type: hysteria2
     server: 94.156.155.56
@@ -180,6 +172,14 @@ proxies:
     password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
     skip-cert-verify: true
     sni: reddeadfan.rd-team.ru
+    tfo: false
+  - name: 🇩🇪 德国-2ED85C68
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    skip-cert-verify: true
+    sni: dash.cloudflare.com
     tfo: false
   - name: 🏁 未知-11E85382
     type: hysteria2
@@ -216,15 +216,6 @@ proxies:
     skip-cert-verify: false
     sni: tunel1.washing.help
     tfo: false
-  - name: 🇸🇬 新加坡-B84003E3
-    type: hysteria2
-    server: osg01.7770123.xyz
-    port: 17398
-    alpn:
-      - h3
-    password: ff488c48-b745-4d65-a6a1-0339be0b7fd7
-    sni: osg01.7770123.xyz
-    udp: true
   - name: 🇷🇺 俄罗斯-2569F099
     type: hysteria2
     server: 195.133.53.33
@@ -239,15 +230,23 @@ proxies:
     skip-cert-verify: false
     sni: s516.okgfw.top
     up: ""
-  - name: 🇰🇷 韩国-90A45407
+  - name: 🇸🇬 新加坡-B84003E3
     type: hysteria2
-    server: okrs01.7770123.xyz
-    port: 15219
+    server: osg01.7770123.xyz
+    port: 17398
     alpn:
       - h3
     password: ff488c48-b745-4d65-a6a1-0339be0b7fd7
-    sni: okrs01.7770123.xyz
+    sni: osg01.7770123.xyz
     udp: true
+  - name: 🏁 未知-E2022774
+    type: hysteria2
+    server: 89.251.26.111
+    port: 55555
+    password: e3a5bb40be52de65
+    skip-cert-verify: true
+    sni: apps.apple.com
+    tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
