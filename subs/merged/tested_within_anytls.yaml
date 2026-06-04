@@ -69,11 +69,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇭🇰 香港-88D61D2B
-      - 🇭🇰 香港-927ACC26
-      - 🇭🇰 香港-DDA36C4B
-      - 🇭🇰 香港-7A6397AD
+      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-88D61D2B
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -83,11 +81,9 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇭🇰 香港-88D61D2B
-      - 🇭🇰 香港-927ACC26
-      - 🇭🇰 香港-DDA36C4B
-      - 🇭🇰 香港-7A6397AD
+      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-88D61D2B
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -96,11 +92,9 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇭🇰 香港-88D61D2B
-      - 🇭🇰 香港-927ACC26
-      - 🇭🇰 香港-DDA36C4B
-      - 🇭🇰 香港-7A6397AD
+      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-A2B049D4
+      - 🇭🇰 香港-88D61D2B
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -116,45 +110,18 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇭🇰 香港-88D61D2B
+  - name: 🇺🇸 美国-C3404006
     type: anytls
-    server: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
-    port: 8443
-    password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-    skip-cert-verify: true
-    sni: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
-  - name: 🇭🇰 香港-927ACC26
-    type: anytls
-    server: 85677df4-t9w4g0-tbo02e-4mce.hkt.east.wctype.com
-    port: 8300
-    client-fingerprint: chrome
-    password: 06c625ea-5902-11ee-9e87-f23c9313b177
-    skip-cert-verify: true
-    sni: 85677df4-t9w4g0-tbo02e-4mce.hkt.east.wctype.com
-    udp: true
-  - name: 🇭🇰 香港-DDA36C4B
-    type: anytls
-    server: a0ef01f1-t9w4g0-tedj2a-1glq.hkt.east.wctype.com
-    port: 8300
-    allowInsecure: "1"
+    server: 38.99.248.217
+    port: 51112
+    alpn:
+      - h2
     client-fingerprint: chrome
     fp: chrome
     packet-encoding: xudp
-    password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-    skip-cert-verify: true
-    sni: a0ef01f1-t9w4g0-tedj2a-1glq.hkt.east.wctype.com
-    udp: true
-  - name: 🇭🇰 香港-7A6397AD
-    type: anytls
-    server: 4d060537-t9xz40-tb70mp-4550.hkt.east.wctype.com
-    port: 8300
-    allowInsecure: "1"
-    client-fingerprint: chrome
-    fp: chrome
-    packet-encoding: xudp
-    password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-    skip-cert-verify: true
-    sni: 4d060537-t9xz40-tb70mp-4550.hkt.east.wctype.com
+    password: 1c61845e-2a5c-45ae-a34e-8968cb85cc0d
+    skip-cert-verify: false
+    sni: nauk.eu.cc
     udp: true
   - name: 🇭🇰 香港-A2B049D4
     type: anytls
@@ -164,6 +131,13 @@ proxies:
     skip-cert-verify: true
     sni: 8e58ada0-te7og0-tir0zk-1hpo0.hkt2.cdnhuawei.com
     udp: true
+  - name: 🇭🇰 香港-88D61D2B
+    type: anytls
+    server: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
+    port: 8443
+    password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+    skip-cert-verify: true
+    sni: 199dc802-te5ts0-twuk0i-1hzyr.hkt2.cdnhuawei.com
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
