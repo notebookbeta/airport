@@ -69,19 +69,20 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
+      - 🇺🇸 美国-B46B5253
+      - 🇩🇪 德国-2ED85C68
       - 🇫🇷 法国-3926257B
-      - 🏁 未知-9418FEA2
       - 🏁 未知-11E85382
       - 🏁 未知-5764655D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇯🇵 日本-E96106D0
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-2CF780E5
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-5B93A3C9
+      - 🏁 未知-9418FEA2
+      - 🇮🇱 以色列-D25CEABC
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -91,19 +92,20 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
+      - 🇺🇸 美国-B46B5253
+      - 🇩🇪 德国-2ED85C68
       - 🇫🇷 法国-3926257B
-      - 🏁 未知-9418FEA2
       - 🏁 未知-11E85382
       - 🏁 未知-5764655D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇯🇵 日本-E96106D0
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-2CF780E5
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-5B93A3C9
+      - 🏁 未知-9418FEA2
+      - 🇮🇱 以色列-D25CEABC
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -112,19 +114,20 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🏁 未知-DBEA1307
-      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
+      - 🇺🇸 美国-B46B5253
+      - 🇩🇪 德国-2ED85C68
       - 🇫🇷 法国-3926257B
-      - 🏁 未知-9418FEA2
       - 🏁 未知-11E85382
       - 🏁 未知-5764655D
-      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇯🇵 日本-E96106D0
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-2CF780E5
+      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🏁 未知-5B93A3C9
+      - 🏁 未知-9418FEA2
+      - 🇮🇱 以色列-D25CEABC
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -140,6 +143,22 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🏁 未知-798A29E5
+    type: hysteria2
+    server: 155.248.209.237
+    port: 33333
+    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    skip-cert-verify: true
+    sni: hy2.123266.xyz
+    tfo: false
+  - name: 🇺🇸 美国-2844BECE
+    type: hysteria2
+    server: hy2.123266.xyz
+    port: 33333
+    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    skip-cert-verify: true
+    sni: hy2.123266.xyz
+    tfo: false
   - name: 🏁 未知-DBEA1307
     type: hysteria2
     server: 204.12.170.168
@@ -160,29 +179,21 @@ proxies:
     skip-cert-verify: false
     sni: 2.us.chuanyun-endpoint.cc
     tfo: false
-  - name: 🏁 未知-798A29E5
+  - name: 🇺🇸 美国-B46B5253
     type: hysteria2
-    server: 155.248.209.237
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
-    skip-cert-verify: true
-    sni: hy2.123266.xyz
+    server: 185.106.96.231
+    port: 443
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s559.ccgfw.top
     tfo: false
-  - name: 🇺🇸 美国-2844BECE
+  - name: 🇩🇪 德国-2ED85C68
     type: hysteria2
-    server: hy2.123266.xyz
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
     skip-cert-verify: true
-    sni: hy2.123266.xyz
-    tfo: false
-  - name: 🏁 未知-B1F8F316
-    type: hysteria2
-    server: 62.210.29.98
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: bing.com
+    sni: dash.cloudflare.com
     tfo: false
   - name: 🇫🇷 法国-3926257B
     type: hysteria2
@@ -191,16 +202,6 @@ proxies:
     password: github.com/Alvin9999-newpac/fanqiang
     skip-cert-verify: true
     sni: bing.com
-    tfo: false
-  - name: 🏁 未知-9418FEA2
-    type: hysteria2
-    server: 94.156.155.56
-    port: 2026
-    obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
-    skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
     tfo: false
   - name: 🏁 未知-11E85382
     type: hysteria2
@@ -220,6 +221,14 @@ proxies:
     skip-cert-verify: true
     sni: musicclips.videolinks.ru
     tfo: false
+  - name: 🇯🇵 日本-E96106D0
+    type: hysteria2
+    server: vps-orange-jpn.maze-maker.com
+    port: 37749
+    password: C6TpRY6HyT
+    skip-cert-verify: false
+    sni: vps-orange-jpn.maze-maker.com
+    tfo: false
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
     server: 2.56.172.83
@@ -229,35 +238,37 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇯🇵 日本-E96106D0
+  - name: 🏁 未知-5B93A3C9
     type: hysteria2
-    server: vps-orange-jpn.maze-maker.com
-    port: 37749
-    password: C6TpRY6HyT
-    skip-cert-verify: false
-    sni: vps-orange-jpn.maze-maker.com
-    tfo: false
-  - name: 🇷🇺 俄罗斯-FC7BDE33
-    type: hysteria2
-    server: 80.66.81.78
-    port: 9443
+    server: 144.31.224.163
+    port: 8932
     obfs: salamander
-    obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-    password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-    skip-cert-verify: false
-    sni: tunel1.washing.help
+    obfs-password: CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W
+    password: rstnnl2705:ZmRjX7MkeEqZ5GQUIT5VO53ARuy6nrmQ
+    skip-cert-verify: true
+    sni: nrealistic.nn-foto.ru
     tfo: false
-  - name: 🇦🇹 奥地利-2CF780E5
+  - name: 🏁 未知-9418FEA2
     type: hysteria2
-    server: nl-at.9966690.xyz
-    port: 30000
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
+    tfo: false
+  - name: 🇮🇱 以色列-D25CEABC
+    type: hysteria2
+    server: il.9966690.xyz
+    port: 40000
     insecure: "1"
-    mport: 30000-39999
+    mport: 40000-49999
     obfs: salamander
     obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
-    sni: nl-at.9966690.xyz
+    sni: il.9966690.xyz
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
