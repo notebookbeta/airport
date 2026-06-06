@@ -69,20 +69,17 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇺🇸 美国-5FF22A17
-      - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-9418FEA2
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-5764655D
-      - 🏁 未知-11E85382
-      - 🇫🇷 法国-3926257B
+      - 🇫🇷 法国-FAD5673D
       - 🏁 未知-5B93A3C9
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇯🇵 日本-9FE30B0B
+      - 🇫🇷 法国-3926257B
+      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -92,20 +89,17 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-5FF22A17
-      - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-9418FEA2
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-5764655D
-      - 🏁 未知-11E85382
-      - 🇫🇷 法国-3926257B
+      - 🇫🇷 法国-FAD5673D
       - 🏁 未知-5B93A3C9
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇯🇵 日本-9FE30B0B
+      - 🇫🇷 法国-3926257B
+      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -114,20 +108,17 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-5FF22A17
-      - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇩🇪 德国-2ED85C68
-      - 🏁 未知-9418FEA2
-      - 🏁 未知-B1F8F316
+      - 🏁 未知-DBEA1307
+      - 🇺🇸 美国-5FF22A17
       - 🏁 未知-5764655D
-      - 🏁 未知-11E85382
-      - 🇫🇷 法国-3926257B
+      - 🇫🇷 法国-FAD5673D
       - 🏁 未知-5B93A3C9
       - 🇷🇸 塞尔维亚-DF3E3271
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇯🇵 日本-9FE30B0B
+      - 🇫🇷 法国-3926257B
+      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -143,26 +134,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇺🇸 美国-5FF22A17
-    type: hysteria2
-    server: 2.us.chuanyun-endpoint.cc
-    port: 8443
-    obfs: salamander
-    obfs-password: DTmHKckozGB3krkv
-    password: ad9c6715-c894-4d75-ba11-2c86fba1887c
-    skip-cert-verify: false
-    sni: 2.us.chuanyun-endpoint.cc
-    tfo: false
-  - name: 🏁 未知-DBEA1307
-    type: hysteria2
-    server: 204.12.170.168
-    port: 443
-    obfs: salamander
-    obfs-password: 726c9c641a068d74
-    password: de72b066a61a39af
-    skip-cert-verify: true
-    sni: claude.ai
-    tfo: false
   - name: 🏁 未知-798A29E5
     type: hysteria2
     server: 155.248.209.237
@@ -179,31 +150,25 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🇩🇪 德国-2ED85C68
+  - name: 🏁 未知-DBEA1307
     type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
-    tfo: false
-  - name: 🏁 未知-9418FEA2
-    type: hysteria2
-    server: 94.156.155.56
-    port: 2026
+    server: 204.12.170.168
+    port: 443
     obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    obfs-password: 726c9c641a068d74
+    password: de72b066a61a39af
     skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
+    sni: claude.ai
     tfo: false
-  - name: 🏁 未知-B1F8F316
+  - name: 🇺🇸 美国-5FF22A17
     type: hysteria2
-    server: 62.210.29.98
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: bing.com
+    server: 2.us.chuanyun-endpoint.cc
+    port: 8443
+    obfs: salamander
+    obfs-password: DTmHKckozGB3krkv
+    password: ad9c6715-c894-4d75-ba11-2c86fba1887c
+    skip-cert-verify: false
+    sni: 2.us.chuanyun-endpoint.cc
     tfo: false
   - name: 🏁 未知-5764655D
     type: hysteria2
@@ -215,22 +180,17 @@ proxies:
     skip-cert-verify: true
     sni: musicclips.videolinks.ru
     tfo: false
-  - name: 🏁 未知-11E85382
+  - name: 🇫🇷 法国-FAD5673D
     type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    skip-cert-verify: false
-    sni: files.fantoff.online
-    tfo: false
-  - name: 🇫🇷 法国-3926257B
-    type: hysteria2
-    server: 62.210.26.173
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
+    server: fr.9966690.xyz
+    port: 40000
+    insecure: "1"
+    mport: 40000-49999
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk42TU23T365A==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
-    sni: bing.com
-    tfo: false
+    sni: fr.9966690.xyz
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
     server: 144.31.224.163
@@ -250,30 +210,30 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🇷🇺 俄罗斯-FC7BDE33
+  - name: 🇫🇷 法国-3926257B
     type: hysteria2
-    server: 80.66.81.78
-    port: 9443
-    obfs: salamander
-    obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-    password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-    skip-cert-verify: false
-    sni: tunel1.washing.help
+    server: 62.210.26.173
+    port: 64772
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: bing.com
     tfo: false
-  - name: 🇯🇵 日本-9FE30B0B
+  - name: 🇯🇵 日本-E96106D0
     type: hysteria2
-    server: 150.251.158.76
-    port: 443
-    alpn:
-      - h3
-    down: ""
-    fingerprint: ""
-    obfs: ""
-    obfs-password: ""
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    server: vps-orange-jpn.maze-maker.com
+    port: 37749
+    password: C6TpRY6HyT
     skip-cert-verify: false
-    sni: s647.okgg.top
-    up: ""
+    sni: vps-orange-jpn.maze-maker.com
+    tfo: false
+  - name: 🏁 未知-B1F8F316
+    type: hysteria2
+    server: 62.210.29.98
+    port: 64772
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: bing.com
+    tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
