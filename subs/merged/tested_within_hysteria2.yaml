@@ -73,19 +73,16 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇸🇪 瑞典-C1FBD20C
-      - 🏁 未知-5764655D
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-11E85382
-      - 🇸🇪 瑞典-A786A3F7
-      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
-      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-5764655D
+      - 🏁 未知-11E85382
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-5B93A3C9
+      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-5A906024
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇯🇵 日本-9FE30B0B
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -99,19 +96,16 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇸🇪 瑞典-C1FBD20C
-      - 🏁 未知-5764655D
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-11E85382
-      - 🇸🇪 瑞典-A786A3F7
-      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
-      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-5764655D
+      - 🏁 未知-11E85382
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-5B93A3C9
+      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-5A906024
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇯🇵 日本-9FE30B0B
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -124,19 +118,16 @@ proxy-groups:
       - 🏁 未知-DBEA1307
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇸🇪 瑞典-C1FBD20C
-      - 🏁 未知-5764655D
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-11E85382
-      - 🇸🇪 瑞典-A786A3F7
-      - 🇷🇸 塞尔维亚-DF3E3271
+      - 🇩🇪 德国-2ED85C68
       - 🏁 未知-9418FEA2
-      - 🇯🇵 日本-E96106D0
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-5764655D
+      - 🏁 未知-11E85382
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-5B93A3C9
+      - 🇷🇸 塞尔维亚-DF3E3271
       - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇦🇹 奥地利-5A906024
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇯🇵 日本-9FE30B0B
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -188,13 +179,23 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🇫🇷 法国-3926257B
+  - name: 🇩🇪 德国-2ED85C68
     type: hysteria2
-    server: 62.210.26.173
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
     skip-cert-verify: true
-    sni: bing.com
+    sni: dash.cloudflare.com
+    tfo: false
+  - name: 🏁 未知-9418FEA2
+    type: hysteria2
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
     tfo: false
   - name: 🏁 未知-B1F8F316
     type: hysteria2
@@ -204,17 +205,6 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
     tfo: false
-  - name: 🇸🇪 瑞典-C1FBD20C
-    type: hysteria2
-    server: usa-se.9966690.xyz
-    port: 40000
-    insecure: "1"
-    mport: 40000-49999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: usa-se.9966690.xyz
   - name: 🏁 未知-5764655D
     type: hysteria2
     server: 2.26.97.21
@@ -224,6 +214,22 @@ proxies:
     password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
     skip-cert-verify: true
     sni: musicclips.videolinks.ru
+    tfo: false
+  - name: 🏁 未知-11E85382
+    type: hysteria2
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    skip-cert-verify: false
+    sni: files.fantoff.online
+    tfo: false
+  - name: 🇫🇷 法国-3926257B
+    type: hysteria2
+    server: 62.210.26.173
+    port: 64772
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: bing.com
     tfo: false
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
@@ -235,25 +241,6 @@ proxies:
     skip-cert-verify: true
     sni: nrealistic.nn-foto.ru
     tfo: false
-  - name: 🏁 未知-11E85382
-    type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    skip-cert-verify: false
-    sni: files.fantoff.online
-    tfo: false
-  - name: 🇸🇪 瑞典-A786A3F7
-    type: hysteria2
-    server: usa-se.9966690.xyz
-    port: 20000
-    insecure: "1"
-    mport: 20000-29999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: usa-se.9966690.xyz
   - name: 🇷🇸 塞尔维亚-DF3E3271
     type: hysteria2
     server: 2.56.172.83
@@ -263,24 +250,6 @@ proxies:
     password: strong-secret-pass-777
     skip-cert-verify: true
     sni: www.microsoft.com
-  - name: 🏁 未知-9418FEA2
-    type: hysteria2
-    server: 94.156.155.56
-    port: 2026
-    obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
-    skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
-    tfo: false
-  - name: 🇯🇵 日本-E96106D0
-    type: hysteria2
-    server: vps-orange-jpn.maze-maker.com
-    port: 37749
-    password: C6TpRY6HyT
-    skip-cert-verify: false
-    sni: vps-orange-jpn.maze-maker.com
-    tfo: false
   - name: 🇷🇺 俄罗斯-FC7BDE33
     type: hysteria2
     server: 80.66.81.78
@@ -291,28 +260,20 @@ proxies:
     skip-cert-verify: false
     sni: tunel1.washing.help
     tfo: false
-  - name: 🇦🇹 奥地利-5A906024
+  - name: 🇯🇵 日本-9FE30B0B
     type: hysteria2
-    server: nl-at.9966690.xyz
-    port: 40000
-    insecure: "1"
-    mport: 40000-49999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: nl-at.9966690.xyz
-  - name: 🇮🇱 以色列-D8F1E03B
-    type: hysteria2
-    server: il.9966690.xyz
-    port: 20000
-    insecure: "1"
-    mport: 20000-29999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: il.9966690.xyz
+    server: 150.251.158.76
+    port: 443
+    alpn:
+      - h3
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s647.okgg.top
+    up: ""
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
