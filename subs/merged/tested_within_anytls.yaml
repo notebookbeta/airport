@@ -69,7 +69,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-88C20A52
   - name: ♻️ 自动选择
     type: url-test
@@ -80,7 +79,6 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-88C20A52
   - name: 🚑 故障转移
     type: fallback
@@ -90,7 +88,6 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-C3404006
       - 🇭🇰 香港-88C20A52
   - name: 🎯 全局直连
     type: select
@@ -107,19 +104,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇺🇸 美国-C3404006
-    type: anytls
-    server: 38.99.248.217
-    port: 51112
-    alpn:
-      - h2
-    client-fingerprint: chrome
-    fp: chrome
-    packet-encoding: xudp
-    password: 1c61845e-2a5c-45ae-a34e-8968cb85cc0d
-    skip-cert-verify: false
-    sni: nauk.eu.cc
-    udp: true
   - name: 🇭🇰 香港-88C20A52
     type: anytls
     server: 4562ef30-tegxs0-tr9h64-1f1f1.hk2.hyhuawei.com
