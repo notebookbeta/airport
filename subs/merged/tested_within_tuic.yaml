@@ -69,6 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
+      - 🏁 未知-8015D2B7
       - 🇸🇬 新加坡-718E3F45
   - name: ♻️ 自动选择
     type: url-test
@@ -79,6 +80,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
+      - 🏁 未知-8015D2B7
       - 🇸🇬 新加坡-718E3F45
   - name: 🚑 故障转移
     type: fallback
@@ -88,6 +90,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
+      - 🏁 未知-8015D2B7
       - 🇸🇬 新加坡-718E3F45
   - name: 🎯 全局直连
     type: select
@@ -104,6 +107,18 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🏁 未知-8015D2B7
+    type: tuic
+    server: sg2-8sb.6121999.dpdns.org
+    port: 33738
+    alpn:
+      - h3
+    congestion-controller: bbr
+    password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+    sni: sg2-8sb.6121999.dpdns.org
+    udp-relay-mode: quic
+    uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+    version: 5
   - name: 🇸🇬 新加坡-718E3F45
     type: tuic
     server: 8.219.215.193
