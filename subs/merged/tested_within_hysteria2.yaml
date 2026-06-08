@@ -71,17 +71,18 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-88404753
-      - 🏁 未知-9418FEA2
-      - 🇩🇪 德国-2ED85C68
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇭🇰 香港-E2022774
-      - 🇳🇱 荷兰-59EC401C
-      - 🇫🇷 法国-FAD5673D
+      - 🇩🇪 德国-5F00176D
       - 🏁 未知-5764655D
+      - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-2F10847A
+      - 🇩🇪 德国-2ED85C68
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-9418FEA2
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-88404753
+      - 🏁 未知-04078CCF
+      - 🇯🇵 日本-9FE30B0B
+      - 🇳🇱 荷兰-59EC401C
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -93,17 +94,18 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-88404753
-      - 🏁 未知-9418FEA2
-      - 🇩🇪 德国-2ED85C68
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇭🇰 香港-E2022774
-      - 🇳🇱 荷兰-59EC401C
-      - 🇫🇷 法国-FAD5673D
+      - 🇩🇪 德国-5F00176D
       - 🏁 未知-5764655D
+      - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-2F10847A
+      - 🇩🇪 德国-2ED85C68
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-9418FEA2
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-88404753
+      - 🏁 未知-04078CCF
+      - 🇯🇵 日本-9FE30B0B
+      - 🇳🇱 荷兰-59EC401C
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -114,17 +116,18 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
-      - 🏁 未知-88404753
-      - 🏁 未知-9418FEA2
-      - 🇩🇪 德国-2ED85C68
-      - 🇫🇷 法国-3926257B
-      - 🏁 未知-B1F8F316
-      - 🇭🇰 香港-E2022774
-      - 🇳🇱 荷兰-59EC401C
-      - 🇫🇷 法国-FAD5673D
+      - 🇩🇪 德国-5F00176D
       - 🏁 未知-5764655D
+      - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-2F10847A
+      - 🇩🇪 德国-2ED85C68
+      - 🏁 未知-B1F8F316
+      - 🏁 未知-9418FEA2
+      - 🇫🇷 法国-3926257B
+      - 🏁 未知-88404753
+      - 🏁 未知-04078CCF
+      - 🇯🇵 日本-9FE30B0B
+      - 🇳🇱 荷兰-59EC401C
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -156,13 +159,27 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🏁 未知-04078CCF
+  - name: 🇩🇪 德国-5F00176D
     type: hysteria2
-    server: 89.167.25.28
-    port: 11004
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: fi-node.farnet.top
+    server: 5.45.100.100
+    port: 51511
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: miaoge110
+    skip-cert-verify: true
+    sni: www.bing.com
+    up: ""
+  - name: 🏁 未知-5764655D
+    type: hysteria2
+    server: 2.26.97.21
+    port: 8443
+    obfs: salamander
+    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
+    password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
+    skip-cert-verify: true
+    sni: musicclips.videolinks.ru
     tfo: false
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
@@ -174,12 +191,30 @@ proxies:
     skip-cert-verify: true
     sni: nrealistic.nn-foto.ru
     tfo: false
-  - name: 🏁 未知-88404753
+  - name: 🇺🇸 美国-2F10847A
     type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
+    server: 192.129.193.206
+    port: 48653
+    password: c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d
+    skip-cert-verify: true
+    sni: www.bing.com
+    tfo: false
+  - name: 🇩🇪 德国-2ED85C68
+    type: hysteria2
+    server: 130.61.50.75
+    port: 6443
+    password: zhangyang
+    skip-cert-verify: true
+    sni: dash.cloudflare.com
+    tfo: false
+  - name: 🏁 未知-B1F8F316
+    type: hysteria2
+    server: 62.210.29.98
+    port: 64772
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: bing.com
+    tfo: false
   - name: 🏁 未知-9418FEA2
     type: hysteria2
     server: 94.156.155.56
@@ -190,14 +225,6 @@ proxies:
     skip-cert-verify: true
     sni: reddeadfan.rd-team.ru
     tfo: false
-  - name: 🇩🇪 德国-2ED85C68
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    skip-cert-verify: true
-    sni: dash.cloudflare.com
-    tfo: false
   - name: 🇫🇷 法国-3926257B
     type: hysteria2
     server: 62.210.26.173
@@ -206,22 +233,34 @@ proxies:
     skip-cert-verify: true
     sni: bing.com
     tfo: false
-  - name: 🏁 未知-B1F8F316
+  - name: 🏁 未知-88404753
     type: hysteria2
-    server: 62.210.29.98
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: bing.com
-    tfo: false
-  - name: 🇭🇰 香港-E2022774
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    sni: files.fantoff.online
+  - name: 🏁 未知-04078CCF
     type: hysteria2
-    server: 89.251.26.111
-    port: 55555
-    password: e3a5bb40be52de65
-    skip-cert-verify: true
-    sni: apps.apple.com
+    server: 89.167.25.28
+    port: 11004
+    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    skip-cert-verify: false
+    sni: fi-node.farnet.top
     tfo: false
+  - name: 🇯🇵 日本-9FE30B0B
+    type: hysteria2
+    server: 150.251.158.76
+    port: 443
+    alpn:
+      - h3
+    down: ""
+    fingerprint: ""
+    obfs: ""
+    obfs-password: ""
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s647.okgg.top
+    up: ""
   - name: 🇳🇱 荷兰-59EC401C
     type: hysteria2
     server: hy2.aspidnet.xyz
@@ -231,27 +270,6 @@ proxies:
     password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     skip-cert-verify: false
     sni: hy2.aspidnet.xyz
-    tfo: false
-  - name: 🇫🇷 法国-FAD5673D
-    type: hysteria2
-    server: fr.9966690.xyz
-    port: 40000
-    insecure: "1"
-    mport: 40000-49999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk42TU23T365A==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: fr.9966690.xyz
-  - name: 🏁 未知-5764655D
-    type: hysteria2
-    server: 2.26.97.21
-    port: 8443
-    obfs: salamander
-    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
-    password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
-    skip-cert-verify: true
-    sni: musicclips.videolinks.ru
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
