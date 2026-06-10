@@ -69,7 +69,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇿🇦 南非-25652E3A
       - 🇺🇸 美国-EFA0B6A9
   - name: ♻️ 自动选择
     type: url-test
@@ -80,7 +79,6 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇿🇦 南非-25652E3A
       - 🇺🇸 美国-EFA0B6A9
   - name: 🚑 故障转移
     type: fallback
@@ -90,7 +88,6 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇿🇦 南非-25652E3A
       - 🇺🇸 美国-EFA0B6A9
   - name: 🎯 全局直连
     type: select
@@ -107,14 +104,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇿🇦 南非-25652E3A
-    type: mieru
-    server: 45.221.98.11
-    port: 28866
-    multiplexing: MULTIPLEXING_LOW
-    password: dongtaiwang.com
-    transport: TCP
-    username: dongtaiwang.com
   - name: 🇺🇸 美国-EFA0B6A9
     type: mieru
     server: 157.254.223.44
