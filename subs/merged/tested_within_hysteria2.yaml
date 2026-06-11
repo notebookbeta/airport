@@ -71,17 +71,18 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🇦🇪 阿联酋-7783DD77
       - 🏁 未知-B1F8F316
       - 🇫🇷 法国-3926257B
       - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
+      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🏁 未知-A6E418FD
-      - 🇦🇪 阿联酋-7783DD77
-      - 🇺🇸 美国-B46B5253
+      - 🇮🇱 以色列-D8F1E03B
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -93,17 +94,18 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🇦🇪 阿联酋-7783DD77
       - 🏁 未知-B1F8F316
       - 🇫🇷 法国-3926257B
       - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
+      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🏁 未知-A6E418FD
-      - 🇦🇪 阿联酋-7783DD77
-      - 🇺🇸 美国-B46B5253
+      - 🇮🇱 以色列-D8F1E03B
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -114,17 +116,18 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🇦🇪 阿联酋-7783DD77
       - 🏁 未知-B1F8F316
       - 🇫🇷 法国-3926257B
       - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
+      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
+      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🏁 未知-A6E418FD
-      - 🇦🇪 阿联酋-7783DD77
-      - 🇺🇸 美国-B46B5253
+      - 🇮🇱 以色列-D8F1E03B
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -155,6 +158,16 @@ proxies:
     password: bce6c821-200d-421f-bf3d-7159e5246ea0
     skip-cert-verify: true
     sni: hy2.123266.xyz
+    tfo: false
+  - name: 🇦🇪 阿联酋-7783DD77
+    type: hysteria2
+    server: 130.49.161.70
+    port: 443
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: true
+    sni: hy2.aspidnet.xyz
     tfo: false
   - name: 🏁 未知-B1F8F316
     type: hysteria2
@@ -192,13 +205,25 @@ proxies:
     skip-cert-verify: false
     sni: de1-node.farnet.top
     tfo: false
-  - name: 🏁 未知-04078CCF
+  - name: 🏁 未知-9418FEA2
     type: hysteria2
-    server: 89.167.25.28
-    port: 11004
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
+    tfo: false
+  - name: 🇳🇱 荷兰-59EC401C
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     skip-cert-verify: false
-    sni: fi-node.farnet.top
+    sni: hy2.aspidnet.xyz
     tfo: false
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
@@ -209,6 +234,14 @@ proxies:
     password: rstnnl2705:ZmRjX7MkeEqZ5GQUIT5VO53ARuy6nrmQ
     skip-cert-verify: true
     sni: nrealistic.nn-foto.ru
+    tfo: false
+  - name: 🇺🇸 美国-B46B5253
+    type: hysteria2
+    server: 185.106.96.231
+    port: 443
+    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    skip-cert-verify: false
+    sni: s559.ccgfw.top
     tfo: false
   - name: 🏁 未知-88404753
     type: hysteria2
@@ -226,32 +259,17 @@ proxies:
     skip-cert-verify: true
     sni: musicclips.videolinks.ru
     tfo: false
-  - name: 🏁 未知-A6E418FD
+  - name: 🇮🇱 以色列-D8F1E03B
     type: hysteria2
-    server: 8.216.21.135
-    port: 11009
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: jp2-node.farnet.top
-    tfo: false
-  - name: 🇦🇪 阿联酋-7783DD77
-    type: hysteria2
-    server: 130.49.161.70
-    port: 443
+    server: il.9966690.xyz
+    port: 20000
+    insecure: "1"
+    mport: 20000-29999
     obfs: salamander
-    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
-    sni: hy2.aspidnet.xyz
-    tfo: false
-  - name: 🇺🇸 美国-B46B5253
-    type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
-    tfo: false
+    sni: il.9966690.xyz
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
