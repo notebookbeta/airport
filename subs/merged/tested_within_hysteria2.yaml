@@ -72,17 +72,14 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-B1F8F316
-      - 🇫🇷 法国-3926257B
-      - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-9418FEA2
-      - 🇳🇱 荷兰-59EC401C
+      - 🏁 未知-EE1DF0FC
+      - 🇫🇮 芬兰-F3DE6122
       - 🏁 未知-5B93A3C9
-      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇫🇷 法国-FAD5673D
+      - 🏁 未知-A6E418FD
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -95,17 +92,14 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-B1F8F316
-      - 🇫🇷 法国-3926257B
-      - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-9418FEA2
-      - 🇳🇱 荷兰-59EC401C
+      - 🏁 未知-EE1DF0FC
+      - 🇫🇮 芬兰-F3DE6122
       - 🏁 未知-5B93A3C9
-      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇫🇷 法国-FAD5673D
+      - 🏁 未知-A6E418FD
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -117,17 +111,14 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-B1F8F316
-      - 🇫🇷 法国-3926257B
-      - 🇩🇪 德国-5F00176D
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-9418FEA2
-      - 🇳🇱 荷兰-59EC401C
+      - 🏁 未知-EE1DF0FC
+      - 🇫🇮 芬兰-F3DE6122
       - 🏁 未知-5B93A3C9
-      - 🇺🇸 美国-B46B5253
       - 🏁 未知-88404753
       - 🏁 未知-5764655D
-      - 🇮🇱 以色列-D8F1E03B
+      - 🇫🇷 法国-FAD5673D
+      - 🏁 未知-A6E418FD
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -169,34 +160,6 @@ proxies:
     skip-cert-verify: true
     sni: hy2.aspidnet.xyz
     tfo: false
-  - name: 🏁 未知-B1F8F316
-    type: hysteria2
-    server: 62.210.29.98
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: bing.com
-    tfo: false
-  - name: 🇫🇷 法国-3926257B
-    type: hysteria2
-    server: 62.210.26.173
-    port: 64772
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: bing.com
-    tfo: false
-  - name: 🇩🇪 德国-5F00176D
-    type: hysteria2
-    server: 5.45.100.100
-    port: 51511
-    down: ""
-    fingerprint: ""
-    obfs: ""
-    obfs-password: ""
-    password: miaoge110
-    skip-cert-verify: true
-    sni: www.bing.com
-    up: ""
   - name: 🏁 未知-13BFB5D4
     type: hysteria2
     server: 23.88.54.80
@@ -205,26 +168,25 @@ proxies:
     skip-cert-verify: false
     sni: de1-node.farnet.top
     tfo: false
-  - name: 🏁 未知-9418FEA2
+  - name: 🏁 未知-EE1DF0FC
     type: hysteria2
-    server: 94.156.155.56
-    port: 2026
-    obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
-    skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
-    tfo: false
-  - name: 🇳🇱 荷兰-59EC401C
-    type: hysteria2
-    server: hy2.aspidnet.xyz
-    port: 443
-    obfs: salamander
-    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    server: 8.219.213.195
+    port: 11008
+    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
     skip-cert-verify: false
-    sni: hy2.aspidnet.xyz
+    sni: sg-node.farnet.top
     tfo: false
+  - name: 🇫🇮 芬兰-F3DE6122
+    type: hysteria2
+    server: fr-fi.9966690.xyz
+    port: 50000
+    insecure: "1"
+    mport: 50000-59999
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    skip-cert-verify: true
+    sni: fr-fi.9966690.xyz
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
     server: 144.31.224.163
@@ -234,14 +196,6 @@ proxies:
     password: rstnnl2705:ZmRjX7MkeEqZ5GQUIT5VO53ARuy6nrmQ
     skip-cert-verify: true
     sni: nrealistic.nn-foto.ru
-    tfo: false
-  - name: 🇺🇸 美国-B46B5253
-    type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
     tfo: false
   - name: 🏁 未知-88404753
     type: hysteria2
@@ -259,17 +213,25 @@ proxies:
     skip-cert-verify: true
     sni: musicclips.videolinks.ru
     tfo: false
-  - name: 🇮🇱 以色列-D8F1E03B
+  - name: 🇫🇷 法国-FAD5673D
     type: hysteria2
-    server: il.9966690.xyz
-    port: 20000
+    server: fr.9966690.xyz
+    port: 40000
     insecure: "1"
-    mport: 20000-29999
+    mport: 40000-49999
     obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
+    obfs-password: YzgyOTkwNDk42TU23T365A==
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     skip-cert-verify: true
-    sni: il.9966690.xyz
+    sni: fr.9966690.xyz
+  - name: 🏁 未知-A6E418FD
+    type: hysteria2
+    server: 8.216.21.135
+    port: 11009
+    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    skip-cert-verify: false
+    sni: jp2-node.farnet.top
+    tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
