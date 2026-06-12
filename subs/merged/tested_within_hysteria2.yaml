@@ -69,18 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🏁 未知-798A29E5
-      - 🇺🇸 美国-2844BECE
-      - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-88404753
-      - 🏁 未知-A6E418FD
-      - 🏁 未知-9418FEA2
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇳🇱 荷兰-59EC401C
-      - 🏁 未知-5764655D
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -90,18 +79,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🏁 未知-798A29E5
-      - 🇺🇸 美国-2844BECE
-      - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-88404753
-      - 🏁 未知-A6E418FD
-      - 🏁 未知-9418FEA2
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇳🇱 荷兰-59EC401C
-      - 🏁 未知-5764655D
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -110,18 +88,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🏁 未知-798A29E5
-      - 🇺🇸 美国-2844BECE
-      - 🏁 未知-13BFB5D4
-      - 🏁 未知-04078CCF
-      - 🏁 未知-5B93A3C9
       - 🇦🇪 阿联酋-7783DD77
-      - 🏁 未知-88404753
-      - 🏁 未知-A6E418FD
-      - 🏁 未知-9418FEA2
-      - 🇷🇺 俄罗斯-FC7BDE33
-      - 🇳🇱 荷兰-59EC401C
-      - 🏁 未知-5764655D
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -137,48 +104,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🏁 未知-798A29E5
-    type: hysteria2
-    server: 155.248.209.237
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
-    skip-cert-verify: true
-    sni: hy2.123266.xyz
-    tfo: false
-  - name: 🇺🇸 美国-2844BECE
-    type: hysteria2
-    server: hy2.123266.xyz
-    port: 33333
-    password: bce6c821-200d-421f-bf3d-7159e5246ea0
-    skip-cert-verify: true
-    sni: hy2.123266.xyz
-    tfo: false
-  - name: 🏁 未知-13BFB5D4
-    type: hysteria2
-    server: 23.88.54.80
-    port: 11006
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: de1-node.farnet.top
-    tfo: false
-  - name: 🏁 未知-04078CCF
-    type: hysteria2
-    server: 89.167.25.28
-    port: 11004
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: fi-node.farnet.top
-    tfo: false
-  - name: 🏁 未知-5B93A3C9
-    type: hysteria2
-    server: 144.31.224.163
-    port: 8932
-    obfs: salamander
-    obfs-password: CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W
-    password: rstnnl2705:ZmRjX7MkeEqZ5GQUIT5VO53ARuy6nrmQ
-    skip-cert-verify: true
-    sni: nrealistic.nn-foto.ru
-    tfo: false
   - name: 🇦🇪 阿联酋-7783DD77
     type: hysteria2
     server: 130.49.161.70
@@ -188,60 +113,6 @@ proxies:
     password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     skip-cert-verify: true
     sni: hy2.aspidnet.xyz
-    tfo: false
-  - name: 🏁 未知-88404753
-    type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
-  - name: 🏁 未知-A6E418FD
-    type: hysteria2
-    server: 8.216.21.135
-    port: 11009
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: jp2-node.farnet.top
-    tfo: false
-  - name: 🏁 未知-9418FEA2
-    type: hysteria2
-    server: 94.156.155.56
-    port: 2026
-    obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
-    skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
-    tfo: false
-  - name: 🇷🇺 俄罗斯-FC7BDE33
-    type: hysteria2
-    server: 80.66.81.78
-    port: 9443
-    obfs: salamander
-    obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-    password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-    skip-cert-verify: false
-    sni: tunel1.washing.help
-    tfo: false
-  - name: 🇳🇱 荷兰-59EC401C
-    type: hysteria2
-    server: hy2.aspidnet.xyz
-    port: 443
-    obfs: salamander
-    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-    skip-cert-verify: false
-    sni: hy2.aspidnet.xyz
-    tfo: false
-  - name: 🏁 未知-5764655D
-    type: hysteria2
-    server: 2.26.97.21
-    port: 8443
-    obfs: salamander
-    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
-    password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
-    skip-cert-verify: true
-    sni: musicclips.videolinks.ru
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
