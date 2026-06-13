@@ -72,16 +72,12 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-88404753
       - 🏁 未知-04078CCF
-      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
-      - 🏁 未知-5764655D
-      - 🇺🇸 美国-B46B5253
-      - 🇳🇱 荷兰-D84A6DB3
-      - 🏁 未知-A6E418FD
-      - 🇷🇺 俄罗斯-FC7BDE33
       - 🇭🇰 香港-E2022774
+      - 🇳🇱 荷兰-D84A6DB3
+      - 🏁 未知-5764655D
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -94,16 +90,12 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-88404753
       - 🏁 未知-04078CCF
-      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
-      - 🏁 未知-5764655D
-      - 🇺🇸 美国-B46B5253
-      - 🇳🇱 荷兰-D84A6DB3
-      - 🏁 未知-A6E418FD
-      - 🇷🇺 俄罗斯-FC7BDE33
       - 🇭🇰 香港-E2022774
+      - 🇳🇱 荷兰-D84A6DB3
+      - 🏁 未知-5764655D
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -115,16 +107,12 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-13BFB5D4
-      - 🏁 未知-88404753
       - 🏁 未知-04078CCF
-      - 🏁 未知-9418FEA2
+      - 🇳🇱 荷兰-59EC401C
       - 🏁 未知-5B93A3C9
-      - 🏁 未知-5764655D
-      - 🇺🇸 美国-B46B5253
-      - 🇳🇱 荷兰-D84A6DB3
-      - 🏁 未知-A6E418FD
-      - 🇷🇺 俄罗斯-FC7BDE33
       - 🇭🇰 香港-E2022774
+      - 🇳🇱 荷兰-D84A6DB3
+      - 🏁 未知-5764655D
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -164,12 +152,6 @@ proxies:
     skip-cert-verify: false
     sni: de1-node.farnet.top
     tfo: false
-  - name: 🏁 未知-88404753
-    type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
   - name: 🏁 未知-04078CCF
     type: hysteria2
     server: 89.167.25.28
@@ -178,15 +160,15 @@ proxies:
     skip-cert-verify: false
     sni: fi-node.farnet.top
     tfo: false
-  - name: 🏁 未知-9418FEA2
+  - name: 🇳🇱 荷兰-59EC401C
     type: hysteria2
-    server: 94.156.155.56
-    port: 2026
+    server: hy2.aspidnet.xyz
+    port: 443
     obfs: salamander
-    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
-    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
-    skip-cert-verify: true
-    sni: reddeadfan.rd-team.ru
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: false
+    sni: hy2.aspidnet.xyz
     tfo: false
   - name: 🏁 未知-5B93A3C9
     type: hysteria2
@@ -198,23 +180,13 @@ proxies:
     skip-cert-verify: true
     sni: nrealistic.nn-foto.ru
     tfo: false
-  - name: 🏁 未知-5764655D
+  - name: 🇭🇰 香港-E2022774
     type: hysteria2
-    server: 2.26.97.21
-    port: 8443
-    obfs: salamander
-    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
-    password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
+    server: 89.251.26.111
+    port: 55555
+    password: e3a5bb40be52de65
     skip-cert-verify: true
-    sni: musicclips.videolinks.ru
-    tfo: false
-  - name: 🇺🇸 美国-B46B5253
-    type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
+    sni: apps.apple.com
     tfo: false
   - name: 🇳🇱 荷兰-D84A6DB3
     type: hysteria2
@@ -224,31 +196,15 @@ proxies:
     skip-cert-verify: false
     sni: sni.nl01-cherry.online
     tfo: false
-  - name: 🏁 未知-A6E418FD
+  - name: 🏁 未知-5764655D
     type: hysteria2
-    server: 8.216.21.135
-    port: 11009
-    password: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    skip-cert-verify: false
-    sni: jp2-node.farnet.top
-    tfo: false
-  - name: 🇷🇺 俄罗斯-FC7BDE33
-    type: hysteria2
-    server: 80.66.81.78
-    port: 9443
+    server: 2.26.97.21
+    port: 8443
     obfs: salamander
-    obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-    password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-    skip-cert-verify: false
-    sni: tunel1.washing.help
-    tfo: false
-  - name: 🇭🇰 香港-E2022774
-    type: hysteria2
-    server: 89.251.26.111
-    port: 55555
-    password: e3a5bb40be52de65
+    obfs-password: hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw
+    password: rstnnl2705:56Uhk1CcaR5mCmGpaN0AsOAmRscZSIaM
     skip-cert-verify: true
-    sni: apps.apple.com
+    sni: musicclips.videolinks.ru
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
