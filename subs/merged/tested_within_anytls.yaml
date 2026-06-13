@@ -69,10 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇫🇷 法国-91A4A4D1
-      - 🇫🇷 法国-2F1F9BDD
-      - 🇫🇮 芬兰-02838956
-      - 🇫🇷 法国-A0A3E9B8
+      - 🇺🇸 美国-F4849B68
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -82,10 +79,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇫🇷 法国-91A4A4D1
-      - 🇫🇷 法国-2F1F9BDD
-      - 🇫🇮 芬兰-02838956
-      - 🇫🇷 法国-A0A3E9B8
+      - 🇺🇸 美国-F4849B68
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -94,10 +88,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇫🇷 法国-91A4A4D1
-      - 🇫🇷 法国-2F1F9BDD
-      - 🇫🇮 芬兰-02838956
-      - 🇫🇷 法国-A0A3E9B8
+      - 🇺🇸 美国-F4849B68
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -113,50 +104,16 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇫🇷 法国-91A4A4D1
+  - name: 🇺🇸 美国-F4849B68
     type: anytls
-    server: fr.9966690.xyz
-    port: 5003
-    client-fingerprint: chrome
-    fp: chrome
-    insecure: "1"
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    servername: iosapps.itunes.apple.com
+    server: ae8413f3-teisg0-tgl134-1h240.se.hyhuawei.com
+    port: 443
+    password: 28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9
+    servername: ae8413f3-teisg0-tgl134-1h240.se.hyhuawei.com
     skip-cert-verify: true
-    sni: fr.9966690.xyz
-  - name: 🇫🇷 法国-2F1F9BDD
-    type: anytls
-    server: fr.9966690.xyz
-    port: 5002
-    client-fingerprint: chrome
-    fp: chrome
-    insecure: "1"
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    servername: iosapps.itunes.apple.com
-    skip-cert-verify: true
-    sni: fr.9966690.xyz
-  - name: 🇫🇮 芬兰-02838956
-    type: anytls
-    server: fr-fi.9966690.xyz
-    port: 5001
-    client-fingerprint: chrome
-    fp: chrome
-    insecure: "1"
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    servername: iosapps.itunes.apple.com
-    skip-cert-verify: true
-    sni: fr-fi.9966690.xyz
-  - name: 🇫🇷 法国-A0A3E9B8
-    type: anytls
-    server: fr.9966690.xyz
-    port: 5005
-    client-fingerprint: chrome
-    fp: chrome
-    insecure: "1"
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    servername: iosapps.itunes.apple.com
-    skip-cert-verify: true
-    sni: fr.9966690.xyz
+    sni: ae8413f3-teisg0-tgl134-1h240.se.hyhuawei.com
+    tfo: false
+    udp: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
