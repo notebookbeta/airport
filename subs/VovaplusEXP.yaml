@@ -1,19 +1,9 @@
 proxies:
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"162.19.254.232","port":2083,"cipher":"aes-256-gcm","password":"7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=","name":"SS-A256GCM-🇩🇪(DE)-162.19.254.232"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"de5.taskflowhub.org","port":2083,"cipher":"aes-256-gcm","password":"7NuB0Y5m3aNzkKMKlFoMwkiajsu6F36c9ok4VKEZnB4=","name":"SS-A256GCM-🇩🇪(DE)-de5.taskflowhub.org"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"51.254.128.106","port":2083,"cipher":"aes-256-gcm","password":"FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=","name":"SS-A256GCM-🇫🇷(FR)-51.254.128.106"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"fr5.taskflowhub.org","port":2083,"cipher":"aes-256-gcm","password":"FjG3IPbny+0ZYU4/p1vULP84GcKpGoZpWKAay16VhIw=","name":"SS-A256GCM-🇫🇷(FR)-fr5.taskflowhub.org"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"57.131.28.246","port":2083,"cipher":"aes-256-gcm","password":"34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=","name":"SS-A256GCM-🇮🇹(IT)-57.131.28.246"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"it5.taskflowhub.org","port":2083,"cipher":"aes-256-gcm","password":"34fItyZyz69uIrxkJ+cLR1pdclvG628pv8+fzUNTIC0=","name":"SS-A256GCM-🇮🇹(IT)-it5.taskflowhub.org"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"135.125.219.2","port":12911,"cipher":"chacha20-ietf-poly1305","password":"4368f055243e225f","name":"SS-C20P-🇩🇪(DE)-135.125.219.2"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"148.253.208.76","port":3478,"cipher":"chacha20-ietf-poly1305","password":"yu2XnSPWhmQjxn83iJA3DA","name":"SS-C20P-🇩🇪(DE)-148.253.208.76"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"57.129.121.230","port":10443,"cipher":"chacha20-ietf-poly1305","password":"uROuEqsL8IUMMVb4wDwnGU","name":"SS-C20P-🇩🇪(DE)-57.129.121.230"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"62.60.255.11","port":8388,"cipher":"chacha20-ietf-poly1305","password":"do1DZ-_QvkFWXzsjc_w8eT5-TeYP6U3Q","name":"SS-C20P-🇫🇮(FI)-62.60.255.11"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"51.75.168.50","port":26179,"cipher":"chacha20-ietf-poly1305","password":"78b6e93e54225803","name":"SS-C20P-🇬🇧(GB)-51.75.168.50"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"57.129.129.247","port":19308,"cipher":"chacha20-ietf-poly1305","password":"4a055e9e903128a1","name":"SS-C20P-🇬🇧(GB)-57.129.129.247"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"46.246.97.3","port":31348,"cipher":"chacha20-ietf-poly1305","password":"nbWNC8zZ0eXokIOuW5rL8oNrXmXg5qAuL05R4fGNKCS7IG0u","name":"SS-C20P-🇸🇪(SE)-46.246.97.3"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"36.224.128.4","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4","name":"SS-C20P-🇹🇼(TW)-36.224.128.4"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"36.230.59.142","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4","name":"SS-C20P-🇹🇼(TW)-36.230.59.142"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"61.231.11.137","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4","name":"SS-C20P-🇹🇼(TW)-61.231.11.137"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"r3mrcg001269pz2.cybervena.com","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4","name":"SS-C20P-🇹🇼(TW)-r3mrcg001269pz2.cybervena.com"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"149.28.255.6","port":816,"cipher":"chacha20-ietf-poly1305","password":"GyZ5Xo0ht41vYmW3H4","name":"SS-C20P-🇺🇸(US)-149.28.255.6"}
+  - {"name":"VMESS-TCP-🇩🇪(DE)-91.107.174.146","type":"vmess","server":"91.107.174.146","port":44652,"cipher":"auto","uuid":"29b2695f-dcc2-489c-bc43-5b6be1c06bc6","alterId":0,"tls":false,"network":"tcp"}
+  - {"name":"VMESS-TCP-🇪🇸(ES)-85.90.217.42","type":"vmess","server":"85.90.217.42","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"client-fingerprint":"","network":"tcp"}
+  - {"name":"VMESS-TCP-🇮🇹(IT)-45.92.70.236","type":"vmess","server":"45.92.70.236","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":0,"tls":false,"client-fingerprint":"","network":"tcp"}
+  - {"name":"VMESS-TCP-🇯🇵(JP)-153.121.73.175","type":"vmess","server":"153.121.73.175","port":49803,"cipher":"auto","uuid":"cd3dacbc-2b7b-4718-83ad-ab870f87e12e","alterId":0,"tls":false,"network":"tcp"}
+  - {"name":"VMESS-TCP-🇯🇵(JP)-153.121.73.175_1","type":"vmess","server":"153.121.73.175","port":32221,"cipher":"auto","uuid":"b06054ae-f249-438e-998a-8e67bd8df653","alterId":0,"tls":false,"client-fingerprint":"","network":"tcp"}
+  - {"name":"VMESS-TCP-🇯🇵(JP)-172.104.80.66","type":"vmess","server":"172.104.80.66","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":1,"tls":false,"network":"tcp"}
+  - {"name":"VMESS-TCP-🇹🇷(TR)-5.188.190.252","type":"vmess","server":"5.188.190.252","port":22324,"cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":1,"tls":false,"network":"tcp"}
+  - {"name":"VMESS-TCP-🇺🇸(US)-165.140.216.141","type":"vmess","server":"165.140.216.141","port":443,"cipher":"auto","uuid":"e7d72a8d-26f2-4b54-b366-0c43e0bcba7d","alterId":0,"tls":false,"client-fingerprint":"","network":"tcp"}
