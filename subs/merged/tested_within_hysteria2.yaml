@@ -72,8 +72,9 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇺🇸 美国-B46B5253
-      - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🏁 未知-88404753
+      - 🇭🇰 香港-E2022774
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -86,8 +87,9 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇺🇸 美国-B46B5253
-      - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🏁 未知-88404753
+      - 🇭🇰 香港-E2022774
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -99,8 +101,9 @@ proxy-groups:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🇺🇸 美国-B46B5253
-      - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🏁 未知-88404753
+      - 🇭🇰 香港-E2022774
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -140,12 +143,6 @@ proxies:
     skip-cert-verify: false
     sni: s559.ccgfw.top
     tfo: false
-  - name: 🏁 未知-88404753
-    type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
   - name: 🇺🇸 美国-15E672A5
     type: hysteria2
     server: 161.104.88.46
@@ -153,6 +150,20 @@ proxies:
     password: 2d83ea00-2813-448d-bee6-14eaf7f52e13
     skip-cert-verify: true
     sni: k71530.w-mebel.pro
+    tfo: false
+  - name: 🏁 未知-88404753
+    type: hysteria2
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    sni: files.fantoff.online
+  - name: 🇭🇰 香港-E2022774
+    type: hysteria2
+    server: 89.251.26.111
+    port: 55555
+    password: e3a5bb40be52de65
+    skip-cert-verify: true
+    sni: apps.apple.com
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
