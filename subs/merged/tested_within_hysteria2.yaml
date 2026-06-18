@@ -69,18 +69,15 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇨🇦 加拿大-2976DA14
-      - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-798A29E5
       - 🏁 未知-339BAA0B
-      - 🏁 未知-9E4A0634
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
       - 🏁 未知-88404753
-      - 🇨🇳 中国-FDDC4B4C
-      - 🇨🇳 中国-AF1F1365
-      - 🇨🇳 中国-ADDB42EC
-      - 🇨🇳 中国-7260C6E5
+      - 🇺🇸 美国-185EF251
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: ♻️ 自动选择
     type: url-test
@@ -91,18 +88,15 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇨🇦 加拿大-2976DA14
-      - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-798A29E5
       - 🏁 未知-339BAA0B
-      - 🏁 未知-9E4A0634
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
       - 🏁 未知-88404753
-      - 🇨🇳 中国-FDDC4B4C
-      - 🇨🇳 中国-AF1F1365
-      - 🇨🇳 中国-ADDB42EC
-      - 🇨🇳 中国-7260C6E5
+      - 🇺🇸 美国-185EF251
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: 🚑 故障转移
     type: fallback
@@ -112,18 +106,15 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇨🇦 加拿大-2976DA14
-      - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-798A29E5
       - 🏁 未知-339BAA0B
-      - 🏁 未知-9E4A0634
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
       - 🏁 未知-88404753
-      - 🇨🇳 中国-FDDC4B4C
-      - 🇨🇳 中国-AF1F1365
-      - 🇨🇳 中国-ADDB42EC
-      - 🇨🇳 中国-7260C6E5
+      - 🇺🇸 美国-185EF251
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: 🎯 全局直连
     type: select
@@ -140,28 +131,17 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇨🇦 加拿大-2976DA14
+  - name: 🇺🇸 美国-2844BECE
     type: hysteria2
-    server: ca-6az7mzjl.9966690.xyz
-    port: 40000
-    insecure: "1"
-    mport: 40000-49999
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: ca-6az7mzjl.9966690.xyz
-  - name: 🏁 未知-798A29E5
-    type: hysteria2
-    server: 155.248.209.237
+    server: hy2.123266.xyz
     port: 33333
     password: bce6c821-200d-421f-bf3d-7159e5246ea0
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🇺🇸 美国-2844BECE
+  - name: 🏁 未知-798A29E5
     type: hysteria2
-    server: hy2.123266.xyz
+    server: 155.248.209.237
     port: 33333
     password: bce6c821-200d-421f-bf3d-7159e5246ea0
     skip-cert-verify: true
@@ -176,14 +156,6 @@ proxies:
     password: EsimHy2Game_7xK9mPq2
     skip-cert-verify: false
     sni: nl.esimpson.org
-    tfo: false
-  - name: 🏁 未知-9E4A0634
-    type: hysteria2
-    server: hy2.313186.xyz
-    port: 18066
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: false
-    sni: hy2.313186.xyz
     tfo: false
   - name: 🇺🇸 美国-B46B5253
     type: hysteria2
@@ -207,46 +179,34 @@ proxies:
     port: 10808
     password: b95dd8e5-2758-408f-be99-9362eecee609
     sni: files.fantoff.online
-  - name: 🇨🇳 中国-FDDC4B4C
+  - name: 🇺🇸 美国-185EF251
     type: hysteria2
-    server: tw.9966690.xyz
-    port: 6003
-    insecure: "1"
+    server: hy2-new.aspidnet.xyz
+    port: 443
     obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    obfs-password: c1b4086fea89914496c7e10967a419216566
+    password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
     skip-cert-verify: true
-    sni: tw.9966690.xyz
-  - name: 🇨🇳 中国-AF1F1365
+    sni: hy2-new.aspidnet.xyz
+    tfo: false
+  - name: 🏁 未知-9E4A0634
     type: hysteria2
-    server: tw.9966690.xyz
-    port: 6001
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: tw.9966690.xyz
-  - name: 🇨🇳 中国-ADDB42EC
+    server: hy2.313186.xyz
+    port: 18066
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: false
+    sni: hy2.313186.xyz
+    tfo: false
+  - name: 🏁 未知-9418FEA2
     type: hysteria2
-    server: tw.9966690.xyz
-    port: 6002
-    insecure: "1"
+    server: 94.156.155.56
+    port: 2026
     obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
     skip-cert-verify: true
-    sni: tw.9966690.xyz
-  - name: 🇨🇳 中国-7260C6E5
-    type: hysteria2
-    server: tw.9966690.xyz
-    port: 6005
-    insecure: "1"
-    obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-    skip-cert-verify: true
-    sni: tw.9966690.xyz
+    sni: reddeadfan.rd-team.ru
+    tfo: false
   - name: 🇭🇰 香港-E2022774
     type: hysteria2
     server: 89.251.26.111
