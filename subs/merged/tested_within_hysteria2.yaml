@@ -71,9 +71,11 @@ proxy-groups:
       - DIRECT
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-88404753
+      - 🏁 未知-339BAA0B
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: ♻️ 自动选择
     type: url-test
@@ -86,9 +88,11 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-88404753
+      - 🏁 未知-339BAA0B
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: 🚑 故障转移
     type: fallback
@@ -100,9 +104,11 @@ proxy-groups:
     proxies:
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
+      - 🏁 未知-88404753
+      - 🏁 未知-339BAA0B
       - 🇺🇸 美国-B46B5253
       - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
+      - 🏁 未知-9418FEA2
       - 🇭🇰 香港-E2022774
   - name: 🎯 全局直连
     type: select
@@ -135,6 +141,22 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
+  - name: 🏁 未知-88404753
+    type: hysteria2
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    sni: files.fantoff.online
+  - name: 🏁 未知-339BAA0B
+    type: hysteria2
+    server: 198.105.112.118
+    port: 443
+    obfs: salamander
+    obfs-password: EsimObfs_9mK2x7
+    password: EsimHy2Game_7xK9mPq2
+    skip-cert-verify: false
+    sni: nl.esimpson.org
+    tfo: false
   - name: 🇺🇸 美国-B46B5253
     type: hysteria2
     server: 185.106.96.231
@@ -151,12 +173,16 @@ proxies:
     skip-cert-verify: true
     sni: k71530.w-mebel.pro
     tfo: false
-  - name: 🏁 未知-88404753
+  - name: 🏁 未知-9418FEA2
     type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
+    server: 94.156.155.56
+    port: 2026
+    obfs: salamander
+    obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+    password: rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+    skip-cert-verify: true
+    sni: reddeadfan.rd-team.ru
+    tfo: false
   - name: 🇭🇰 香港-E2022774
     type: hysteria2
     server: 89.251.26.111
