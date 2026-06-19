@@ -69,6 +69,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
+      - 🇺🇸 美国-09D616E6
       - 🏁 未知-A410DB6D
   - name: ♻️ 自动选择
     type: url-test
@@ -79,6 +80,7 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
+      - 🇺🇸 美国-09D616E6
       - 🏁 未知-A410DB6D
   - name: 🚑 故障转移
     type: fallback
@@ -88,6 +90,7 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
+      - 🇺🇸 美国-09D616E6
       - 🏁 未知-A410DB6D
   - name: 🎯 全局直连
     type: select
@@ -104,6 +107,12 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
+  - name: 🇺🇸 美国-09D616E6
+    type: socks5
+    server: 65.109.29.104
+    port: 1080
+    password: ""
+    username: ""
   - name: 🏁 未知-A410DB6D
     type: socks5
     server: 5.255.99.75
