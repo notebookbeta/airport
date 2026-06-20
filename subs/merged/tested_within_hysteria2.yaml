@@ -70,19 +70,20 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🏁 未知-C6712EB3
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-61B116C0
       - 🏁 未知-339BAA0B
-      - 🏁 未知-23A66182
-      - 🏁 未知-1600704D
-      - 🏁 未知-A2E19C45
       - 🏁 未知-D92FC47D
-      - 🏁 未知-9E4A0634
+      - 🏁 未知-1600704D
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
       - 🇭🇰 香港-E2022774
+      - 🏁 未知-9E4A0634
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -93,19 +94,20 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-C6712EB3
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-61B116C0
       - 🏁 未知-339BAA0B
-      - 🏁 未知-23A66182
-      - 🏁 未知-1600704D
-      - 🏁 未知-A2E19C45
       - 🏁 未知-D92FC47D
-      - 🏁 未知-9E4A0634
+      - 🏁 未知-1600704D
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
       - 🇭🇰 香港-E2022774
+      - 🏁 未知-9E4A0634
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -115,19 +117,20 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-C6712EB3
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
       - 🏁 未知-61B116C0
       - 🏁 未知-339BAA0B
-      - 🏁 未知-23A66182
-      - 🏁 未知-1600704D
-      - 🏁 未知-A2E19C45
       - 🏁 未知-D92FC47D
-      - 🏁 未知-9E4A0634
+      - 🏁 未知-1600704D
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
       - 🇭🇰 香港-E2022774
+      - 🏁 未知-9E4A0634
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -151,6 +154,15 @@ proxies:
       - h3
     password: 43bcba7d-cd22-379c-a7da-2e8eafecbc78
     sni: u711540us737.csgfw.top
+  - name: 🇺🇸 美国-3810121C
+    type: hysteria2
+    server: wuhantravel.duckdns.org
+    port: 8443
+    alpn:
+      - h3
+    password: MySecurePassword123
+    sni: wuhantravel.duckdns.org
+    udp: true
   - name: 🏁 未知-798A29E5
     type: hysteria2
     server: 155.248.209.237
@@ -185,9 +197,9 @@ proxies:
     skip-cert-verify: false
     sni: nl.esimpson.org
     tfo: false
-  - name: 🏁 未知-23A66182
+  - name: 🏁 未知-D92FC47D
     type: hysteria2
-    server: 3.123.41.86
+    server: 3.66.236.81
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
@@ -199,27 +211,19 @@ proxies:
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
     tfo: false
+  - name: 🏁 未知-23A66182
+    type: hysteria2
+    server: 3.123.41.86
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    tfo: false
   - name: 🏁 未知-A2E19C45
     type: hysteria2
     server: 3.79.47.137
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
-    tfo: false
-  - name: 🏁 未知-D92FC47D
-    type: hysteria2
-    server: 3.66.236.81
-    port: 443
-    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-    skip-cert-verify: true
-    tfo: false
-  - name: 🏁 未知-9E4A0634
-    type: hysteria2
-    server: hy2.313186.xyz
-    port: 18066
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: false
-    sni: hy2.313186.xyz
     tfo: false
   - name: 🏁 未知-88404753
     type: hysteria2
@@ -252,6 +256,14 @@ proxies:
     password: e3a5bb40be52de65
     skip-cert-verify: true
     sni: apps.apple.com
+    tfo: false
+  - name: 🏁 未知-9E4A0634
+    type: hysteria2
+    server: hy2.313186.xyz
+    port: 18066
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: false
+    sni: hy2.313186.xyz
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
