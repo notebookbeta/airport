@@ -69,19 +69,18 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-23A66182
-      - 🏁 未知-D92FC47D
-      - 🏁 未知-A2E19C45
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-1600704D
-      - 🏁 未知-9E4A0634
-      - 🇺🇸 美国-B46B5253
-      - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
-      - 🇺🇸 美国-185EF251
       - 🏁 未知-339BAA0B
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
+      - 🏁 未知-D92FC47D
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-88404753
+      - 🇺🇸 美国-15E672A5
+      - 🇺🇸 美国-185EF251
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -91,19 +90,18 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-23A66182
-      - 🏁 未知-D92FC47D
-      - 🏁 未知-A2E19C45
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-1600704D
-      - 🏁 未知-9E4A0634
-      - 🇺🇸 美国-B46B5253
-      - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
-      - 🇺🇸 美国-185EF251
       - 🏁 未知-339BAA0B
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
+      - 🏁 未知-D92FC47D
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-88404753
+      - 🇺🇸 美国-15E672A5
+      - 🇺🇸 美国-185EF251
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -112,19 +110,18 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-23A66182
-      - 🏁 未知-D92FC47D
-      - 🏁 未知-A2E19C45
+      - 🇺🇸 美国-3810121C
       - 🏁 未知-1600704D
-      - 🏁 未知-9E4A0634
-      - 🇺🇸 美国-B46B5253
-      - 🇺🇸 美国-15E672A5
-      - 🏁 未知-88404753
-      - 🇺🇸 美国-185EF251
       - 🏁 未知-339BAA0B
+      - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
+      - 🏁 未知-D92FC47D
+      - 🏁 未知-9E4A0634
+      - 🏁 未知-88404753
+      - 🇺🇸 美国-15E672A5
+      - 🇺🇸 美国-185EF251
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -140,15 +137,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇺🇸 美国-3810121C
-    type: hysteria2
-    server: wuhantravel.duckdns.org
-    port: 8443
-    alpn:
-      - h3
-    password: MySecurePassword123
-    sni: wuhantravel.duckdns.org
-    udp: true
   - name: 🏁 未知-798A29E5
     type: hysteria2
     server: 155.248.209.237
@@ -165,16 +153,35 @@ proxies:
     skip-cert-verify: true
     sni: hy2.123266.xyz
     tfo: false
-  - name: 🏁 未知-23A66182
+  - name: 🇺🇸 美国-3810121C
     type: hysteria2
-    server: 3.123.41.86
+    server: wuhantravel.duckdns.org
+    port: 8443
+    alpn:
+      - h3
+    password: MySecurePassword123
+    sni: wuhantravel.duckdns.org
+    udp: true
+  - name: 🏁 未知-1600704D
+    type: hysteria2
+    server: 3.70.127.37
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
     tfo: false
-  - name: 🏁 未知-D92FC47D
+  - name: 🏁 未知-339BAA0B
     type: hysteria2
-    server: 3.66.236.81
+    server: 198.105.112.118
+    port: 443
+    obfs: salamander
+    obfs-password: EsimObfs_9mK2x7
+    password: EsimHy2Game_7xK9mPq2
+    skip-cert-verify: false
+    sni: nl.esimpson.org
+    tfo: false
+  - name: 🏁 未知-23A66182
+    type: hysteria2
+    server: 3.123.41.86
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
@@ -186,9 +193,9 @@ proxies:
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
     tfo: false
-  - name: 🏁 未知-1600704D
+  - name: 🏁 未知-D92FC47D
     type: hysteria2
-    server: 3.70.127.37
+    server: 3.66.236.81
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
@@ -201,14 +208,12 @@ proxies:
     skip-cert-verify: false
     sni: hy2.313186.xyz
     tfo: false
-  - name: 🇺🇸 美国-B46B5253
+  - name: 🏁 未知-88404753
     type: hysteria2
-    server: 185.106.96.231
-    port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-    skip-cert-verify: false
-    sni: s559.ccgfw.top
-    tfo: false
+    server: files.fantoff.online
+    port: 10808
+    password: b95dd8e5-2758-408f-be99-9362eecee609
+    sni: files.fantoff.online
   - name: 🇺🇸 美国-15E672A5
     type: hysteria2
     server: 161.104.88.46
@@ -217,12 +222,6 @@ proxies:
     skip-cert-verify: true
     sni: k71530.w-mebel.pro
     tfo: false
-  - name: 🏁 未知-88404753
-    type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
   - name: 🇺🇸 美国-185EF251
     type: hysteria2
     server: hy2-new.aspidnet.xyz
@@ -232,16 +231,6 @@ proxies:
     password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
     skip-cert-verify: true
     sni: hy2-new.aspidnet.xyz
-    tfo: false
-  - name: 🏁 未知-339BAA0B
-    type: hysteria2
-    server: 198.105.112.118
-    port: 443
-    obfs: salamander
-    obfs-password: EsimObfs_9mK2x7
-    password: EsimHy2Game_7xK9mPq2
-    skip-cert-verify: false
-    sni: nl.esimpson.org
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
