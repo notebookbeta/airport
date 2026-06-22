@@ -70,9 +70,9 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🏁 未知-A410DB6D
-      - 🇺🇸 美国-09D616E6
-      - 🇫🇷 法国-C7E104DC
       - 🇨🇭 瑞士-2CBDA6BA
+      - 🇫🇷 法国-C7E104DC
+      - 🇺🇸 美国-09D616E6
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -83,9 +83,9 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-A410DB6D
-      - 🇺🇸 美国-09D616E6
-      - 🇫🇷 法国-C7E104DC
       - 🇨🇭 瑞士-2CBDA6BA
+      - 🇫🇷 法国-C7E104DC
+      - 🇺🇸 美国-09D616E6
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -95,9 +95,9 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🏁 未知-A410DB6D
-      - 🇺🇸 美国-09D616E6
-      - 🇫🇷 法国-C7E104DC
       - 🇨🇭 瑞士-2CBDA6BA
+      - 🇫🇷 法国-C7E104DC
+      - 🇺🇸 美国-09D616E6
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -119,24 +119,24 @@ proxies:
     port: 1080
     password: ""
     username: ""
-  - name: 🇺🇸 美国-09D616E6
-    type: socks5
-    server: 65.109.29.104
-    port: 1080
-    password: ""
-    username: ""
-  - name: 🇫🇷 法国-C7E104DC
-    type: socks5
-    server: dk-cop.pvdata.host
-    port: 1080
-    password: Tel6@SoonTeam
-    username: R38Ycj1bnGQtFWP7cLUMgyGC
   - name: 🇨🇭 瑞士-2CBDA6BA
     type: socks5
     server: ch-zur.pvdata.host
     port: 1080
     password: Tel6@SoonTeam
     username: R38Ycj1bnGQtFWP7cLUMgyGC
+  - name: 🇫🇷 法国-C7E104DC
+    type: socks5
+    server: dk-cop.pvdata.host
+    port: 1080
+    password: Tel6@SoonTeam
+    username: R38Ycj1bnGQtFWP7cLUMgyGC
+  - name: 🇺🇸 美国-09D616E6
+    type: socks5
+    server: 65.109.29.104
+    port: 1080
+    password: ""
+    username: ""
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
