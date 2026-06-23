@@ -69,17 +69,20 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚑 故障转移
       - DIRECT
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-A2E19C45
       - 🏁 未知-339BAA0B
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-1600704D
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇲🇦 摩洛哥-738A6652
       - 🇺🇸 美国-185EF251
+      - 🇷🇺 俄罗斯-D68CDB88
+      - 🇰🇷 韩国-09FD0648
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -89,17 +92,20 @@ proxy-groups:
     tolerance: 200
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-A2E19C45
       - 🏁 未知-339BAA0B
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-1600704D
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇲🇦 摩洛哥-738A6652
       - 🇺🇸 美国-185EF251
+      - 🇷🇺 俄罗斯-D68CDB88
+      - 🇰🇷 韩国-09FD0648
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -108,17 +114,20 @@ proxy-groups:
     timeout: 3000
     max-failed-times: 3
     proxies:
-      - 🇺🇸 美国-3810121C
       - 🏁 未知-798A29E5
       - 🇺🇸 美国-2844BECE
-      - 🏁 未知-A2E19C45
       - 🏁 未知-339BAA0B
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
+      - 🏁 未知-A2E19C45
       - 🏁 未知-1600704D
       - 🏁 未知-88404753
       - 🇺🇸 美国-15E672A5
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇲🇦 摩洛哥-738A6652
       - 🇺🇸 美国-185EF251
+      - 🇷🇺 俄罗斯-D68CDB88
+      - 🇰🇷 韩国-09FD0648
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -134,15 +143,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
 proxies:
-  - name: 🇺🇸 美国-3810121C
-    type: hysteria2
-    server: wuhantravel.duckdns.org
-    port: 8443
-    alpn:
-      - h3
-    password: MySecurePassword123
-    sni: wuhantravel.duckdns.org
-    udp: true
   - name: 🏁 未知-798A29E5
     type: hysteria2
     server: 155.248.209.237
@@ -158,13 +158,6 @@ proxies:
     password: bce6c821-200d-421f-bf3d-7159e5246ea0
     skip-cert-verify: true
     sni: hy2.123266.xyz
-    tfo: false
-  - name: 🏁 未知-A2E19C45
-    type: hysteria2
-    server: 3.79.47.137
-    port: 443
-    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-    skip-cert-verify: true
     tfo: false
   - name: 🏁 未知-339BAA0B
     type: hysteria2
@@ -190,6 +183,13 @@ proxies:
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
     tfo: false
+  - name: 🏁 未知-A2E19C45
+    type: hysteria2
+    server: 3.79.47.137
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    skip-cert-verify: true
+    tfo: false
   - name: 🏁 未知-1600704D
     type: hysteria2
     server: 3.70.127.37
@@ -211,6 +211,27 @@ proxies:
     skip-cert-verify: true
     sni: k71530.w-mebel.pro
     tfo: false
+  - name: 🇦🇪 阿联酋-7783DD77
+    type: hysteria2
+    server: 130.49.161.70
+    port: 443
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: true
+    sni: hy2.aspidnet.xyz
+    tfo: false
+  - name: 🇲🇦 摩洛哥-738A6652
+    type: hysteria2
+    server: ma-ybu7mswk.9966690.xyz
+    port: 30000
+    insecure: "1"
+    mport: 30000-39999
+    obfs: salamander
+    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
+    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    skip-cert-verify: true
+    sni: ma-ybu7mswk.9966690.xyz
   - name: 🇺🇸 美国-185EF251
     type: hysteria2
     server: hy2-new.aspidnet.xyz
@@ -220,6 +241,24 @@ proxies:
     password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
     skip-cert-verify: true
     sni: hy2-new.aspidnet.xyz
+    tfo: false
+  - name: 🇷🇺 俄罗斯-D68CDB88
+    type: hysteria2
+    server: 46.254.18.107
+    port: 443
+    password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+    skip-cert-verify: false
+    sni: newlte.kihsuyhf8jkiugsxb.cfd
+    tfo: false
+  - name: 🇰🇷 韩国-09FD0648
+    type: hysteria2
+    server: 193.123.228.188
+    port: 20000
+    fingerprint: 652664a8689f6c45f7083c46c6e1dd02b26f0a45ab08e2c7c5f458a10602ce7a
+    password: C0DD7bgChaltqnh/T2az6ijM
+    ports: 20000-30000
+    skip-cert-verify: false
+    sni: www.bing.com
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
