@@ -70,7 +70,7 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇩🇪 德国-224D9744
-      - 🇺🇸 美国-141189D1
+      - 🇰🇷 韩国-453F7315
       - 🇺🇸 美国-09D616E6
   - name: ♻️ 自动选择
     type: url-test
@@ -82,7 +82,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇩🇪 德国-224D9744
-      - 🇺🇸 美国-141189D1
+      - 🇰🇷 韩国-453F7315
       - 🇺🇸 美国-09D616E6
   - name: 🚑 故障转移
     type: fallback
@@ -93,7 +93,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇩🇪 德国-224D9744
-      - 🇺🇸 美国-141189D1
+      - 🇰🇷 韩国-453F7315
       - 🇺🇸 美国-09D616E6
   - name: 🎯 全局直连
     type: select
@@ -116,15 +116,12 @@ proxies:
     port: 1081
     password: ""
     username: ""
-  - name: 🇺🇸 美国-141189D1
+  - name: 🇰🇷 韩国-453F7315
     type: socks5
-    server: fbaU654714155239sg.u7.huawei-static.com
-    port: 8443
-    password: f8eca8df-a1a5-4918-a194-d34112a3673f
-    skip-cert-verify: false
-    sni: fbaU654714155239sg.u7.huawei-static.com
-    tls: true
-    username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    server: 121.169.46.116
+    port: 1090
+    tls: false
+    username: T2clM0QlM0Q6
   - name: 🇺🇸 美国-09D616E6
     type: socks5
     server: 65.109.29.104
