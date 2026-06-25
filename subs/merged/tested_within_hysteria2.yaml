@@ -77,15 +77,14 @@ proxy-groups:
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
       - 🏁 未知-A2E19C45
-      - 🏁 未知-88404753
-      - 🇮🇹 意大利-D209AABC
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇳🇱 荷兰-59EC401C
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
-      - 🇨🇳 中国-D0742003
-      - 🇰🇷 韩国-09FD0648
       - 🇭🇰 香港-C6E7A7E9
       - 🏁 未知-332A58FA
-      - 🇺🇸 美国-B46B5253
+      - 🏁 未知-158DBA6E
+      - 🇰🇷 韩国-09FD0648
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -103,15 +102,14 @@ proxy-groups:
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
       - 🏁 未知-A2E19C45
-      - 🏁 未知-88404753
-      - 🇮🇹 意大利-D209AABC
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇳🇱 荷兰-59EC401C
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
-      - 🇨🇳 中国-D0742003
-      - 🇰🇷 韩国-09FD0648
       - 🇭🇰 香港-C6E7A7E9
       - 🏁 未知-332A58FA
-      - 🇺🇸 美国-B46B5253
+      - 🏁 未知-158DBA6E
+      - 🇰🇷 韩国-09FD0648
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -128,15 +126,14 @@ proxy-groups:
       - 🏁 未知-D92FC47D
       - 🏁 未知-23A66182
       - 🏁 未知-A2E19C45
-      - 🏁 未知-88404753
-      - 🇮🇹 意大利-D209AABC
+      - 🇦🇪 阿联酋-7783DD77
+      - 🇳🇱 荷兰-59EC401C
       - 🇺🇸 美国-15E672A5
       - 🇺🇸 美国-185EF251
-      - 🇨🇳 中国-D0742003
-      - 🇰🇷 韩国-09FD0648
       - 🇭🇰 香港-C6E7A7E9
       - 🏁 未知-332A58FA
-      - 🇺🇸 美国-B46B5253
+      - 🏁 未知-158DBA6E
+      - 🇰🇷 韩国-09FD0648
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -216,23 +213,26 @@ proxies:
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     skip-cert-verify: true
     tfo: false
-  - name: 🏁 未知-88404753
+  - name: 🇦🇪 阿联酋-7783DD77
     type: hysteria2
-    server: files.fantoff.online
-    port: 10808
-    password: b95dd8e5-2758-408f-be99-9362eecee609
-    sni: files.fantoff.online
-  - name: 🇮🇹 意大利-D209AABC
-    type: hysteria2
-    server: it-hrgv6p.9966690.xyz
-    port: 20000
-    insecure: "1"
-    mport: 20000-29999
+    server: 130.49.161.70
+    port: 443
     obfs: salamander
-    obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-    password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
     skip-cert-verify: true
-    sni: it-hrgv6p.9966690.xyz
+    sni: hy2.aspidnet.xyz
+    tfo: false
+  - name: 🇳🇱 荷兰-59EC401C
+    type: hysteria2
+    server: hy2.aspidnet.xyz
+    port: 443
+    obfs: salamander
+    obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+    password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+    skip-cert-verify: false
+    sni: hy2.aspidnet.xyz
+    tfo: false
   - name: 🇺🇸 美国-15E672A5
     type: hysteria2
     server: 161.104.88.46
@@ -251,24 +251,6 @@ proxies:
     skip-cert-verify: true
     sni: hy2-new.aspidnet.xyz
     tfo: false
-  - name: 🇨🇳 中国-D0742003
-    type: hysteria2
-    server: 103.115.109.49
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    skip-cert-verify: true
-    sni: https://t.me/WangCai2🇨🇳
-    tfo: false
-  - name: 🇰🇷 韩国-09FD0648
-    type: hysteria2
-    server: 193.123.228.188
-    port: 20000
-    fingerprint: 652664a8689f6c45f7083c46c6e1dd02b26f0a45ab08e2c7c5f458a10602ce7a
-    password: C0DD7bgChaltqnh/T2az6ijM
-    ports: 20000-30000
-    skip-cert-verify: false
-    sni: www.bing.com
-    tfo: false
   - name: 🇭🇰 香港-C6E7A7E9
     type: hysteria2
     server: 202.146.222.174
@@ -284,13 +266,23 @@ proxies:
     password: g00teh7gcl67irgs
     skip-cert-verify: false
     tfo: false
-  - name: 🇺🇸 美国-B46B5253
+  - name: 🏁 未知-158DBA6E
     type: hysteria2
-    server: 185.106.96.231
+    server: fta.fontanvpn.com
     port: 443
-    password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+    password: 00dcd873-9211-4d61-ad35-87999906e5c8
     skip-cert-verify: false
-    sni: s559.ccgfw.top
+    sni: fta.fontanvpn.com
+    tfo: false
+  - name: 🇰🇷 韩国-09FD0648
+    type: hysteria2
+    server: 193.123.228.188
+    port: 20000
+    fingerprint: 652664a8689f6c45f7083c46c6e1dd02b26f0a45ab08e2c7c5f458a10602ce7a
+    password: C0DD7bgChaltqnh/T2az6ijM
+    ports: 20000-30000
+    skip-cert-verify: false
+    sni: www.bing.com
     tfo: false
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
