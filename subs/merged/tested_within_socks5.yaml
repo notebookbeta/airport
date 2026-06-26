@@ -70,7 +70,6 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇺🇸 美国-5775D0EA
-      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
   - name: ♻️ 自动选择
     type: url-test
@@ -82,7 +81,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-5775D0EA
-      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
   - name: 🚑 故障转移
     type: fallback
@@ -93,7 +91,6 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-5775D0EA
-      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
   - name: 🎯 全局直连
     type: select
@@ -114,12 +111,6 @@ proxies:
     type: socks5
     server: 47.253.211.16
     port: 1080
-    password: ""
-    username: ""
-  - name: 🇩🇪 德国-224D9744
-    type: socks5
-    server: 152.53.137.180
-    port: 1081
     password: ""
     username: ""
   - name: 🏁 未知-A410DB6D
