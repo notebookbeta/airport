@@ -70,7 +70,9 @@ proxy-groups:
       - 🚑 故障转移
       - DIRECT
       - 🇺🇸 美国-5775D0EA
+      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
+      - 🇳🇱 荷兰-8B00DBD2
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -81,7 +83,9 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-5775D0EA
+      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
+      - 🇳🇱 荷兰-8B00DBD2
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -91,7 +95,9 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - 🇺🇸 美国-5775D0EA
+      - 🇩🇪 德国-224D9744
       - 🏁 未知-A410DB6D
+      - 🇳🇱 荷兰-8B00DBD2
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -113,10 +119,22 @@ proxies:
     port: 1080
     password: ""
     username: ""
+  - name: 🇩🇪 德国-224D9744
+    type: socks5
+    server: 152.53.137.180
+    port: 1081
+    password: ""
+    username: ""
   - name: 🏁 未知-A410DB6D
     type: socks5
     server: 5.255.99.75
     port: 1080
+    password: ""
+    username: ""
+  - name: 🇳🇱 荷兰-8B00DBD2
+    type: socks5
+    server: 144.124.232.204
+    port: 5222
     password: ""
     username: ""
 rules:
