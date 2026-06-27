@@ -71,8 +71,8 @@ proxy-groups:
       - DIRECT
       - 🇺🇸 美国-5775D0EA
       - 🏁 未知-A410DB6D
-      - 🇨🇭 瑞士-2CBDA6BA
       - 🇩🇪 德国-224D9744
+      - 🇨🇭 瑞士-2CBDA6BA
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -84,8 +84,8 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-5775D0EA
       - 🏁 未知-A410DB6D
-      - 🇨🇭 瑞士-2CBDA6BA
       - 🇩🇪 德国-224D9744
+      - 🇨🇭 瑞士-2CBDA6BA
   - name: 🚑 故障转移
     type: fallback
     url: https://cp.cloudflare.com/generate_204
@@ -96,8 +96,8 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国-5775D0EA
       - 🏁 未知-A410DB6D
-      - 🇨🇭 瑞士-2CBDA6BA
       - 🇩🇪 德国-224D9744
+      - 🇨🇭 瑞士-2CBDA6BA
   - name: 🎯 全局直连
     type: select
     proxies:
@@ -125,18 +125,18 @@ proxies:
     port: 1080
     password: ""
     username: ""
-  - name: 🇨🇭 瑞士-2CBDA6BA
-    type: socks5
-    server: ch-zur.pvdata.host
-    port: 1080
-    password: Tel6@SoonTeam
-    username: R38Ycj1bnGQtFWP7cLUMgyGC
   - name: 🇩🇪 德国-224D9744
     type: socks5
     server: 152.53.137.180
     port: 1081
     password: ""
     username: ""
+  - name: 🇨🇭 瑞士-2CBDA6BA
+    type: socks5
+    server: ch-zur.pvdata.host
+    port: 1080
+    password: Tel6@SoonTeam
+    username: R38Ycj1bnGQtFWP7cLUMgyGC
 rules:
   - GEOIP,lan,🎯 全局直连,no-resolve
   - GEOSITE,github,🚀 节点选择
