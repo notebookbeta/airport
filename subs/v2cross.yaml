@@ -1,23 +1,23 @@
 proxies:
   - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"149.22.87.204","port":443,"cipher":"aes-128-gcm","password":"shadowsocks","name":"EPODONIOS-1"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"45.32.16.53","port":8388,"cipher":"chacha20-ietf-poly1305","password":"uTBjZhDmOMwBVAJI","name":"EPODONIOS-2"}
-  - {"type":"trojan","password":"ND91608427","server":"3.113.24.17","port":443,"name":"EPODONIOS-3","udp":true,"network":"tcp"}
+  - {"type":"vless","name":"EPODONIOS-2","server":"202.37.33.80","port":443,"uuid":"5aafc2be-9348-4dec-b896-f4a91253bbca","udp":true,"skip-cert-verify":false,"packet-encoding":"xudp","network":"tcp"}
   - {"name":"http flickity.metafizzy.co:443","type":"http","tls":true,"server":"flickity.metafizzy.co","port":443,"udp":true,"sni":"flickity.metafizzy.co"}
   - {"name":"http gethomeland.com:443","type":"http","tls":true,"server":"gethomeland.com","port":443,"udp":true,"sni":"gethomeland.com"}
   - {"name":"http www.jacklmoore.com/autosize:80","type":"http","tls":false,"server":"www.jacklmoore.com/autosize","port":80,"udp":true}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"149.22.87.241","port":443,"cipher":"aes-128-gcm","password":"shadowsocks","name":"🇯🇵JP-149.22.87.241-0128"}
-  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"176.97.73.215","port":8388,"cipher":"chacha20-ietf-poly1305","password":"ma6zc4JoLRJA","name":"🇯🇵JP_120|264KB/s|A004-260618 01"}
-  - {"type":"trojan","password":"AE62539071","server":"superb-dory.rooster465.autos","port":443,"name":"🇯🇵JP_140|248KB/s 01","sni":"superb-dory.rooster465.autos","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"balanced-goat.rooster465.autos","port":443,"name":"🇯🇵JP_202|310KB/s|C002-260622 01","sni":"balanced-goat.rooster465.autos","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"whole-grub.rooster465.autos","port":443,"name":"🇯🇵JP_211|253KB/s|C002-260622 01","sni":"whole-grub.rooster465.autos","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"real-cardinal.rooster465.autos","port":443,"name":"🇯🇵JP_272|194KB/s|A004-260618 01","sni":"real-cardinal.rooster465.autos","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"13.113.89.229","port":443,"name":"🇯🇵JP_277|138KB/s|A004-260618 01</pre><small class=\"v2cross-node-snapshot-hint\">只导入客户端支持的协议，连接后继续检查 IP、DNS 和 WebRTC。</small></section>                    <div class=\"content-excerpt\">","client-fingerprint":"chrome","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"43.207.235.64","port":443,"name":"🇯🇵JP_282|169KB/s|A004-260618 01","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"52.68.175.30","port":443,"name":"🇯🇵JP_288|250KB/s|A004-260618 01","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"54.168.18.107","port":443,"name":"🇯🇵JP_322|203KB/s|M003-260806 01","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"AE62539071","server":"3.112.4.72","port":443,"name":"🇯🇵JP_332|254KB/s|A004-260618 01","udp":true,"network":"tcp"}
-  - {"type":"hysteria2","name":"🇯🇵JP_351|195KB/s|C002-260622 01","server":"45.88.43.116","port":52454,"password":"6c077487-06af-4fb1-9e46-d485d98f0a31","skip-cert-verify":true,"tfo":false,"udp":true}
-  - {"type":"trojan","password":"ND91608427","server":"devoted-heron.rooster465.autos","port":443,"name":"🇯🇵JP_36|160KB/s|A001-260618 01","sni":"devoted-heron.rooster465.autos","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"ND91608427","server":"3.112.15.214","port":443,"name":"🇯🇵JP_67|370KB/s|A004-260618 01","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"ND91608427","server":"35.72.13.34","port":443,"name":"🇯🇵JP_75|111KB/s|M003-260806 01","udp":true,"network":"tcp"}
-  - {"type":"trojan","password":"ND91608427","server":"18.181.175.120","port":443,"name":"🇯🇵JP_81|173KB/s|M003-260806 01","client-fingerprint":"chrome","udp":true,"network":"tcp"}
+  - {"type":"vless","name":"🇫🇷FR_156|335KB/s 01","server":"172.66.170.53","port":8880,"uuid":"e4927998-38dd-4bf4-a37d-4cc67a06ee2d","udp":true,"tls":false,"skip-cert-verify":false,"packet-encoding":"xudp","network":"tcp"}
+  - {"type":"vless","name":"🇫🇷FR_569|303KB/s|C002-260622 01","server":"cf4.466688.xyz","port":8880,"uuid":"5659b42c-636f-4563-ac41-87d565d0dd1e","udp":true,"tls":false,"skip-cert-verify":false,"packet-encoding":"xudp","network":"tcp"}
+  - {"type":"trojan","password":"ND91608427","server":"18.178.132.111","port":443,"name":"🇯🇵JP-18.178.132.111-0170","udp":true,"network":"tcp"}
+  - {"type":"hysteria2","name":"🇯🇵JP_104|70KB/s|C002-260622 01","server":"freedom.chenlan.top","port":12765,"password":"STYyftThFn","sni":"freedom.chenlan.top","skip-cert-verify":true,"tfo":false,"udp":true}
+  - {"type":"trojan","password":"AE62539071","server":"clear-killdeer.rooster465.autos","port":443,"name":"🇯🇵JP_168|120KB/s 01","sni":"clear-killdeer.rooster465.autos","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"rich-gelding.rooster465.autos","port":443,"name":"🇯🇵JP_201|90KB/s|C002-260622 01","sni":"rich-gelding.rooster465.autos","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"sweeping-parakeet.rooster465.autos","port":443,"name":"🇯🇵JP_215|198KB/s|C002-260622 01","sni":"sweeping-parakeet.rooster465.autos","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"premium-weevil.rooster465.autos","port":443,"name":"🇯🇵JP_257|80KB/s|A004-260618 01</pre><small class=\"v2cross-node-snapshot-hint\">只导入客户端支持的协议，连接后继续检查 IP、DNS 和 WebRTC。</small></section>                    <div class=\"content-excerpt\">","sni":"premium-weevil.rooster465.autos","client-fingerprint":"chrome","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"18.183.182.132","port":443,"name":"🇯🇵JP_276|295KB/s|A004-260618 01","client-fingerprint":"chrome","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"52.192.243.203","port":443,"name":"🇯🇵JP_278|187KB/s|A004-260618 01","client-fingerprint":"chrome","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"43.207.118.231","port":443,"name":"🇯🇵JP_280|157KB/s|A004-260618 01","client-fingerprint":"chrome","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"AE62539071","server":"54.249.32.173","port":443,"name":"🇯🇵JP_338|301KB/s|M003-260806 01","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"ND91608427","server":"57.180.13.78","port":443,"name":"🇯🇵JP_40|277KB/s|S001-260618 01","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"ND91608427","server":"18.181.164.216","port":443,"name":"🇯🇵JP_59|131KB/s|A004-260618 01","udp":true,"network":"tcp"}
+  - {"type":"ss","skip-cert-verify":false,"udp":false,"server":"149.22.87.240","port":443,"cipher":"aes-128-gcm","password":"shadowsocks","name":"🇯🇵JP_6|175KB/s|A004-260618 01"}
+  - {"type":"trojan","password":"ND91608427","server":"3.113.1.131","port":443,"name":"🇯🇵JP_73|126KB/s|M003-260806 01","udp":true,"network":"tcp"}
+  - {"type":"trojan","password":"ND91608427","server":"3.112.223.141","port":443,"name":"🇯🇵JP_82|114KB/s|M003-260806 01","client-fingerprint":"chrome","udp":true,"network":"tcp"}
